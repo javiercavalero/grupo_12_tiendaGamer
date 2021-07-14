@@ -29,4 +29,4 @@ adolescentes / adultos gamers.
 Ofreciendo productos de calidad y los mejores descuentos!
 
 ## Sitios de referencia
-Sitio elegido por las funcionalidades implementadas: (Maximus)(https://www.maximus.com.ar/DETALLE/Mouse-Inalambrico-Trust-Yvi-Blue/ITEM_ID=6688/maximus.aspx?PN=19663?GTIN=8713439196634)
+Sitio elegido por las funcionalidades implementadas: [Maximus](https://www.maximus.com.ar/DETALLE/Mouse-Inalambrico-Trust-Yvi-Blue/ITEM_ID=6688/maximus.aspx?PN=19663?GTIN=8713439196634)
