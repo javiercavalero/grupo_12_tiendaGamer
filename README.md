@@ -7,7 +7,7 @@ Proyecto Integrador
 - Escobar, Buenos Aires.
 
 
-## Sobre nosotros
+## Descripción de nuestros productos y servicios
 ¿Qué productos o servicios brindará nuestro sitio? 
 Ofreceremos accesorios y equipamiento gamer
 Todo lo que un gamer necesita para dominar el juego y disfrutar al máximo.
