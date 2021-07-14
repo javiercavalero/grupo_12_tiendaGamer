@@ -23,3 +23,7 @@ Todo lo que un gamer necesita para dominar el juego y disfrutar al máximo.
 ¿Quién será nuestra audiencia
 objetivo?
 adolescentes / adultos gamers.
+
+¿Cómo ajustaremos nuestra oferta a ese público?
+
+Ofreciendo productos de calidad y los mejores descuentos!
