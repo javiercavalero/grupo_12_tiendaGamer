@@ -10,6 +10,10 @@ Proyecto Integrador
 - 30 años
 - Quilmes, Buenos Aires.
 
+- Javier Cavalero
+- 24 años
+- San Miguel, Buenos aires
+
 
 ## Descripción sobre nuestros productos y servicios
 ¿Qué productos o servicios brindará nuestro sitio? 
