@@ -29,6 +29,8 @@ adolescentes / adultos gamers.
 Ofreciendo productos de calidad y los mejores descuentos!
 
 ## Sitios de referencia
-- Sitio elegido por las funcionalidades implementadas: [Maximus](https://www.maximus.com.ar/DETALLE/Mouse-Inalambrico-Trust-Yvi-Blue/ITEM_ID=6688/maximus.aspx?PN=19663?GTIN=8713439196634)
-- Sitio elegido por los productos o servicios que ofrecen: [Melon](https://www.melonstore.com.ar/?gclid=Cj0KCQjw0K-HBhDDARIsAFJ6UGihj86XNax0PGErzI8W8Vp1TQ8B_Tn3BCoNf-qlHf4ovjX8JiKb4LAaAndUEALw_wcB)
 
+- Sitio elegido por los productos o servicios que ofrecen: [Melon](https://www.melonstore.com.ar/?gclid=Cj0KCQjw0K-HBhDDARIsAFJ6UGihj86XNax0PGErzI8W8Vp1TQ8B_Tn3BCoNf-qlHf4ovjX8JiKb4LAaAndUEALw_wcB)
+- Sitio elegido por los clientes a los que apunta: [Compumundo](https://www.compumundo.com.ar/)
+- Sitio elegido por la estética que presenta [FullH4rd](https://www.fullh4rd.com.ar/)
+- Sitio elegido por las funcionalidades implementadas: [Maximus](https://www.maximus.com.ar/DETALLE/Mouse-Inalambrico-Trust-Yvi-Blue/ITEM_ID=6688/maximus.aspx?PN=19663?GTIN=8713439196634)
