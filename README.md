@@ -6,6 +6,10 @@ Proyecto Integrador
 - 19 años
 - Escobar, Buenos Aires.
 
+- Mayra Corvalán
+- 30 años
+- Quilmes, Buenos Aires.
+
 
 ## Descripción sobre nuestros productos y servicios
 ¿Qué productos o servicios brindará nuestro sitio? 
