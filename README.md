@@ -1,4 +1,5 @@
 # grupo_12_tiendaGamer
+## Integrantes:
 Proyecto Integrador
 Integrantes: 
 - Eliana Despo
