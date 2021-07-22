@@ -38,3 +38,5 @@ Ofreciendo productos de calidad y los mejores descuentos!
 - Sitio elegido por la estética que presenta [FullH4rd](https://www.fullh4rd.com.ar/)
 - Sitio elegido por las funcionalidades implementadas: [Maximus](https://www.maximus.com.ar/DETALLE/Mouse-Inalambrico-Trust-Yvi-Blue/ITEM_ID=6688/maximus.aspx?PN=19663?GTIN=8713439196634)
 - Sitio elegido por el carrito [ForGamers](https://www.for-gamers.com.ar/)
+
+## Fuentes a utilizar en web: Open Sans, Roboto.
