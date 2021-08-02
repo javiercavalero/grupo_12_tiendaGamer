@@ -20,16 +20,20 @@ Proyecto Integrador
 
 ## Descripción sobre nuestros productos y servicios
 ¿Qué productos o servicios brindará nuestro sitio? 
-Ofreceremos accesorios y equipamiento gamer
-Todo lo que un gamer necesita para dominar el juego y disfrutar al máximo.
 
-¿Quién será nuestra audiencia
-objetivo?
-adolescentes / adultos gamers.
+¿Quién será nuestra audiencia objetivo? 
 
 ¿Cómo ajustaremos nuestra oferta a ese público?
 
-Ofreciendo productos de calidad y los mejores descuentos!
+
+
+- Nuestro sitio ofrecerá productos y equipamiento para gamers o quienes busquen mayor comodidad a la hora de utilizar su dispositivo: PC / Tablet / Celular / Consola.
+
+- Nuestra audiencia objetivo serán mayormente adolescentes / adultos gamers.
+
+- Tendremos una vista de portada, donde de manera llamativa, se mostrarán los productos que el cliente desea vender, los cuales podrá ir intercambiando a medida que el cliente lo considere.
+Catálogo con opción de compra online de todos los productos
+Se visualizarán "Productos destacados" y organizaremos por categoría según el tipo de producto.
 
 ## Sitios de referencia
 
