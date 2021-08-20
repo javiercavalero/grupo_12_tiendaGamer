@@ -1,0 +1,47 @@
+.home header{
+    background-color: #42DDF5;
+    margin: 10px;
+    width:100%;
+}
+.home header nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.home header nav .bars {
+    padding-top: 23px ;
+    font-size: 30px;
+}
+.home header nav .busqueda {
+    display: flex;
+    width: 30%;
+    border-radius: 15px;
+}
+.home header nav .logo {
+    width: 30%;
+}
+
+.home header nav .logo img{
+    width: 100%;
+}
+.home header nav .busqueda input {
+    width: 100%;
+    
+}
+.home header nav .carrito-login {
+    display: flex;
+    font-size: 25px;
+}
+
+.home header nav .enlaces {
+    display: none;
+}
+
+.home .banner {
+    display: none;
+}
+.home header nav .box-form {
+    display: none;
+}

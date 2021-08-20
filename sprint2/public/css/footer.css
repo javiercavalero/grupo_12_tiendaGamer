@@ -1,0 +1,39 @@
+.home footer {
+    background-color: #42DDF5;
+    margin: 10px;
+}
+.home footer .listas {
+    display: none;
+}
+.home footer h3 {
+    display: none;
+}
+.home footer .logos{
+    display: flex;
+    justify-content: space-around;
+    font-size: 45px;
+}
+.home footer .logos .facebook a{
+    width: 20%;
+}
+.home footer .logos .instagram a{
+    width: 20%;
+}
+.home footer .logos .youtube a{
+    width: 20%;
+}
+.home footer .logos .wsp a{
+    width: 20%;
+}
+.home footer .logos .facebook a i {
+    color: black;
+}
+.home footer .logos .instagram a i{
+    color: black;
+}
+.home footer .logos .youtube a i {
+    color: black;
+}
+.home footer .logos .wsp a i {
+    color: black;
+}

@@ -15,50 +15,115 @@
   </head>
   <body class="home">
     <header>
-      <nav><div class="bars"><i class="fas fa-bars"></i></div>
+      <!-- menu hamburguesa -->
+      <nav>
+        <div class="bars"><i class="fas fa-bars"></i></div>
+        <!--  logo principal -->
         <div class="logo">
           <a href="/"><img src="/img/zukuna store.png" alt="" /></a>
         </div>
-        <ul class="search">
-          <li class="buscador">Buscador</li>
-          <li class="logo-lupa"><i class="fas fa-search"></i></li>
-        </ul>
 
+        <!-- buscador-->
+        <div class="busqueda">
+          <form action=""><input type="text" placeholder="Busqueda" /></form>
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <!--  register y login -->
         <ul class="enlaces">
           <li class="ingresar"><a href="/views/login.html">Ingresar</a></li>
           <li class="registrarse">
             <a href="/views/register.html">Registrarse</a>
           </li>
-          <li><a href="/views/login.html"><i class="fas fa-user"></i></a></li>
-          <li class="carrito">
+        </ul>
+        <!--  iconos carrito y login -->
+        <ul class="carrito-login">
+          <li>
+            <a href="/views/login.html"><i class="fas fa-user"></i></a>
+          </li>
+          <li>
             <a href="/views/carrito.html"
               ><i class="fas fa-shopping-cart"></i
             ></a>
           </li>
-          
         </ul>
+
+        <!--  form con categorias -->
         <div class="box-form">
           <select name="categorias" id="categorias">
-            <option value="" select hidden>categorias</option>
-            <option value="notebook">notebook</option>
-            <option value="auriculares">auriculares</option>
-            <option value="monitores">monitores</option>
-            <option value="hardware">hardware</option>
-            <option value="mouses">mouses</option>
+            <option value="" select hidden>Categorias</option>
+            <option value="notebook">Notebook</option>
+            <option value="auriculares">Auriculares</option>
+            <option value="monitores">Monitores</option>
+            <option value="hardware">Hardware</option>
+            <option value="mouses">Mouses</option>
           </select>
           <a href="">Ofertas</a>
           <a href="">Contacto</a>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="banner">
+        <img src="" alt="" />
+      </div>
+
+      <h3>Destacados de la semana</h3>
+      <div class="img-destacadas">
+        <div class="img1"><a href=""><img src="" alt=""></a></div>
+        <div class="img2"><a href=""><img src="" alt=""></a></div>
+        <div class="img3"><a href=""><img src="" alt=""></a></div>
+      </div>
+      <h3>¿Que estas buscando?</h3>
+    </main>
     <footer>
-       <ul>
-         <li><a href=""><i class="fab fa-facebook"></i></a></li>
-         <li><a href=""><i class="fab fa-instagram"></i></a></li>
-         <li><a href=""><i class="fab fa-youtube"></i></a></li>
-         <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-       </ul>
+      <!--  categorias -->
+      <div class="listas">
+        <h3>Categorias</h3>
+        <div class="categorias">
+          <ul>
+            <li><a href="">Notebook</a></li>
+            <li><a href="">Auriculares</a></li>
+            <li><a href="">Monitores</a></li>
+          </ul>
+        </div>
+
+        <div class="marcas">
+          <h3>Marcas</h3>
+          <ul>
+            <li><a href="">Lenovo</a></li>
+            <li><a href="">Acer</a></li>
+            <li><a href="">Hp</a></li>
+          </ul>
+        </div>
+
+        <div class="mas-buscado">
+          <h3>lo mas buscado</h3>
+          <ul>
+            <li><a href="">Monitores</a></li>
+            <li><a href="">Teclados</a></li>
+            <li><a href="">Mouses</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--  redes -->
+
+      <div class="logos">
+        <h3>Seguinos en redes!</h3>
+        <div class="facebook">
+          <a href=""><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="instagram">
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="youtube">
+          <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="wsp">
+          <h3>Contactanos</h3>
+          <a href=""><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
