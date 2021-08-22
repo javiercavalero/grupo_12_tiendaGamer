@@ -1,0 +1,15 @@
+@media (min-width: 320px){
+    .header-carrito{
+        background-color: #42DDF5;
+        width: 100%;
+    }
+
+    .header-carrito div{
+        display: flex;
+        flex: wrap;
+        padding: 20px;
+        justify-content: center
+    }
+
+
+}
