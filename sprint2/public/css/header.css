@@ -1,7 +1,7 @@
 .home header{
     background-color: #42DDF5;
     margin: 10px;
-    width:100%;
+    width:94%;
 }
 .home header nav{
     display: flex;
@@ -18,13 +18,16 @@
     display: flex;
     width: 30%;
     border-radius: 15px;
+    padding-top: 20px;
 }
 .home header nav .logo {
     width: 30%;
+    
 }
 
 .home header nav .logo img{
     width: 100%;
+    background-image: #42DDF5;
 }
 .home header nav .busqueda input {
     width: 100%;
@@ -33,15 +36,73 @@
 .home header nav .carrito-login {
     display: flex;
     font-size: 25px;
+    margin: 18px 0px 0px -27px;
 }
 
 .home header nav .enlaces {
     display: none;
 }
 
-.home .banner {
-    display: none;
-}
+
 .home header nav .box-form {
     display: none;
+}
+
+
+
+
+/* tablet */
+@media (min-width: 769px) {
+    .home header{
+        background-color: #42DDF5;
+        margin: 16px;
+        width:96%;
+    }
+    .home header nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+       /*  justify-content: space-around; */
+    
+    }
+    .home header nav .bars {
+        padding-top: 80px ;
+        font-size: 45px;
+        
+    }
+    .home header nav .busqueda {
+        display: flex;
+        width: 30%;
+        border-radius: 15px;
+        padding-top: 80px;
+    }
+    .home header nav .logo {
+        width: 30%;
+        margin: 29px 10px 0 -42px;
+        
+    }
+    
+    .home header nav .logo img{
+        width: 100%;
+        background-image: #42DDF5;
+    }
+    .home header nav .busqueda input {
+        width: 100%;
+        
+    }
+    .home header nav .carrito-login {
+        display: flex;
+        font-size: 25px;
+        margin: 18px 0px 0px -27px;
+    }
+    
+    .home header nav .enlaces {
+        display: none;
+    }
+    
+    
+    .home header nav .box-form {
+        display: none;
+    }
+
 }
