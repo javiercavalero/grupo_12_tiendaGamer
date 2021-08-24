@@ -115,3 +115,46 @@ text-align: center;}
 .home main #carouselExampleIndicators{
     display: none;
 }
+/* tablet */
+@media (min-width: 769px){
+    .home main #carouselExampleIndicators{
+        display: flex;
+}
+.home main .img-destacadas {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    
+}
+.home main .img-destacadas .img1 {
+    width: 23%;
+}
+
+.home main .img-destacadas .img2 {
+    width: 23%;
+}
+.home main .img-destacadas .img3{
+    width: 23%;
+    display: inline-block;
+}
+.home main .img-destacadas .img4{
+    width: 23%;
+    display: inline-block;
+}
+.home main .icons .laptop{
+    display: flex;
+    justify-content: center;
+}.home main .icons .usb{
+    display: flex;
+    justify-content: center;
+}.home main .icons .mobile{
+    display: flex;
+    justify-content: center;
+}.home main .icons .microfono{
+    display: flex;
+    justify-content: center;
+
+}
+}

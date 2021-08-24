@@ -27,7 +27,6 @@
 
 .home header nav .logo img{
     width: 100%;
-    background-image: #42DDF5;
 }
 .home header nav .busqueda input {
     width: 100%;
@@ -53,6 +52,7 @@
 
 /* tablet */
 @media (min-width: 769px) {
+   /*  header */
     .home header{
         background-color: #42DDF5;
         margin: 16px;
@@ -62,23 +62,26 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-       /*  justify-content: space-around; */
     
     }
     .home header nav .bars {
-        padding-top: 80px ;
+        padding-top: 50px ;
         font-size: 45px;
+        margin-left: -30px;
         
     }
     .home header nav .busqueda {
         display: flex;
-        width: 30%;
+        width: 45%;
         border-radius: 15px;
         padding-top: 80px;
+        margin-left: -30px;
+    }.home header nav .busqueda form{
+        width: 100%;
     }
     .home header nav .logo {
         width: 30%;
-        margin: 29px 10px 0 -42px;
+        margin: 0px 0px 0 -28px;
         
     }
     
@@ -92,8 +95,9 @@
     }
     .home header nav .carrito-login {
         display: flex;
-        font-size: 25px;
-        margin: 18px 0px 0px -27px;
+        width: 9%;
+        font-size: 45px;
+        margin: 50px 30px 0px -27px;
     }
     
     .home header nav .enlaces {
@@ -102,7 +106,14 @@
     
     
     .home header nav .box-form {
-        display: none;
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 100%;
     }
+    .home header nav .box-form a{
+        color: white;
+        padding-left:5px ;
 
+    }
 }
