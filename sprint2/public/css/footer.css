@@ -1,4 +1,4 @@
-.home footer {
+.home footer { 
     background-color: #42DDF5;
     margin: 10px;
 }
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-around;
 }
-.home footer .logos .redes {
+.home footer .logos .redes { 
     width: 20%;
 }
 .home footer .logos .facebook a img{
@@ -54,6 +54,7 @@
         margin: 10px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .home footer h3 {
         display: flex;
@@ -85,12 +86,13 @@
         width: 15%;
     }
     .home footer .listas .mas-buscado{
-        width: 15%;
+        width: 27%;
     }
     
     .home footer .logos{
         display: flex;
         justify-content: space-around;
+        width: 373px;
     }
     .home footer .logos .facebook a img{
         width: 100%;
@@ -105,23 +107,28 @@
         width: 100%;
     }
     .home footer .logos .facebook{
+        display: flex;
         width: 509%;
-        padding: 14px 0 0 5px;
+        padding: 38px 0 0 5px;
     }
     .home footer .logos .instagram{
+        display: flex;
         width: 450%;
-        padding-top: 18px;
+        padding-top: 43px;
     
     }
     .home footer .logos .youtube{
         width: 540%;
-        padding: 22px 0 0 10px;
+        padding: 46px 0 0 10px;
     
     }
     .home footer .logos .wsp{
         width: 700%;
-        padding-top: 21px;
+        padding: 0%;
     
     }
-    
+    .home footer .logos .wsp a img{
+        width: 91px;
+        padding: 0px 7px 0px 17px;
+    }
 }
