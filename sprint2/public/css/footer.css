@@ -132,3 +132,7 @@
         padding: 0px 7px 0px 17px;
     }
 }
+/* desktop */
+@media (min-width:1024px) {
+    
+}
