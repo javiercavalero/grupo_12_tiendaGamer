@@ -61,15 +61,13 @@ text-align: center;}
     font-size: 40px;
     justify-content: center;
     }
-.home main .icons .headphones{
+.home main .icons .headphones {
     width: 45%;
     box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
     background-color: #ffffff;
     margin: 3px;
 } 
-.home main .icons a:hover{
-    font-size:70px ;
-}
+
 .home main .icons .game{
     width: 45%;
     box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
