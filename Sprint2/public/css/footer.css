@@ -1,0 +1,138 @@
+.home footer { 
+    background-color: #42DDF5;
+    margin: 10px;
+}
+.home footer .listas {
+    display: none;
+}
+.home footer h3 {
+    display: none;
+}
+.home footer .logos{
+    display: flex;
+    justify-content: space-around;
+}
+.home footer .logos .redes { 
+    width: 20%;
+}
+.home footer .logos .facebook a img{
+    width: 100%;
+}
+.home footer .logos .instagram a img{
+    width: 100%;
+}
+.home footer .logos .youtube a img{
+    width: 100%;
+}
+.home footer .logos .wsp a img{
+    width: 100%;
+}
+.home footer .logos .facebook{
+    width: 509%;
+    padding: 14px 0 0 5px;
+}
+.home footer .logos .instagram{
+    width: 450%;
+    padding-top: 18px;
+
+}
+.home footer .logos .youtube{
+    width: 540%;
+    padding: 22px 0 0 10px;
+
+}
+.home footer .logos .wsp{
+    width: 700%;
+    padding-top: 21px;
+
+}
+
+/* tablet */
+@media (min-width:768px) {
+    .home footer {
+        background-color: #42DDF5;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .home footer h3 {
+        display: flex;
+        font-size: 20px;
+        width: 142px;
+    }.home footer h3.seguinos{
+        display: flex;
+        font-size: 20px;
+        width: 142px;
+    }
+    .home footer .listas {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+
+    }
+    .home footer .listas .categorias{
+      width: 15%;
+
+    }
+    .home footer .listas li a {
+        display: flex;
+        justify-content: left;
+        font-size: 20px;
+        color: #000000;
+        margin-left: -30px;
+    }
+    .home footer .listas .marcas{
+        width: 15%;
+    }
+    .home footer .listas .mas-buscado{
+        width: 27%;
+    }
+    
+    .home footer .logos{
+        display: flex;
+        justify-content: space-around;
+        width: 373px;
+    }
+    .home footer .logos .facebook a img{
+        width: 100%;
+    }
+    .home footer .logos .instagram a img{
+        width: 100%;
+    }
+    .home footer .logos .youtube a img{
+        width: 100%;
+    }
+    .home footer .logos .wsp a img{
+        width: 100%;
+    }
+    .home footer .logos .facebook{
+        display: flex;
+        width: 509%;
+        padding: 38px 0 0 5px;
+    }
+    .home footer .logos .instagram{
+        display: flex;
+        width: 450%;
+        padding-top: 43px;
+    
+    }
+    .home footer .logos .youtube{
+        width: 540%;
+        padding: 46px 0 0 10px;
+    
+    }
+    .home footer .logos .wsp{
+        width: 700%;
+        padding: 0%;
+    
+    }
+    .home footer .logos .wsp a img{
+        width: 91px;
+        padding: 0px 7px 0px 17px;
+    }
+}
+/* desktop */
+@media (min-width:1024px) {
+    
+}
