@@ -200,21 +200,23 @@
             margin-top: 0px;
         }
         .social{
-            margin-left: 560px;
+            margin: 20px 0px 0px 20px;
+            width: 30%;
+            padding: 20px;
         }
 
         .contactos{
             font-size: 17px;
-            margin-top: 20px;
-            margin-left: 570px;
-            margin-bottom: 0px;            
-        }
+            position: absolute;
+            left: 440px;
 
+        }
+        
+        .contactos p{
+            margin-top: 10px;
+        }
         .footer-categories{
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-
         }
         .categories, .brands, .most-searched{
             display: flex;
@@ -237,7 +239,7 @@
         }
 
         .footer-categories{
-            margin: 0px 0px 0px 0px;
+            margin: 15px 0px 15px 0px;
         }
 
     }
@@ -289,6 +291,19 @@
         .especificaciones-product{
             margin: 0px 0px 50px 0px;
             padding: 30px
+        }
+
+        .contactos{
+            font-size: 22px;
+            position: absolute;
+            left: 570px;
+
+        }
+
+      .social{
+            margin: 20px 0px 0px 170px;
+            width: 30%;
+            padding: 20px;
         }
 }
     

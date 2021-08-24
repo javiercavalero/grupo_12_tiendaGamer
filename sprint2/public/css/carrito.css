@@ -3,24 +3,20 @@
     .carrito-body{
         background-color: #ebebeb
     }
-    .header-carrito{
+    .carrito-body .header-carrito{
         background-color: #42DDF5;
         width: 100%;
     }
 
-    .header-carrito div{
+    .carrito-body .header-carrito div{
         display: flex;
         flex: wrap;
         padding: 20px;
         justify-content: space-evenly;
     }
 
-    .header-carrito h3{
+    .carrito-body .header-carrito h3{
         margin: 5px 0px 0px 0px;
-    }
-
-    .header-carrito h2{
-        margin: 0px;
     }
 
     .carrito-body img{
@@ -29,19 +25,18 @@
         margin-left: 10px;
     }
     
-    .product-price-details{
+    .carrito-body .product-price-details{
         display: flex;
         padding: 5px;
     }
 
-    .nombre-cantidad h5{
+    .carrito-body .nombre-cantidad h5{
         font-size: 15px;
         margin: 10px;
-        color: #646568
-;
+        color: #646568;
     }
 
-    .cantidad{
+    .carrito-body .cantidad{
         color: #646568;
         background-color: #cfd0d3;
         border-radius: 10px;
@@ -53,41 +48,47 @@
         font-size:15px;
     }
 
-    .precio-cancelar{
+    .carrito-body .precio-cancelar{
         color: #646568;
         margin-top: 20px;
         justify-content: space-evenly;
     }
 
-    .precio-cancelar i{
+    .carrito-body .precio-cancelar i{
         margin-left: 25px;
     }
-    .precio-cancelar p{
+
+    .carrito-body .precio-cancelar p{
         margin: 20px 5px 0px 0px;
     }
 
-    .info-shipping h5{
+    .carrito-body .info-shipping h5{
         font-size: 17px;
         margin:10px;
     }
 
-    .info-shipping i, h6{
+    .carrito-body .envios{
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .carrito-body .info-shipping i, h6{
         color: #646568;
         font-size: 15px;
         margin: 5px;
     }
 
-    .shipping{
+    .carrito-body .shipping{
         display:flex;
         margin: 10px;
     }
 
-    .calcular-envio{
+    .carrito-body .calcular-envio{
         display: flex;
         justify-content:center;
     }
 
-    .cp{
+    .carrito-body .cp{
         border: 1px solid #6e7073;
         border-radius: 5px;
         padding: 10px;
@@ -95,24 +96,24 @@
 
     }
 
-    .calcular{
+    .carrito-body .calcular{
         border: 1px solid #6e7073;
         padding: 12px;
         color: #202121;
     }
 
-    .local{
+    .carrito-body .local{
         display:flex;
         margin: 10px;
 
     }
 
-    .local h6{
+    .carrito-body .local h6{
         margin: 5px;
         font-size: 15px;
     }
 
-    .direccion{
+    .carrito-body .direccion{
         justify-content:center;
         padding: 10px;
         text-align: center;
@@ -121,7 +122,7 @@
         border-radius: 5px;
     }
 
-    hr{
+    .carrito-body hr{
         height: 1px;
         width: 93%;
         background-color: #dde0e6;
@@ -130,12 +131,12 @@
         margin-bottom: 15px;
     }
     
-    .total h3{
+    .carrito-body .total h3{
         font-size: 30px;
         font-weight: lighter;
     }
     
-    .total h5{
+    .carrito-body .total h5{
         font-size: 15px;
         color: #585a5c;
         margin-left: 90px;
@@ -143,13 +144,14 @@
 
 
     }
-    .box-1total{
+    
+    .carrito-body .box-1total{
         display:flex;
         justify-content: space-between;
         margin: 20px;
     }
 
-    .total button{
+    .carrito-body .total button{
         padding: 20px;
         border-radius: 50px;
         color: white;
@@ -161,8 +163,73 @@
         font-weight: 600;
     }
 
-    .compra{
+    .carrito-body .compra{
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (min-width: 769px){
+
+    .carrito-body .nombre-cantidad h5{
+        position:relative;
+        left: 30px;
+        top: 20px;
+    }
+
+    .carrito-body .cantidad{
+        position: relative;
+        top: 40px;
+        left: 39px;
+    }
+
+    .carrito-body .nombre-cantidad h5, p{
+        font-size:20px;
+
+    }
+
+    .carrito-body .precio-cancelar{
+        font-size: 35px;
+        position: relative;
+        left: 110px;
+        top: 15px;
+    }
+
+    .carrito-body .envios{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .carrito-body .envios h5{
+        margin:0px;
+        font-size: 18px;
+    }
+
+    .carrito-body .ver-mas{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .carrito-body .ver-mas h5{
+        margin: 0px 0px 50px 0px;
+    }
+}
+
+@media (min-width: 1024px){
+    .carrito-body .carrito-body h5{
+        font-size: 30px
+    }
+
+    .carrito-body .carrito-body h6{
+        font-size: 22px
+    }
+
+    .carrito-body .total h5{
+        font-size: 20px
+    }
+
+    .carrito-body .total button{
+        font-size: 20px;
     }
 }
