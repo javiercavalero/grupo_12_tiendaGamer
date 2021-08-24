@@ -21,7 +21,7 @@ text-align: center;}
     box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
 }
 .home main .img-destacadas .img1 img{
-    height: 69%;
+    height: 84%;
     
 }
 
@@ -155,4 +155,10 @@ text-align: center;}
     justify-content: center;
 
 }
+}
+/* desktop */
+@media (min-width: 1024px){
+    .home main .img-destacadas .img1 img{
+        height: 78%;
+    }
 }

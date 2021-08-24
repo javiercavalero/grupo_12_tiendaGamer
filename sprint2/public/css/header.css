@@ -131,6 +131,15 @@
     }
     .home header nav .enlaces .registrarse{
         margin-left: 17px;
+        
+    }
+    .home header nav .enlaces .registrarse a{
+        color: black;
+        
+    }
+    .home header nav .enlaces .ingresar a{
+        color: black;
+        
     }
     .home header nav .carrito-login {
         display: none;
