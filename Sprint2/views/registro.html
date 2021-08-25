@@ -15,32 +15,59 @@
 
 <body class="registro-login">
 
-    <header class="header-product-detail">
-        <nav>
-            <div class="logo">
-                <div class="burger"><i class="fas fa-bars"></i></div>
-                <img src="/img/zukuna store.png" alt="" /></a>
-            </div>
-            <ul class="search">
-                <li class="buscar">Buscador</li>
-                <li class="lupa"><i class="fas fa-search"></i></li>
-            </ul>
-            <ul class="ingresar-registrar">
-                <li><a href="">Ingresar</a></li>
-                <li><a href="">Registrarse</a></li>
-            </ul>
-            <ul class="login-carrito">
-                <a href="">
-                    <li class="usuario"><i class="fas fa-user"></i></li>
-                </a>
-                <a href="">
-                    <li class="carrito"><i class="fas fa-shopping-cart"></i></li>
-                </a>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <!-- menu hamburguesa -->
+    <nav>
+      <div class="bars"><i class="fas fa-bars"></i></div>
+      <!--  logo principal -->
+      <div class="logo">
+        <a href="/"><img src="/img/zukuna store.png" alt="" /></a>
+      </div>
+
+      <!-- buscador-->
+      <div class="busqueda">
+        <form action=""><input type="text" placeholder="Busqueda" /></form>
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <!--  register y login -->
+      <ul class="enlaces">
+        <li class="ingresar"><a href="/login">Ingresar</a></li>
+        <li class="registrarse">
+          <a href="/register">Registrarse</a>
+        </li>
+      </ul>
+      <!--  iconos carrito y login -->
+      <ul class="carrito-login">
+        <li>
+          <a href="/login"><i class="fas fa-user"></i></a>
+        </li>
+        <li>
+          <a href="/carrito"
+            ><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+
+      <!--  form con categorias -->
+      <div class="box-form">
+        <select name="categorias" id="categorias">
+          <option value="" select hidden>Categorias</option>
+          <option value="notebook">Notebook</option>
+          <option value="auriculares">Auriculares</option>
+          <option value="monitores">Monitores</option>
+          <option value="hardware">Hardware</option>
+          <option value="mouses">Mouses</option>
+        </select>
+        <a href="">Ofertas</a>
+        <a href="">Contacto</a>
+      </div>
+    </nav>
+  </header>
 
 <br>
+<br>
+<br>
+<br>
+
     <main>
 
         <div class='contenedor'>
@@ -105,6 +132,7 @@
 
     </main>
 <br>
+
 <footer>
     <!--  categorias -->
     <div class="listas">

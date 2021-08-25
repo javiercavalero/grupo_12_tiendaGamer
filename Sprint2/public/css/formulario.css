@@ -10,6 +10,7 @@ padding-top: 5px;
 box-shadow: black;
 background-color: #42DDF5; 
 text-align: center;
+
  }
 
  .registro-login .contenedor form {
@@ -17,6 +18,7 @@ text-align: center;
     margin: 0 auto;  
     max-width: 375px;
     font-family: open sans;
+    
      }
 
 
@@ -46,10 +48,13 @@ margin: 0%;
     .contenedor {
         display: flex;
 }
+}
 
 /* desktop */
 @media (min-width: 1024px){
     .contenedor {
         display: flex;
 }
+}
+
 
