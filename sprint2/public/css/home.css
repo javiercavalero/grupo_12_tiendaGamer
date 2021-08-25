@@ -1,0 +1,167 @@
+.home{
+    background-color: #C4C4C4;
+}
+.home h3 {
+text-align: center;}
+
+.home main .img-destacadas {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    
+}
+.home main .img-destacadas img{
+    width: 100%;
+}
+.home main .img-destacadas .img1 {
+    width: 45%;
+    background-color:#42DDF5 ;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+}
+.home main .img-destacadas .img1 img{
+    height: 69%;
+    
+}
+
+.home main .img-destacadas .img2{
+    width: 45%;
+    background-color:#42DDF5 ;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+
+}
+.home main .img-destacadas .img3{
+    width: 23%;
+    background-color:#42DDF5 ;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    display: none;
+}
+.home main .img-destacadas .img4{
+    width: 23%;
+    background-color:#42DDF5 ;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    display: none;
+}
+.home main .img-destacadas .carrito-compra {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 2px 50px;
+    border-radius: 50%;
+}
+.home main .img-destacadas p {
+    text-align: center;
+}
+.home main .icons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 40px;
+    justify-content: center;
+    }
+.home main .icons .headphones {
+    width: 45%;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    background-color: #ffffff;
+    margin: 3px;
+} 
+
+.home main .icons .game{
+    width: 45%;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    background-color: #ffffff;
+    margin: 3px;
+}
+.home main .icons .mouse{
+    width: 45%;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    background-color: #ffffff;
+    margin: 3px;
+}
+.home main .icons .sd-card{
+    width: 45%;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    background-color: #ffffff;
+    margin: 3px;
+}.home main .icons .laptop{
+    width: 45%;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    background-color: #ffffff;
+    margin: 3px;
+    display: none;
+}.home main .icons .usb{
+    width: 45%;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    background-color: #ffffff;
+    margin: 3px;
+    display: none;
+}.home main .icons .mobile{
+    width: 45%;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    background-color: #ffffff;
+    margin: 3px;
+    display: none;
+}.home main .icons .microfono{
+    width: 45%;
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    background-color: #ffffff;
+    margin: 3px;
+    display: none;
+}
+.home main #carouselExampleIndicators{
+    display: none;
+}
+/* tablet */
+@media (min-width: 769px){
+    .home main #carouselExampleIndicators{
+        display: flex;
+}
+.home main .img-destacadas {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    
+}
+.home main .img-destacadas .img1 {
+    width: 23%;
+}
+.home main .img-destacadas .img1 img{
+    height: 177px;
+}
+
+.home main .img-destacadas .img2 {
+    width: 23%;
+}
+.home main .img-destacadas .img3{
+    width: 23%;
+    display: inline-block;
+}
+.home main .img-destacadas .img4{
+    width: 23%;
+    display: inline-block;
+}
+.home main .icons .laptop{
+    display: flex;
+    justify-content: center;
+}.home main .icons .usb{
+    display: flex;
+    justify-content: center;
+}.home main .icons .mobile{
+    display: flex;
+    justify-content: center;
+}.home main .icons .microfono{
+    display: flex;
+    justify-content: center;
+
+}
+}
+/* desktop */
+@media (min-width: 1024px){
+    .home main .img-destacadas .img1 img{
+        height: 78%;
+    }
+}

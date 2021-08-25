@@ -1,0 +1,139 @@
+ footer { 
+    background-color: #42DDF5;
+    margin: 10px;
+}
+ footer .listas {
+    display: none;
+}
+ footer h3 {
+    display: none;
+}
+footer .logos{
+    display: flex;
+    justify-content: space-around;
+}
+ footer .logos .redes { 
+    width: 20%;
+}
+footer .logos .facebook a img{
+    width: 100%;
+}
+footer .logos .instagram a img{
+    width: 100%;
+}
+footer .logos .youtube a img{
+    width: 100%;
+}
+footer .logos .wsp a img{
+    width: 100%;
+}
+ footer .logos .facebook{
+    width: 509%;
+    padding: 14px 0 0 5px;
+}
+footer .logos .instagram{
+    width: 450%;
+    padding-top: 18px;
+
+}
+ footer .logos .youtube{
+    width: 540%;
+    padding: 22px 0 0 10px;
+
+}
+ footer .logos .wsp{
+    width: 700%;
+    padding-top: 21px;
+
+}
+
+/* tablet */
+@media (min-width:768px) {
+ footer {
+        background-color: #42DDF5;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+ footer h3 {
+        display: flex;
+        font-size: 20px;
+        width: 142px;
+    }
+     footer h3.seguinos{
+        display: flex;
+        font-size: 20px;
+        width: 142px;
+    }
+ footer .listas {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+
+    }
+footer .listas .categorias{
+      width: 15%;
+
+    }
+footer .listas li a {
+        display: flex;
+        justify-content: left;
+        font-size: 20px;
+        color: #000000;
+        margin-left: -30px;
+    }
+ footer .listas .marcas{
+        width: 15%;
+    }
+footer .listas .mas-buscado{
+        width: 27%;
+    }
+    
+ footer .logos{
+        display: flex;
+        justify-content: space-around;
+        width: 373px;
+    }
+ footer .logos .facebook a img{
+        width: 100%;
+    }
+ footer .logos .instagram a img{
+        width: 100%;
+    }
+ footer .logos .youtube a img{
+        width: 100%;
+    }
+ footer .logos .wsp a img{
+        width: 100%;
+    }
+ footer .logos .facebook{
+        display: flex;
+        width: 509%;
+        padding: 38px 0 0 5px;
+    }
+ footer .logos .instagram{
+        display: flex;
+        width: 450%;
+        padding-top: 43px;
+    
+    }
+ footer .logos .youtube{
+        width: 540%;
+        padding: 46px 0 0 10px;
+    
+    }
+ footer .logos .wsp{
+        width: 700%;
+        padding: 0%;
+    
+    }
+ footer .logos .wsp a img{
+        width: 91px;
+        padding: 0px 7px 0px 17px;
+    }
+}
+/* desktop */
+@media (min-width:1024px) {
+    
+}
