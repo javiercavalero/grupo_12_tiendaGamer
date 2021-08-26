@@ -3,7 +3,7 @@
 Proyecto Integrador
  
 - Eliana Despo
-- 19 años
+- 20 años
 - Escobar, Buenos Aires.
 
 - Mayra Corvalán
@@ -14,9 +14,6 @@ Proyecto Integrador
 - 24 años
 - San Miguel, Buenos aires
 
--  Brenda Vecchia
--  19 años
--  Villa la Angostura, Neuquen
 
 ## Descripción sobre nuestros productos y servicios
 ¿Qué productos o servicios brindará nuestro sitio? 
