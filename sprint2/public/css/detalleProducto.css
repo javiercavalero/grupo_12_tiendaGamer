@@ -1,0 +1,126 @@
+
+    .body-product-detail h3{
+        margin-bottom: 20px
+    }
+    
+    .body-product-detail{
+        background-color: #ebebeb;
+    }
+    
+    .body-product-detail .product img{
+        width: 100%;
+    }
+    
+    .body-product-detail .product{
+        display:flex;
+        flex-wrap: wrap;
+        border: 20px solid #EBEBEB;
+        text-align:center;
+    }
+    
+    .body-product-detail main section div ul{
+        text-align:center;
+    }
+
+    .cards{
+        display:flex;
+        justify-content:center center;
+        flex-wrap: nowrap;
+        width: 25%;
+        align-items: center;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .icon-caracteristicas{
+        display: flex;
+        margin: 10px 0px 10px 20px;
+    }
+
+    .icon-caracteristicas p{
+        margin: 0px 0px 0px 9px;
+    }
+    
+    .botones{
+        display:flex;
+        flex-direction: column;
+        margin: 0px 0px 30px 0px;
+    }
+    
+    .botones button{
+        margin: 10px 60px 0px 60px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+    }
+
+    .especificaciones-product{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 0px 50px 0px;
+        padding: 10px
+    }
+
+
+@media (min-width: 769px){
+        
+        .body-product-detail .product .img-teclado {
+            width: 50%;
+        }
+
+
+        .body-product-detail .product p{
+            font-size: 19px;
+            margin: 10px;
+        }
+
+
+        .cards{
+            width: 15%;
+            margin-left: 90px;
+        }
+        
+        .adapt{
+            width: 50%;
+        }
+
+        .botones{
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0px 0px 30px 0px;
+        }
+    
+        .botones button{
+            width: 600%
+        }
+    }
+
+@media (min-width: 1024px){
+
+        .icon-caracteristicas{
+            font-size: 25px;
+        }
+
+       .product{
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .product h3{
+            position: relative;
+            left: 280px;
+            bottom: 50px;
+            font-size: 20px;
+        }
+
+       .body-product-detail .product .img-teclado {
+            width: 40%;
+            position: absolute;
+        }
+
+        .botones button{
+            padding: 25px;
+            font-size: 22px;
+            margin-top: 60px;
+        }
+}

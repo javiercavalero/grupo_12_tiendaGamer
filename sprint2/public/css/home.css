@@ -1,9 +1,12 @@
 .home {
   background-color: #c4c4c4;
 }
-.home h3 {
+.home h2 {
   text-align: center;
+  margin: 10px 0px;
 }
+.home h3 {
+  text-align: center;}
 
 .home main .img-destacadas {
   width: 100%;
@@ -16,40 +19,44 @@
   width: 100%;
 }
 .home main .img-destacadas .img1 {
-  width: 45%;
+  width: 70%;
   background-color: #42ddf5;
   box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+  margin-top: 10px;
 }
 .home main .img-destacadas .img1 img {
   height: 69%;
 }
 
 .home main .img-destacadas .img2 {
-  width: 45%;
+  width: 70%;
   background-color: #42ddf5;
   box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+  margin-top: 10px;
 }
 .home main .img-destacadas .img3 {
-  width: 23%;
+  width: 70%;
   background-color: #42ddf5;
   box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
-  display: none;
+  margin-top: 10px;
+  
 }
 .home main .img-destacadas .img4 {
-  width: 23%;
+  width: 70%;
   background-color: #42ddf5;
   box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
-  display: none;
+  margin-top: 10px;
 }
 .home main .img-destacadas .carrito-compra {
   text-align: center;
   background-color: #000000;
   color: #ffffff;
-  margin: 2px 50px;
+  margin: 2px 90px;
   border-radius: 50%;
 }
 .home main .img-destacadas p {
   text-align: center;
+  margin: 0%;
 }
 .home main .icons {
   width: 100%;
@@ -127,6 +134,9 @@
     flex-wrap: wrap;
     margin-top: 5px;
   }
+  .home main .img-destacadas .carrito-compra{
+    margin: 2px 70px;
+  }
   .home main .img-destacadas .img1 {
     width: 23%;
   }
@@ -165,6 +175,6 @@
 /* desktop */
 @media (min-width: 1024px) {
   .home main .img-destacadas .img1 img {
-    height: 78%;
+    height: 71%;
   }
 }
