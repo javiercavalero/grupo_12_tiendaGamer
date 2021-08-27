@@ -1,7 +1,7 @@
- header{
+header{
     background-color: #42DDF5;
-    margin: 10px;
-    width:94%;
+    width:100%;
+    padding: 15px;
 }
  header nav{
     display: flex;
@@ -30,12 +30,21 @@
 }
  header nav .busqueda input {
     width: 100%;
-    
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 2px
 }
+
+ header nav .busqueda button{
+     background-color: white;
+     border: 0px solid white;
+     border-radius: 2px
+ }
  header nav .carrito-login {
     display: flex;
     font-size: 25px;
-    margin: 18px 0px 0px -27px;
+    margin: 18px 0px 0px 0px;
+    padding: 0px;
 }
 
  header nav .enlaces {
@@ -43,7 +52,7 @@
 }
 
 
-e header nav .box-form {
+ header nav .box-form {
     display: none;
 }
 
@@ -55,8 +64,7 @@ e header nav .box-form {
    /*  header */
  header{
         background-color: #42DDF5;
-        margin: 16px;
-        width:96%;
+        width:100%;
     }
  header nav{
         display: flex;
@@ -88,7 +96,8 @@ e header nav .box-form {
     
  header nav .logo img{
         width: 100%;
-        background-image: #42DDF5;
+        padding: 5px;
+
     }
  header nav .busqueda input {
         width: 100%;
@@ -98,7 +107,7 @@ e header nav .box-form {
         display: flex;
         width: 9%;
         font-size: 45px;
-        margin: 50px 30px 0px -27px;
+        margin: 50px 30px 0px 0px;
     }
     
  header nav .enlaces {
