@@ -6,7 +6,7 @@ Proyecto Integrador
 - 19 años
 - Escobar, Buenos Aires.
 
-- Mayra Corvalán
+- Mayra Alejandra Corvalán
 - 30 años
 - Quilmes, Buenos Aires.
 
