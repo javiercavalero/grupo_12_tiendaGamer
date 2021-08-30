@@ -150,6 +150,20 @@ margin-top: 10px;}
     width: 23%;
     display: inline-block;
 }
+.home main .img-destacadas p,h2 {
+    text-align: center;
+    margin:0;
+    font-size: 25px;
+}
+.home main .img-destacadas .carrito-compra {
+    text-align: center;
+    background-color: #000000;   
+    margin: 2px 70px;
+    border-radius: 50%;
+}
+.home main .img-destacadas .carrito-compra i{
+    color: #ffffff;
+}
 .home main .icons .laptop{
     display: flex;
     justify-content: center;
@@ -168,6 +182,9 @@ margin-top: 10px;}
 /* desktop */
 @media (min-width: 1024px){
     .home main .img-destacadas .img1 img{
-        height: 78%;
+        height: 71%;
+    }
+    .home main .img-destacadas .carrito-compra{
+        margin: 2px 95px;
     }
 }
