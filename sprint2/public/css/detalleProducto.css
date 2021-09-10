@@ -33,9 +33,13 @@
     display:flex;
     justify-content:center center;
     flex-wrap: nowrap;
-    width: 10%;
+    width: 20%;
     align-items: center;
     margin: 20px 0px 20px 0px;
+}
+
+.cards img{
+    margin-left: 20px;
 }
 
 .icon-caracteristicas{
