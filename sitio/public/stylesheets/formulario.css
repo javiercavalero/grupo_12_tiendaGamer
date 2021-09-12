@@ -1,0 +1,70 @@
+.registro-login {
+    background-color: #ebebeb;
+}
+.registro-login .contenedor {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 450px;
+    border-radius: 10px;
+    padding-bottom: 39px;
+    padding-top: 39px;
+    box-shadow: black;
+    background-color: #42DDF5; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+    
+.registro-login .contenedor form {
+     width: 90%;
+     margin: 0 auto;  
+     max-width: 375px;
+     font-family: open sans;
+        
+}
+.registro-login .container-input input{
+    font-size: 15px;
+    border-radius: 5px;
+    border: solid 1px white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    padding: 10px;
+    width: 100%;
+}
+
+.registro-login  .container-buttons button{
+   background-color: white;
+   border-radius: solid 5px white;
+   border-radius: 5px;
+   font-weight: 900;
+   padding: 8px;
+   box-shadow: 2px 2px #ebebeb;
+   border: none;
+   margin-top: 10px;
+   font-size: 15px;
+}
+
+    
+.fuente2{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+}
+    
+
+    
+    /* desktop */
+@media (min-width: 1024px){
+
+.registro-login .contenedor {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+ 
+}
+    
+    
+    
