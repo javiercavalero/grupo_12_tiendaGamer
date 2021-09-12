@@ -18,10 +18,16 @@ margin-top: 10px;}
 }
 .home main .img-destacadas .img1 {
     width: 70%;
-    background-color:#42DDF5 ;
-    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    background-color:hsl(188, 90%, 61%) ;
+    
     margin-top: 10px;
+    transition: all ease 0.3s;
 }
+.home main .img-destacadas .img1:hover{
+box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+transform: scale(1.03);
+}
+
 .home main .img-destacadas .img1 img{
     height: 69%;
     
@@ -30,21 +36,35 @@ margin-top: 10px;}
 .home main .img-destacadas .img2{
     width: 70%;
     background-color:#42DDF5 ;
-    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
     margin-top: 10px;
+    transition: all ease 0.3s;
 
 }
+.home main .img-destacadas .img2:hover{
+     box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+     transform: scale(1.03);
+}
+
+
 .home main .img-destacadas .img3{
     width: 70%;
     background-color:#42DDF5 ;
-    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
     margin-top: 10px;
+    transition: all ease 0.3s;
+}
+.home main .img-destacadas .img3:hover{
+     box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+     transform: scale(1.03);
 }
 .home main .img-destacadas .img4{
     width: 70%;
     background-color:#42DDF5 ;
-    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
     margin-top: 10px;
+    transition: all ease 0.3s;
+}
+.home main .img-destacadas .img4:hover{
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    transform: scale(1.03);
 }
 .home main .img-destacadas .carrito-compra {
     text-align: center;
@@ -67,54 +87,95 @@ margin-top: 10px;}
     font-size: 40px;
     justify-content: center;
     }
+   
+
 .home main .icons .headphones {
     width: 45%;
-    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
     background-color: #ffffff;
     margin: 3px;
+    transition: all ease 0.3s;
 } 
+.home main .icons .headphones:hover{
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    transform: scale(1.03);
+
+}
 
 .home main .icons .game{
     width: 45%;
-    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
     background-color: #ffffff;
     margin: 3px;
+    transition: all ease 0.3s;
+}
+.home main .icons .game:hover{
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    transform: scale(1.03);
+
 }
 .home main .icons .mouse{
     width: 45%;
-    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
     background-color: #ffffff;
     margin: 3px;
+    transition: all ease 0.3s;
+}
+.home main .icons .mouse:hover{
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    transform: scale(1.03);
 }
 .home main .icons .sd-card{
     width: 45%;
-    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
     background-color: #ffffff;
     margin: 3px;
-}.home main .icons .laptop{
-    width: 45%;
+    transition: all ease 0.3s;
+}
+.home main .icons .sd-card:hover{
     box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    transform: scale(1.03);
+}
+
+.home main .icons .laptop{
+    width: 45%;
     background-color: #ffffff;
     margin: 3px;
     display: none;
-}.home main .icons .usb{
-    width: 45%;
+    transition: all ease 0.3s;
+}
+.home main .icons .laptop:hover{
     box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    transform: scale(1.03);
+}
+.home main .icons .usb{
+    width: 45%;
     background-color: #ffffff;
     margin: 3px;
     display: none;
-}.home main .icons .mobile{
-    width: 45%;
+    transition: all ease 0.3s;
+}
+.home main .icons .usb:hover{
     box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    transform: scale(1.03);
+}
+.home main .icons .mobile{
+    width: 45%;
     background-color: #ffffff;
     margin: 3px;
     display: none;
-}.home main .icons .microfono{
-    width: 45%;
+    transition: all ease 0.3s;
+}
+.home main .icons .mobile:hover{
     box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    transform: scale(1.03);
+}
+.home main .icons .microfono{
+    width: 45%;
     background-color: #ffffff;
     margin: 3px;
     display: none;
+    transition: all ease 0.3s;
+}
+.home main .icons .microfono:hover{
+    box-shadow: 0px 2px 0px 1px rgb(0 0 0 / 27%);
+    transform: scale(1.03);
 }
 .home main #carouselExampleIndicators{
     display: none;
