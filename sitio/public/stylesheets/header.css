@@ -46,6 +46,10 @@ header{
     margin: 18px 0px 0px 0px;
     padding: 0px;
 }
+header nav .admin a {
+    color: black;
+
+}
 
  header nav .enlaces {
     display: none;
@@ -60,7 +64,7 @@ header{
 
 
 /* tablet */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
    /*  header */
  header{
         background-color: #42DDF5;
@@ -80,7 +84,7 @@ header{
     }
  header nav .busqueda {
         display: flex;
-        width: 45%;
+        width: 35%;
         border-radius: 15px;
         padding-top: 80px;
         margin-left: -30px;
@@ -89,7 +93,7 @@ header{
         width: 100%;
     }
  header nav .logo {
-        width: 30%;
+        width: 25%;
         margin: 0px 0px 0 -28px;
         
     }
@@ -108,6 +112,11 @@ header{
         width: 9%;
         font-size: 45px;
         margin: 50px 30px 0px 0px;
+    }
+    header nav .admin{
+        margin: 70px 0 -17px 0;
+        font-size: 23px;
+    
     }
     
  header nav .enlaces {
