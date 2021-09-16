@@ -1,65 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-  <title>Details</title>
-  <link rel="stylesheet" href="/stylesheets/styles.css">
-</head>
+<%- include('./partials/head') %> 
 
 <body class="body-product-detail">
-  <header>
-    <!-- menu hamburguesa -->
-    <nav>
-      <div class="bars"><i class="fas fa-bars"></i></div>
-      <!--  logo principal -->
-      <div class="logo">
-        <a href="/"><img src="/img/logos/zukuna store.png" alt="" /></a>
-      </div>
-
-      <!-- buscador-->
-      <div class="busqueda">
-        <form action=""><input type="text" placeholder="Busqueda" /></form>
-        <button><i class="fas fa-search"></i></button>
-      </div>
-      <!--  register y login -->
-      <ul class="enlaces">
-        <li class="ingresar"><a href="/login">Ingresar</a></li>
-        <li class="registrarse">
-          <a href="/register">Registrarse</a>
-        </li>
-      </ul>
-      <!--  iconos carrito y login -->
-      <ul class="carrito-login">
-        <li>
-          <a href="/login"><i class="fas fa-user"></i></a>
-        </li>
-        <li>
-          <a href="/carrito"><i class="fas fa-shopping-cart"></i></a>
-        </li>
-      </ul>
-
-      <!--  form con categorias -->
-      <div class="box-form">
-        <select name="categorias" id="categorias">
-          <option value="" select hidden>Categorias</option>
-          <option value="notebook">Notebook</option>
-          <option value="auriculares">Auriculares</option>
-          <option value="monitores">Monitores</option>
-          <option value="hardware">Hardware</option>
-          <option value="mouses">Mouses</option>
-        </select>
-        <a href="">Ofertas</a>
-        <a href="">Contacto</a>
-      </div>
-    </nav>
-  </header>
+  <%- include('./partials/header') %>
 
 
   <main>
@@ -156,57 +101,7 @@
       </div>
     </section>
   </main>
-  <footer>
-    <!--  categorias -->
-    <div class="listas">
-
-      <div class="categorias">
-        <ul>
-          <h3>Categorias</h3>
-          <li><a href="">Notebook</a></li>
-          <li><a href="">Auriculares</a></li>
-          <li><a href="">Monitores</a></li>
-        </ul>
-      </div>
-
-      <div class="marcas">
-        <h3>Marcas</h3>
-        <ul>
-          <li><a href="">Lenovo</a></li>
-          <li><a href="">Acer</a></li>
-          <li><a href="">Hp</a></li>
-        </ul>
-      </div>
-
-      <div class="mas-buscado">
-        <h3>lo mas buscado</h3>
-        <ul>
-          <li><a href="">Monitores</a></li>
-          <li><a href="">Teclados</a></li>
-          <li><a href="">Mouses</a></li>
-        </ul>
-      </div>
-    </div>
-    <!--  redes -->
-
-    <div class="logos">
-      <h3 class="seguinos">Seguinos en redes!</h3>
-      <div class="facebook">
-        <a href=""><img src="/img/logos/facebook-logo.jpg" alt=""></i></a>
-      </div>
-      <div class="instagram">
-        <a href=""><img src="/img/logos/instagram-logo.jpg" alt=""></i></a>
-      </div>
-      <div class="youtube">
-        <a href=""><img src="/img/logos/youtube-logo.jpg" alt=""></i></a>
-      </div>
-
-      <div class="wsp">
-        <h3>Contactanos</h3>
-        <a href=""><img src="/img/logos/whatsapp-logo.jpg" alt=""></i></a>
-      </div>
-    </div>
-  </footer>
+  <%- include('./partials/footer') %
 </body>
 
 </html>
