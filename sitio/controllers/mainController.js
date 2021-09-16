@@ -7,5 +7,9 @@ module.exports={
         return res.render('admin',{
             title: 'admin'
         })
+    },
+    carrito : (req, res) => {
+        return res.render('carrito')
     }
+    
 }
