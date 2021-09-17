@@ -3,6 +3,8 @@ module.exports = {
         return res.render('detalleProducto', { title: 'detail'});
     },
     productAdd : (req, res) => {
-        return res.render('productAdd')
+        return res.render('productAdd',{
+            title:'agregar producto'
+        })
     }
 }
