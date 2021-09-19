@@ -1,10 +1,15 @@
 module.exports = {
     detail : (req, res) => {
-        return res.render('detalleProducto', { title: 'detail'});
+        return res.render('detalleProducto', { title: 'Detail'});
     },
     productAdd : (req, res) => {
         return res.render('productAdd',{
-            title:'agregar producto'
+            title:'Agregar producto'
+        })
+    },
+    productEdit : (req,res) => {
+        res.render('productEdit',{
+            title:'Editar producto'
         })
     }
 }
