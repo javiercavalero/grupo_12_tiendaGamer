@@ -1,10 +1,5 @@
 ## Retrospectiva ##
 
-## Paleta de colores
-- 42DDF5 %100
-- 000000 %100
-- FFFFFF %100
-- C4C4C4 %58
 
 ## Empezar a hacer:
 - Mas reuniones
