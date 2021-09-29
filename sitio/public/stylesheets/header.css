@@ -64,7 +64,7 @@ header nav .admin a {
 
 
 /* tablet */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
    /*  header */
  header{
         background-color: #42DDF5;

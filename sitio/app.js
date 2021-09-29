@@ -10,6 +10,9 @@ var productsRouter = require('./routes/products')
 
 var app = express();
 
+var productsRouter = require('./routes/products')
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -41,3 +44,12 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
+/* Controladores */
+
+const {login, register} = require('./controllers/mainController');
+
+
+
+

@@ -45,8 +45,4 @@ Se visualizarán "Productos destacados" y organizaremos por categoría según el
 
 ## Fuentes a utilizar en web: Open Sans, Roboto.
 
-## Paleta de colores
-- 42DDF5 %100
-- 000000 %100
-- FFFFFF %100
-- C4C4C4 %58
+
