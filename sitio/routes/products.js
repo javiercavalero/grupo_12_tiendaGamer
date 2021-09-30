@@ -5,7 +5,8 @@ const {detail, productAdd, productEdit}= require('../controllers/productControll
 
 /* router de productos */
 router.get('/productAdd', productAdd);
-router.get('/detail', detail);
+router.get('/detail/:id', detail);
 router.get('/edit',productEdit);
+
 
 module.exports = router;
