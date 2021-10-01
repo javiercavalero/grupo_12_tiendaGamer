@@ -17,5 +17,8 @@ module.exports = {
         res.render('productEdit',{
             title:'Editar producto'
         })
+    },
+    destroy: (req,res)=>{
+        
     }
 }
