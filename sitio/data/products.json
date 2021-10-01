@@ -1,51 +1,61 @@
 [
-    {
-        "id": 1,
-        "name": "Redragon Headset Gamer Zeus2 H510 Negro",
-        "price": 9499,
-        "description": "Pensados para todas las plataformas, el ZEUS es el auricular compatible con PC, PS4, XBOX, Nintendo Switch y Móviles Smartphone que los gamers multiplataforma esperaban. Dándonos la posibilidad de conectar por medio de puerto USB o jack 3.5 gracias a sus cables desmontables.",
-        "image": "auriculares-1.jpg"
-     },
-     {
-        "id": 2,
-        "name": "Redragon Headset Gamer Zeus2 H510 Blanco",
-        "price": 9499,
-        "description": "H510 ZEUS 2 WHITE Incluye otro integrante a tu setup blanco. Toda la calidad que caracteriza al Zeus con una estética diferente. Podrás sumar estilo a tu PC, PS4, Xbox One o Nintendo Switch con su compatibilidad multiplataforma.",
-        "image": "auriculares-2.jpg"
-     },
-     {
-        "id": 3,
-        "name": "Redragon Micrófono Blazar GM300",
-        "price": 9865,
-        "description": "Diseño moderno construido en metal y plástico ABS, con todos los accesorios que necesitas para tus transmisiones.",
-        "image": "microfono-1.jpg"
-     },
-     {
-        "id": 4,
-        "name": "Redragon Monitor GM3CC27 Jade 27' 165hz",
-        "price": 72499,
-        "description": "Equipado con un panel VA, que proporciona una pérdida mínima de luz y un contraste superior, colores oscuros más fuertes y definidos, lo que te brindara la respuesta que necesitas en los juegos y una mejor calidad de visualización en tu experiencia.",
-        "image": "monitor-1.jpg"
-     },
-     {
-        "id": 5,
-        "name": "Dualshock 5 DualSense",
-        "price": 14999,
-        "description": "DualSense marca una diferenciación radical de lo que ofrecíamos con nuestros anteriores controles, y captura cuan fuerte nos sentimos sobre dar un salto generacional con PS5. El nuevo control, junto con todas las funciones innovadoras en PS5, será transformador para los juegos, continuando nuestra misión en PlayStation de empujar los límites del juego, ahora y en el futuro. A la comunidad de PlayStation, realmente quiero agradecerle por compartir esta asombrosa aventura con nosotros mientras nos encaminamos al lanzamiento de PS5 a finales de 2020. Esperamos compartir más información de PS5, incluyendo el diseño de la consola, en los próximos meses",
-        "image": "joystick.jpg"
-     },
-     {
-        "id": 6,
-        "name": "Minecraft Starter Colection PS4",
-        "price": 5799,
-        "description": "Crea todo lo que puedas imaginar. Explora los mundos generados al azar. Sobrevive entre las criaturas peligrosas por la noche.",
-        "image": "juego-1.jpg"
-     },
-     {
-        "id": 7,
-        "name": "Resident Evil Village PS4",
-        "price": 11499,
-        "description": "Resident Evil Village tiene como objetivo crear una innovadora experiencia de survival horror como nunca antes. Años después de la pesadilla, Ethan Winters ha conseguido cierta estabilidad y una vida normal con su familia. Una vida que no tardará en ser destruida por un héroe de antaño, Chris Redfield.",
-        "image": "juego-2.jpg"
-     }
+   {
+      "id": 1,
+      "name": "Redragon Headset Gamer Zeus2 H510 Negro",
+      "price": 9499,
+      "description": "Pensados para todas las plataformas, el ZEUS es el auricular compatible con PC, PS4, XBOX, Nintendo Switch y Móviles Smartphone que los gamers multiplataforma esperaban. Dándonos la posibilidad de conectar por medio de puerto USB o jack 3.5 gracias a sus cables desmontables.",
+      "image": "auriculares-1.jpg"
+   },
+   {
+      "id": 2,
+      "name": "Redragon Headset Gamer Zeus2 H510 Blanco",
+      "price": 9499,
+      "description": "H510 ZEUS 2 WHITE Incluye otro integrante a tu setup blanco. Toda la calidad que caracteriza al Zeus con una estética diferente. Podrás sumar estilo a tu PC, PS4, Xbox One o Nintendo Switch con su compatibilidad multiplataforma.",
+      "image": "auriculares-2.jpg"
+   },
+   {
+      "id": 3,
+      "name": "Redragon Micrófono Blazar GM300",
+      "price": 9865,
+      "description": "Diseño moderno construido en metal y plástico ABS, con todos los accesorios que necesitas para tus transmisiones.",
+      "image": "microfono-1.jpg"
+   },
+   {
+      "id": 4,
+      "name": "Redragon Monitor GM3CC27 Jade 27' 165hz",
+      "price": 72499,
+      "description": "Equipado con un panel VA, que proporciona una pérdida mínima de luz y un contraste superior, colores oscuros más fuertes y definidos, lo que te brindara la respuesta que necesitas en los juegos y una mejor calidad de visualización en tu experiencia.",
+      "image": "monitor-1.jpg"
+   },
+   {
+      "id": 5,
+      "name": "Dualshock 5 DualSense",
+      "price": 14999,
+      "description": "DualSense marca una diferenciación radical de lo que ofrecíamos con nuestros anteriores controles, y captura cuan fuerte nos sentimos sobre dar un salto generacional con PS5. El nuevo control, junto con todas las funciones innovadoras en PS5, será transformador para los juegos, continuando nuestra misión en PlayStation de empujar los límites del juego, ahora y en el futuro. A la comunidad de PlayStation, realmente quiero agradecerle por compartir esta asombrosa aventura con nosotros mientras nos encaminamos al lanzamiento de PS5 a finales de 2020. Esperamos compartir más información de PS5, incluyendo el diseño de la consola, en los próximos meses",
+      "image": "joystick.jpg"
+   },
+   {
+      "id": 6,
+      "name": "Minecraft Starter Colection PS4",
+      "price": 5799,
+      "description": "Crea todo lo que puedas imaginar. Explora los mundos generados al azar. Sobrevive entre las criaturas peligrosas por la noche.",
+      "image": "juego-1.jpg"
+   },
+   {
+      "id": 7,
+      "name": "Resident Evil Village PS4",
+      "price": 11499,
+      "description": "Resident Evil Village tiene como objetivo crear una innovadora experiencia de survival horror como nunca antes. Años después de la pesadilla, Ethan Winters ha conseguido cierta estabilidad y una vida normal con su familia. Una vida que no tardará en ser destruida por un héroe de antaño, Chris Redfield.",
+      "image": "juego-2.jpg"
+   },
+   {
+      "id": 8,
+      "price": null,
+      "image": "default.jpg"
+   },
+   {
+      "id": 9,
+      "price": null,
+      "image": "default.jpg"
+   }
 ]
