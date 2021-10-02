@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const productsFilePath = path.join(__dirname, '../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+let products= JSON.parse(fs.readFileSync(path.join(__dirname,'..','data','products.json'),'utf-8'));
+
 
 
 module.exports = {
@@ -22,17 +22,18 @@ module.exports = {
     },
 
     store: (req, res) => {
-        const {name, price, description} = req.body;
+        const {name, price, description, category} = req.body;
         let product = {
             id: products[products.length -1].id + 1,
-            name: name.trim(),
+            name,
             price: +price,
-            description: description.trim(),
+            description,
+            category,
             image: 'default.jpg'
         }
         products.push(product)
 
         fs.writeFileSync(path.join(__dirname, '..', 'data', 'products.json'), JSON.stringify(products, null,3), 'utf-8')
-         res.redirect('/create')
+         res.redirect('/')
     }
 }

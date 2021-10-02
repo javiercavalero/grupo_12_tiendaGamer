@@ -8,15 +8,15 @@
 
 
   <main>
-    <section>
-      <div class="">
-        <h3>Redragon Teclado Mecánico K530 Draconic Blanco</h3>
+    <section> 
+         <div class="">
+          <h3><%= product.name %></h3> 
       </div>
       <div class="product">
-        <div class="img-teclado"><img src="/images/teclado.jpg" alt="" width="100%"></div>
+        <div class="img-teclado"><img src="/images/<%= product.image %>" alt="" width="100%"></div>
         <div class="adapt">
           <div class="price">
-            <p>$ 9.760</p>
+            <p>$<%=product.price%></p>
           </div>
           <div>
             <p>Precio en cuotas sin interés con las siguientes tarjetas</p>
@@ -53,52 +53,11 @@
         <button>Agregar al carrito<i class="fas fa-shopping-cart"></i></button>
       </div>
       <div class="especificaciones-product">
-        <h3>Especificaciones del producto</h3>
-        <p>- DRACONIC K530RGB:
-          Diseño minimalista, compacto y eficaz. Sin olvidar la calidad en nuestros periféricos.</p>
-          <br>
-        <p>- Conectividad:
-          Con el Draconic podrás conectarte de forma inalámbrica o cableada. Por medio de la conexión
-          Bluetooth 5.0 con el que podremos conectar hasta 3 plataformas. También tendremos la posibilidad
-          de
-          conectar de forma cableada a través de su cable USB Type-C</p>
-          <br>
-        <p>- Switches Outemu Brown:
-          El Draconic es un teclado de 60% que cuenta con 61 teclas con switches Outemu MK2 Brown, un
-          switch
-          balanceado de sensación táctil y poco audible, con una fuerza de actuación necesaria de tan solo
-          45
-          gramos, obtendremos una respuesta infalible tanto para jugar como para el uso cotidiano.</p>
-          <br>
-        <p>- Iluminación RGB:
-          La iluminación del Draconic consta de 13 preset incorporados, configurables para el gusto y
-          comodidad del usuario, logrando un resultado óptimo basado en sus necesidades.</p>
-          <br>
-        <p>- Tecla de bloqueo de Windows:
-          Como su nombre lo dice, esta tecla añade funcionalidad al teclado, evitando tocar accidentalmente la tecla que
-          cierre nuestro juego mientras nos encontramos en el punto clave de la partida.</p>
-          <br>
-        <p>- Teclado 60%:
-          Diseño compacto y robusto, quitamos el teclado numérico y las funciones extras para conseguir un modelo
-          reducido
-          de 61 teclas completamente cómodo y transportable.</p>
-          <br>
-        <p>- Construcción:
-          La construcción del teclado está realizada sobre ABS reforzado, combinado con teclas moldeadas por inyección
-          láser de doble disparo y posteriormente grabadas, generan un producto durable y de excelente calidad, ideal
-          para
-          uso intensivo.</p>
-          <br>
-        <p>- Cable USB Type-C de goma resistente para conectividad y carga.
-          Su estructura real antisalpicaduras protege al usuario de derrames accidentales sobre nuestro periférico,
-          drenando el líquido por la parte posterior de la base del teclado.</p>
-          <br>
-        <p>- Batería de 3000mAh para el uso intensivo, recargable por medio de conexión USB Type-C. Por último, pero no
-          menos
-          importante: todos los teclados Redragon poseen bases antideslizantes que aseguran la rigidez del periférico en
-          el lugar que hayamos decidido colocarlo.</p>
-          <br>
-      </div>
+       
+        
+        
+       
+      
     </section>
   </main>
   <%- include('./partials/footer') %> >
