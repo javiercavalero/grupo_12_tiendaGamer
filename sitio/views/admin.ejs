@@ -7,8 +7,8 @@
           <a class="navbar-brand" href="/">ZUKUNA STORE</a>
           
               <form class="d-flex">
-                <a class="crear" href="/products/create">CREAR</a>
-                <input class="form-control me-2" type="BUSCAR PRODUCTOS" placeholder="BUSCAR PRODUCTOS" aria-label="BUSCAR PRODUCTOS">
+                <a href="/products/create">CREAR</a>
+                <input class="form-control me-2" name="keywords" type="text" placeholder="BUSCAR PRODUCTOS" aria-label="BUSCAR PRODUCTOS">
                 <button class="btn btn-light" type="submit">BUSCAR</button>
               </form>
             </div>
@@ -51,7 +51,7 @@
              
              <form action="/products/destroy/<%= product.id %>?_method=DELETE" method="POST"></form>
 
-             <button class="btn btn-sm btn-danger" style="width: 35px;" >   <i class="fas fa-trash"></i> </button>
+             <button class="btn btn-sm btn-danger" type="submit" style="width: 35px;" >   <i class="fas fa-trash"></i> </button>
            </form>
            </td>
         </tr>

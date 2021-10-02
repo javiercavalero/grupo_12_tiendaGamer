@@ -17,7 +17,7 @@ module.exports = {
 
     create: (req, res) => {
 		return res.render('productAdd',{
-            title: 'agregar producto'
+            title: 'Crear producto'
         })
     },
 
@@ -38,6 +38,8 @@ module.exports = {
     },
 
     destroy: (req,res)=>{
-        
+        let productModified = products.filter(product => product.id !== +req.params.id);
+        fs.writeFileSync(path.join(__dirname,'..','data','products.json'),JSON.stringify(productModified,null,3),'utf-8');
+        res.redirect('/admin')
     }
 }
