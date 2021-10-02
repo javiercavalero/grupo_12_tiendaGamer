@@ -34,6 +34,10 @@ module.exports = {
         products.push(product)
 
         fs.writeFileSync(path.join(__dirname, '..', 'data', 'products.json'), JSON.stringify(products, null,3), 'utf-8')
-         res.redirect('/')
+         res.redirect('/admin')
+    },
+
+    destroy: (req,res)=>{
+        
     }
 }
