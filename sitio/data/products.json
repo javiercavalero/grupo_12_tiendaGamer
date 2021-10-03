@@ -84,5 +84,10 @@
       "id": 12,
       "price": null,
       "image": "default.jpg"
+   },
+   {
+      "id": 13,
+      "price": null,
+      "image": "default.jpg"
    }
 ]
