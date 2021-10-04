@@ -1,1 +1,21 @@
-[]
+[{ 
+    "id":1,
+    "nombre y apellido":"javier cavalero" ,
+    "usuario":"Javier",
+    "nacimiento":"8/6/1997",
+    "domicilio":"calle falsa 123",
+    "email":"javicavalero56@gmail.com",
+    "contraseña":"1234",
+    "repetir":"1234"
+},
+{ 
+    "id":2,
+    "nombre y apellido":"carlos lopez" ,
+    "usuario":"carlitos",
+    "nacimiento":"3/2/1994",
+    "domicilio":"calle falsa 12345",
+    "email":"carlosLopez6@gmail.com",
+    "contraseña":"12341234",
+    "repetir":"12341234"
+}
+]
