@@ -1,3 +1,25 @@
+div.row{
+    margin: 0 auto;
+    padding: 0px;
+}
+form.row{
+    padding: 0px;
+    padding-top: 15px;
+}
+div.card-body{
+    padding: 0px;
+    margin: 0 auto;
+
+}
+div.col-12{
+    margin-left: 20px;
+}
+
+input#name.form-control{
+    padding: 40px;
+}
+
+
 .registro-login {
     background-color: #ebebeb;
 }
