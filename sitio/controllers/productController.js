@@ -45,6 +45,25 @@ module.exports = {
          res.redirect('/admin')
     },
 
+    update : (req, res) => {
+        const {name, price, discount, category, description} = req.body;
+        let productModified = {
+            id: +req.params.id,
+            name: name.trim(),
+            price: +price,
+            discount: +discount,
+            category,
+            description: description.trim(),
+            image: 'default.jpg'
+        }
+        let productsModified = products.map(product => product.id === +req.params.id? productModified : product)
+
+        fs.writeFileSync(path.join(__dirname, '..', 'data', 'products.json'),JSON.stringify(productsModified, null, 3), 'utf-8')
+
+        res.redirect('/admin')
+    },
+
+
     destroy: (req,res)=>{
         let productModified = products.filter(product => product.id !== +req.params.id);
         fs.writeFileSync(path.join(__dirname,'..','data','products.json'),JSON.stringify(productModified,null,3),'utf-8');
