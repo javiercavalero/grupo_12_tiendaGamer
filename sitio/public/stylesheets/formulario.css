@@ -23,6 +23,11 @@ input#name.form-control{
     padding: 40px;
 }
 
+div.card{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
 
 .registro-login {
     background-color: #ebebeb;
