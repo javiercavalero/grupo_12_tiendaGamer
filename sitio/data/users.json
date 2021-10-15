@@ -1,21 +1,80 @@
-[{ 
-    "id":1,
-    "nombre y apellido":"javier cavalero" ,
-    "usuario":"Javier",
-    "nacimiento":"8/6/1997",
-    "domicilio":"calle falsa 123",
-    "email":"javicavalero56@gmail.com",
-    "contraseña":"1234",
-    "repetir":"1234"
-},
-{ 
-    "id":2,
-    "nombre y apellido":"carlos lopez" ,
-    "usuario":"carlitos",
-    "nacimiento":"3/2/1994",
-    "domicilio":"calle falsa 12345",
-    "email":"carlosLopez6@gmail.com",
-    "contraseña":"12341234",
-    "repetir":"12341234"
-}
+[
+   {
+      "id": 1,
+      "nombre y apellido": "javier cavalero",
+      "usuario": "Javier",
+      "nacimiento": "8/6/1997",
+      "domicilio": "calle falsa 123",
+      "email": "javicavalero56@gmail.com",
+      "password": "1234",
+      "rol": "admin"
+   },
+   {
+      "id": 2,
+      "nombre y apellido": "carlos lopez",
+      "usuario": "carlitos",
+      "nacimiento": "3/2/1994",
+      "domicilio": "calle falsa 12345",
+      "email": "carlosLopez6@gmail.com",
+      "password": "12341234",
+      "rol": "user"
+   },
+   {
+      "id": 3,
+      "name": "aaaaaaaaaaaa",
+      "email": "aaa@gmail.com",
+      "password": "$2a$08$h7WsvehHff/n8NwmW1Ybt.GdVw/Bf6C1TskfZ1h6HNyin8Q7L84J2",
+      "avatar": "default.jpg",
+      "rol": "user"
+   },
+   {
+      "id": 4,
+      "name": "a a",
+      "email": "aaaj@gmail.com",
+      "username": "aaaaaaaaaa",
+      "domicilio": "jjjjjjjjjjj",
+      "password": "$2a$08$RX6lU.cGGS1Eg97jGjoHoe5GGpxtxClZ6F9xeco.uVrPhDRmtwyPK",
+      "avatar": "default.jpg",
+      "rol": "user"
+   },
+   {
+      "id": 5,
+      "name": "random guy",
+      "email": "randomail@gmail.com",
+      "username": "randomguy",
+      "domicilio": "random street",
+      "password": "$2a$08$hiL5UuliOkQCSEtMCxRvD.SbgG3Cadsq5txCEzUeOudc.SaC/sri2",
+      "avatar": "default.jpg",
+      "rol": "user"
+   },
+   {
+      "id": 6,
+      "name": "Eliana",
+      "email": "despoeliana@gmail.com",
+      "username": "Despo",
+      "domicilio": "iiiii",
+      "password": "$2a$08$uuW/aGKR.mAcTYhCYhn.I.M/dOkk1LEp6M/AR6JwhoN5d5OeecwJq",
+      "avatar": "default.jpg",
+      "rol": "admin"
+   },
+   {
+      "id": 7,
+      "name": "Genoveva Arti",
+      "email": "arti@outlook.com",
+      "username": "GenovevaArti",
+      "domicilio": "Genoveva",
+      "password": "$2a$10$QpTpU4tPATXwg07bV8Wf9OCctNBKITyOCv5hdGXX05BmWXQWykwj.",
+      "avatar": "default.jpg",
+      "rol": "user"
+   },
+   {
+      "id": 8,
+      "name": "vvvv",
+      "email": "vvvv@gmail.com",
+      "username": "vvvvvvvvvvvvvvvvv",
+      "domicilio": "vvvvvvv",
+      "password": "$2a$10$U0TLDZr/FtxZFefLZm0qm.LgW8adzzQ/5buiVNzoNUx0D0lUW8p/G",
+      "avatar": "default.jpg",
+      "rol": "user"
+   }
 ]
