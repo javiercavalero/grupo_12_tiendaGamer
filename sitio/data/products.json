@@ -45,15 +45,6 @@
       "image": "juego-1.jpg"
    },
    {
-      "id": 7,
-      "name": "Resident Evil Village PS4",
-      "price": 11499,
-      "discount": 0,
-      "description": "Resident Evil Village tiene como objetivo crear una innovadora experiencia de survival horror como nunca antes. Años después de la pesadilla, Ethan Winters ha conseguido cierta estabilidad y una vida normal con su familia. Una vida que no tardará en ser destruida por un héroe de antaño, Chris Redfield.",
-      "category": "oferta",
-      "image": "juego-2.jpg"
-   },
-   {
       "id": 8,
       "name": "Resident Evil Village PS4",
       "price": 11499,
@@ -61,12 +52,6 @@
       "description": "Resident Evil Village tiene como objetivo crear una innovadora experiencia de survival horror como nunca antes. Años después de la pesadilla, Ethan Winters ha conseguido cierta estabilidad y una vida normal con su familia. Una vida que no tardará en ser destruida por un héroe de antaño, Chris Redfield.",
       "category": "oferta",
       "image": "juego-2.jpg"
-   },
-   {
-      "id": 13,
-      "name": "probando",
-      "discount": "20",
-      "image": "default.jpg"
    },
    {
       "id": 14,
