@@ -47,7 +47,7 @@
             <td><%= product.price %> </td>
            <td>
 
-             <button class="btn btn-sm btn-success" style="width: 35px;">   <i class="fas fa-edit"></i> </button>
+            <a href="/products/edit/<%= product.id %>" class="btn btn-sm btn-success" style="width: 35px;"><i class="fas fa-edit"></i></a>
              
              <form action="/products/destroy/<%= product.id %>?_method=DELETE" method="POST"></form>
 
