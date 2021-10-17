@@ -6,6 +6,8 @@ const products = JSON.parse(fs.readFileSync(path.join(__dirname,'..','data','pro
 const toThousand = require('../utils/toThousand');
 const toDiscount = require('../utils/toDiscount');
 
+/* validaciones */
+const{validationResult}= require('express-validator');
 
 module.exports = {
     detail : (req, res) => {
@@ -27,13 +29,17 @@ module.exports = {
     },
 
     store: (req, res) => {
-        const {name, price, description, category, discount} = req.body;
+
+        const errors=validationResult(req);
+
+        if(errors.isEmpty()){
+ const {name, price, description, category, discount} = req.body;
         let product = {
             id: products[products.length -1].id + 1,
-			name,
-            price,
-            discount,
-			description,
+			name:name,
+            price:+price,
+            discount: +discount,
+			description: description,
             category,
             image: 'default.jpg'
         }
@@ -41,6 +47,15 @@ module.exports = {
 
         fs.writeFileSync(path.join(__dirname, '..', 'data', 'products.json'), JSON.stringify(products, null,3), 'utf-8')
          res.redirect('/admin')
+        }else{
+            return res.render('productAdd',{
+                title: 'Crear producto',
+                errors : errors.mapped(),
+                old:req.body
+            })
+        }
+
+       
     },
 
     destroy: (req,res)=>{
