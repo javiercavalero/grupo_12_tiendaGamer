@@ -142,6 +142,9 @@ header nav .admin a {
 
 /* desktop */
 @media (min-width:1024px) {
+header div.bars{
+        display: none;
+    }
  header nav .enlaces {
         display: flex;
         font-size: 25px;

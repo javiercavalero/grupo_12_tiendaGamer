@@ -1,20 +1,8 @@
 <!--head-->
 <%- include('./partials/head') %> 
 <body class="bg-light">
-  <header>
-    <nav class="navbar navbar-light bg-info fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">ZUKUNA STORE</a>
-      <a class="navbar-brand" href="/admin">ADMIN</a>
-          <form class="d-flex">
-            <input class="form-control me-2" type="BUSCAR PRODUCTOS" placeholder="BUSCAR PRODUCTOS" aria-label="BUSCAR PRODUCTOS">
-            <button class="btn btn-light" type="submit">BUSCAR</button>
-          </form>
-        </div>
-      
-  </nav>
-
-</header>
+ <!--HEADER-->
+ <%- include('./partials/headerAdmin') %> 
     
 <main class="container">
     <div class="row">
@@ -26,42 +14,48 @@
               <div class="card-body">
                   <form class="row" action="" method="POST">
                       <div class="row">
-                          <div class="col-12"> 
-                              <div class="form-floating mb-3 ">
-                        <input type="text" class="form-control" id="name" placeholder="Nombre de producto">
+                          <div class="col-12 mb-3 "> 
+                              <div class="form-floating ">
+                        <input type="text" class="form-control <%= locals.errors && errors.name ? 'is-invalid' : null %>" id="name" name="name" placeholder="Nombre de producto" 
+                        value=<%= locals.old && old.name ? old.name:null%>>
                         <label for="name">Nombre de producto</label>
                       </div>
+                      <span ><%= locals.errors && errors.name ? errors.name.msg : null%> </span>
                     </div>
-                      <div class="col-12">
-                          <div class="form-floating mb-3">
-                        <textarea style="resize: none; height: 100px" class="form-control" placeholder="Descripción de producto " id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">Descripción</label>
+                      <div class="col-12 mb-3">
+                          <div class="form-floating ">
+                        <textarea class="form-control <%= locals.errors && errors.description ? 'is-invalid' : null %>" style="resize: none; height: 100px"  placeholder="Descripción de producto " id="description" name="description"><%= locals.old && old.description ? old.description:null%></textarea>
+                        <label for="description">Descripción</label>
                       </div>
+                      <span class="text-danger small ms-2"><%= locals.errors && errors.description ? errors.description.msg : null%> </span>
                     </div>
                     
-                    <div class="col-12 col-md-6">
-                        <div class="form-floating col-md-6 mb-3">
-                        <input type="number" class="form-control" id="price" >
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="form-floating col-md-6">
+                        <input type="number" class="form-control <%= locals.errors && errors.price ? 'is-invalid' : null %>" name="price" id="price" value=<%= locals.old && old.price ? old.price:null%>>
                         <label for="price">Precio</label>
-                      </div>
+                      </div> 
+                      <span class="text-danger small ms-2"><%= locals.errors && errors.price ? errors.price.msg : null%> </span>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="form-floating col-md-6 mb-3">
-                        <input type="number" class="form-control" id="discount" >
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="form-floating col-md-6 ">
+                        <input type="number" class="form-control <%= locals.errors && errors.discount ? 'is-invalid' : null %>" id="discount" name="discount" placeholder="ej: 20" value=<%= locals.old && old.discount ? old.discount:null%> >
                         <label for="discount">Descuento</label>
                       </div>
+                      <span class="text-danger small ms-2"><%= locals.errors && errors.discount ? errors.discount.msg : null%> </span>
                     </div>
                          
                       <div class="col-12 col-md-6">
                         <div class="form-floating">
-                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected hidden>elegí la categoría</option>
-                            <option value="1">nuevo</option>
-                            <option value="2">oferta</option>
-                            <option value="3">usado</option>
+                          <select name="category"class="form-select" id="category" aria-label="Floating label select example"  >
+                            <option  selected hidden>Elegí la categoría</option>
+                            <option value="1">Nuevo</option>
+                            <option value="2">Oferta</option>
+                            <option value="3">Usado</option>
                           </select>
-                          <label for="floatingSelect">categoría</label>
+                          <label for="category">Categoría</label>
                         </div>
+                        <span class="text-danger small ms-2"><%= locals.errors && errors.category ? errors.category.msg : null%> </span>
                       </div>
                       <div class="col-12 col-md-6">
                         <div class="mb-3 ">
