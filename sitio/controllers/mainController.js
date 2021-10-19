@@ -20,7 +20,7 @@ module.exports={
         return res.render('admin',{
             title: 'Administración',
             products : JSON.parse(fs.readFileSync(path.join(__dirname,'..','data','products.json'),'utf-8')),
-
+             
         })
     },
     carrito : (req, res) => {

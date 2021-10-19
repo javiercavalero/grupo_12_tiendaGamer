@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const {detail, productAdd, productEdit,destroy}= require('../controllers/productController');
+const {detail, productAdd, productEdit,destroy,update }= require('../controllers/productController');
 
 const controlller = require('../controllers/productController');
 
@@ -13,7 +13,8 @@ const productAddValidator= require('../validations/productAddValidator')
 router.get('/create/', controlller.create);
 router.post('/create',productAddValidator, controlller.store);
 router.get('/detail/:id', detail);
-router.get('/edit',productEdit);
+router.get('/edit/:id',productEdit);
+router.put('/update/:id', update);
 router.delete('/destroy/:id',destroy);
 
 

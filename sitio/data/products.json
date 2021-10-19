@@ -1,14 +1,5 @@
 [
    {
-      "id": 2,
-      "name": "Redragon Headset Gamer Zeus2 H510 Blanco",
-      "price": 9499,
-      "discount": 0,
-      "description": "H510 ZEUS 2 WHITE Incluye otro integrante a tu setup blanco. Toda la calidad que caracteriza al Zeus con una estética diferente. Podrás sumar estilo a tu PC, PS4, Xbox One o Nintendo Switch con su compatibilidad multiplataforma.",
-      "category": "nuevo",
-      "image": "auriculares-2.jpg"
-   },
-   {
       "id": 3,
       "name": "Redragon Micrófono Blazar GM300",
       "price": 9865,
