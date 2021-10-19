@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const methodOverride = require('method-override');
 const session = require('express-session');
-
+const localsUserCheck= require('./middlewares/localsUserCheck')
 
 
 var indexRouter = require('./routes/index');
@@ -31,7 +31,7 @@ app.use(methodOverride('_method'));
 app.use(session(
   {secret: "zukuna store"})
   );
-
+app.use(localsUserCheck)
 
 
 app.use('/', indexRouter);

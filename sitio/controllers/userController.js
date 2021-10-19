@@ -17,6 +17,7 @@ if(errors.isEmpty()){
 let user= users.find(user => user.email === req.body.email);
 req.session.userLogin ={
     id: user.id,
+    username: user.username,
     name: user.name,
     avatar:user.avatar ,
     rol:user.rol
@@ -63,6 +64,10 @@ processRegister: (req, res) => {
     }
 
 
+},
+logout: (req, res) => {
+    req.session.destroy()
+    res.redirect('/')
 }
 
 }
