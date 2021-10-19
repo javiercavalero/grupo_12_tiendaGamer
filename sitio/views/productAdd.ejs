@@ -20,7 +20,7 @@
                         value=<%= locals.old && old.name ? old.name:null%>>
                         <label for="name">Nombre de producto</label>
                       </div>
-                      <span ><%= locals.errors && errors.name ? errors.name.msg : null%> </span>
+                      <span class="text-danger small ms-2"><%= locals.errors && errors.name ? errors.name.msg : null%> </span>
                     </div>
                       <div class="col-12 mb-3">
                           <div class="form-floating ">

@@ -12,4 +12,4 @@ module.exports = [
             return false
         }
     }).withMessage('credenciales inválidas')
-]
+] 

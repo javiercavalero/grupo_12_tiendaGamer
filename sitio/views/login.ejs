@@ -17,12 +17,20 @@
         <h2 class="fuente2"> Ingresá</h2>
         <!--userName-->
         <div class='container-input'>
-          <input type="email" placeholder="Email" name="email" ;>
+          <input type="email" placeholder="Email" name="email" >
         </div>
         <!--contraseña-->
         <div class='container-input'>
-          <input type="password" placeholder="Contraseña" name="password" ;>
+          <input type="password" placeholder="Contraseña" name="password" >
         </div>
+        <div > 
+          <span class="text-danger small ms-2 fs-32px"><%= locals.errores && errores.email ? errores.email.msg : null%> </span>
+        </div>
+       
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Recordarme</label>
+
+        
         <!--Botones-->
         <div class='container-buttons'>
           <button type="submit"> Ingresar </button>
