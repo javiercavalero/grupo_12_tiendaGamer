@@ -76,5 +76,23 @@
       "password": "$2a$10$U0TLDZr/FtxZFefLZm0qm.LgW8adzzQ/5buiVNzoNUx0D0lUW8p/G",
       "avatar": "default.jpg",
       "rol": "user"
+   },
+   {
+      "id": 9,
+      "name": "roberto juan",
+      "email": "robertojuan@gmail.com",
+      "username": "robertojuan",
+      "password": "$2a$10$QkTIEBAUKXxD3ilQ25H5Ve/zvmvu76jVVm8JNC5gQr1ExzhSE5APa",
+      "avatar": "default.jpg",
+      "rol": "user"
+   },
+   {
+      "id": 10,
+      "name": "dddddddddd",
+      "email": "dddddd@gmail.com",
+      "username": "ddddddddddddd",
+      "password": "$2a$10$ewSjo8RPJGgmV4pr4xlyCeUr/LgR.Yv/9pquQPve2033OlVlIOGQe",
+      "avatar": "default.jpg",
+      "rol": "user"
    }
 ]
