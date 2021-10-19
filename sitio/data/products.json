@@ -1,11 +1,12 @@
 [
    {
       "id": 1,
-      "name": "Redragon Headset Gamer Zeus2 H510 Negro",
-      "price": 9499,
-      "description": "Pensados para todas las plataformas, el ZEUS es el auricular compatible con PC, PS4, XBOX, Nintendo Switch y Móviles Smartphone que los gamers multiplataforma esperaban. Dándonos la posibilidad de conectar por medio de puerto USB o jack 3.5 gracias a sus cables desmontables.",
+      "name": "Mayra",
+      "price": 99,
+      "discount": 0,
       "category": "nuevo",
-      "image": "auriculares-1.jpg"
+      "description": "hola",
+      "image": "default-image.png"
    },
    {
       "id": 2,
