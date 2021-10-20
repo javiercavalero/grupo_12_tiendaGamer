@@ -22,6 +22,12 @@ req.session.userLogin ={
     avatar:user.avatar ,
     rol:user.rol
 }
+if(req.body.remember){
+    res.cookie('zukuna',
+    req.session.userLogin,
+    {maxAge: 60000 })
+}
+
 return res.redirect('/')
 }else{
 
@@ -67,6 +73,7 @@ processRegister: (req, res) => {
 },
 logout: (req, res) => {
     req.session.destroy()
+    
     res.redirect('/')
 }
 

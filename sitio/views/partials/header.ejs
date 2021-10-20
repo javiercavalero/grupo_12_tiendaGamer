@@ -17,6 +17,8 @@
       <li> <% if (locals.userLogin) { %>
         <a href="#"><%= locals.userLogin.username %> </a>
         <li><a href="users/profile">Perfil</a></li>
+                
+
         <% if (locals.userLogin.rol === 'admin') { %>
           
          <li><a href="/admin" method="GET">Admin</a></li>
