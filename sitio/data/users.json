@@ -16,5 +16,14 @@
       "password": "$2a$10$q9liYDNse2Aof0EafSQuX.4Yryiv1YNU6MPTvj58hp1Il6rwi833S",
       "avatar": "default.jpg",
       "rol": "user"
+   },
+   {
+      "id": 3,
+      "name": "Javi",
+      "email": "javi6@gmail.com",
+      "username": "el mejor1234567890",
+      "password": "$2a$10$iQa9QbhTCT78EbXBi7XO6.bBDhatATynVmW5qmRhnJ2XNJP9ABOEq",
+      "avatar": "default.jpg",
+      "rol": "user"
    }
 ]

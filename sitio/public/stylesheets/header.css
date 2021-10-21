@@ -1,7 +1,7 @@
 header{
     background-color: #42DDF5;
     width:100%;
-    padding: 15px;
+    padding: 10px;
 }
  header nav{
     display: flex;
@@ -16,7 +16,7 @@ header{
 }
  header nav .busqueda {
     display: flex;
-    width: 30%;
+    width: 25%;
     border-radius: 15px;
     padding-top: 20px;
 }
@@ -43,17 +43,24 @@ header{
  header nav .carrito-login {
     display: flex;
     font-size: 25px;
-    margin: 18px 0px 0px 0px;
     padding: 0px;
 }
-header nav .admin a {
-    color: black;
+header nav .enlaces{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    
 
 }
-
- header nav .enlaces {
+header nav .enlaces li a{
+    text-decoration: none;
+    color: black;
+}
+header nav .enlaces .ingresar, .registrarse{
     display: none;
 }
+
 
 
  header nav .box-form {
@@ -76,6 +83,14 @@ header nav .admin a {
         align-items: center;
     
     }
+    header nav .enlaces{
+        width: 31%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 71px;
+        
+    
+    }
  header nav .bars {
         padding-top: 50px ;
         font-size: 45px;
@@ -84,9 +99,9 @@ header nav .admin a {
     }
  header nav .busqueda {
         display: flex;
-        width: 35%;
+        width: 27%;
         border-radius: 15px;
-        padding-top: 80px;
+        padding-top: 45px;
         margin-left: -30px;
     }
  header nav .busqueda form{
@@ -118,10 +133,11 @@ header nav .admin a {
         font-size: 23px;
     
     }
-    
- header nav .enlaces {
+    header nav .enlaces .users .ingresar, .registrarse{
         display: none;
     }
+    
+ 
     
     
  header nav .box-form {
@@ -145,10 +161,25 @@ header nav .admin a {
 header div.bars{
         display: none;
     }
+    header nav .bars {
+        padding-top: 65px ;
+        font-size: 30px;
+    }
+    header nav .logo {
+        width: 25%;
+       
+        
+    }
+    header nav .enlaces .ingresar, .registrarse{
+        display: flex;
+    }
  header nav .enlaces {
+        width: 35%;
         display: flex;
         font-size: 25px;
-        margin-top: 90px;
+        margin-top: 14px;
+        margin-bottom: 0;
+        justify-content: space-between;
     }
  header nav .enlaces .registrarse{
         margin-left: 17px;
@@ -167,7 +198,8 @@ header div.bars{
     
     }
  header nav .busqueda {
-        width: 30%;
+        width: 23%;
+        padding-top: 78px;
         
     }
     
