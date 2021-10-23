@@ -1,10 +1,10 @@
 ## Retrospectiva ##
-## Sprint 4 ##
+## Sprint 5 ##
 
 ## Empezar a hacer:
-- Mas reuniones
+- Reuniones mas temprano
 - Mostrar los cambios realizados
-- Asentar fecha de finalización de tareas
+
 
 ## Hacer menos:
 - Dejar pasar días sin comunicarnos
@@ -15,7 +15,8 @@
 - Solicitar ayuda a compañeros, profesores
 - Trabajo en equipo.
 - Buena predisposicion
-- Decisiones en conjunto
+- Decisiones en conjunto 
+- Asentar fecha de finalización de tareas
 
 
 ## Dejar de hacer:
