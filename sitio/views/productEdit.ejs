@@ -17,14 +17,14 @@
                       <div class="row" >
                           <div class="col-12"> 
                               <div class="form-floating mb-3 ">
-                        <input type="text" class="form-control" id="name" placeholder="Nombre de producto">
+                        <input type="text" class="form-control" id="name" placeholder="Nombre de producto" name="<%= products.name %>">
                         <label for="name">Nombre de producto</label>
                       </div>
                     </div>
                       <div class="col-12">
                           <div class="form-floating mb-3">
-                        <textarea style="resize: none; height: 100px" class="form-control" placeholder="Descripción de producto " id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">Descripción</label>
+                        <textarea style="resize: none; height: 100px" class="form-control" placeholder="Descripción de producto " id="floatingTextarea"<%= products.description %> ></textarea>
+                        <label for="floatingTextarea"> Descripción </label>
                       </div>
                     </div>
                     
