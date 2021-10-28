@@ -16,9 +16,10 @@ module.exports = {
         product : products.find(product => product.id === +req.params.id)}
         );
     },
-    productEdit : (req,res) => {
+    productEdit : (req,res) => { 
+        let product = products.find(  product => product.id === +req.params.id )
         return res.render('productEdit',{
-            title:'Editar producto', products,
+            title:'Editar producto', product,
         })
     },
 

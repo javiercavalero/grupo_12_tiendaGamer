@@ -18,4 +18,6 @@ router
         .get('/logout',userLoginCheck, logout)
         .get('/profile',userLoginCheck, profile)
 
+
+        
 module.exports = router;

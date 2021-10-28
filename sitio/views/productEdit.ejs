@@ -11,43 +11,41 @@
                 <div class="card-header bg-info"> 
                      <h2>Editar producto</h2>
                 </div>
-              <div class="card-body">
-                  <form action="/products/update/<%= products.id %>?_method=PUT" class="row" method="POST">
-                    
+              <div class="card-body">                           
+                    <form action="/products/update/<%= product.id %>?_method=PUT" class="row" method="POST">
+
                       <div class="row" >
                           <div class="col-12"> 
                               <div class="form-floating mb-3 ">
-                        <input type="text" class="form-control" id="name" placeholder="Nombre de producto">
+                        <input type="text" class="form-control" id="name" placeholder="Nombre de producto" name="name" value="<%= product.name %>">
                         <label for="name">Nombre de producto</label>
                       </div>
                     </div>
                       <div class="col-12">
                           <div class="form-floating mb-3">
-                        <textarea style="resize: none; height: 100px" class="form-control" placeholder="Descripción de producto " id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">Descripción</label>
-                      </div>
+                        <textarea style="resize: none; height: 100px" class="form-control" placeholder="Descripción de producto" id="floatingTextarea"<%= product.description %> ></textarea>
+                        <label for="floatingTextarea"> Descripción </label>
                     </div>
                     
-                    <div class="col-12 col-md-6">
                         <div class="form-floating col-md-6 mb-3">
-                        <input type="number" class="form-control" id="price" >
+                        <input name="price" type="number" class="form-control" id="price" value= "<%= product.price %>" >
                         <label for="price">Precio</label>
                       </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-floating col-md-6 mb-3">
-                        <input type="number" class="form-control" id="discount" >
+                        <input name="discount" type="number" class="form-control" id="discount" value= "<%= product.discount %>">
                         <label for="discount">Descuento</label>
                       </div>
                     </div>
                          
                       <div class="col-12 col-md-6">
                         <div class="form-floating">
-                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected hidden>elegí la categoría</option>
-                            <option value="1">nuevo</option>
-                            <option value="2">oferta</option>
-                            <option value="3">usado</option>
+                          <select name="category" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected  hidden>elegí la categoría</option>
+                            <option value="nuevo" <% product.category === "nuevo" ? "selected" : null %> >nuevo</option>
+                            <option value="oferta" <% product.category === "oferta" ? "selected" : null %>>oferta</option>
+                            <option value="usado" <% product.category === "usado" ? "selected" : null %>>usado</option>
                           </select>
                           <label for="floatingSelect">categoría</label>
                         </div>
@@ -55,7 +53,7 @@
                       <div class="col-12 col-md-6">
                         <div class="mb-3 ">
                           <label for="image" class="btn btn-outline-info w-100 ">subir imagen</label>
-                          <input hidden class="form-control" type="file" id="image">
+                          <input name="image" hidden class="form-control" type="file" id="image">
                         </div>
                       </div>
                       
