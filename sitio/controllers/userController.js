@@ -73,7 +73,7 @@ processRegister: (req, res) => {
 },
 logout: (req, res) => {
     req.session.destroy()
-    
+    req.cookie.destroy()
     res.redirect('/')
 }
 
