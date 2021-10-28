@@ -75,6 +75,15 @@ logout: (req, res) => {
     req.session.destroy()
     req.cookie.destroy()
     res.redirect('/')
+},
+
+
+
+profile : (req,res) => {
+    let users = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/users.json'),'utf-8'));
+    return res.render('profile',{
+        user : users.find(user => user.id === req.session.userLogin.id)
+    })
 }
 
 }

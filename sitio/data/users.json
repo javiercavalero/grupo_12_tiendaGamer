@@ -25,5 +25,16 @@
       "password": "$2a$10$iQa9QbhTCT78EbXBi7XO6.bBDhatATynVmW5qmRhnJ2XNJP9ABOEq",
       "avatar": "default.jpg",
       "rol": "user"
+   },
+
+   {
+      "id": 4,
+      "name": "mayra corvalan",
+      "email": "mayracorvalan@hotmail.com",
+      "username": "mayra",
+      "password": "$2a$10$MyQ1.Oo3VZj75RbyFtDOQuFkowMK1liwoUEvwS8F9Q8DpN9d9RW.6",
+      "avatar": "default.jpg",
+      "rol": "admin"
+
    }
 ]
