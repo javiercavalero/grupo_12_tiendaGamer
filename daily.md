@@ -56,6 +56,5 @@ Que hice ayer?
 
 
 ## Action items:
-- [ ] Mayra y Eli se van a reunir con Javi para avanzar con las tareas de multer.
-- [ ] Reunirse con el equipo para organizar tareas a las 18:00
+
 
