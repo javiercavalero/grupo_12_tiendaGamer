@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-const upload = require('../middlewares/uploadImagesProduct');
+const multer = require('multer');
+const path = require ('path');
 
 const {detail, productAdd, productEdit,destroy,update }= require('../controllers/productController');
 
