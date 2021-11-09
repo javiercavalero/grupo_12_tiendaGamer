@@ -4,9 +4,8 @@
       "name": "Redragon Micrófono Blazar GM300",
       "price": 9865,
       "discount": 0,
-      "description": "Diseño moderno construido en metal y plástico ABS, con todos los accesorios que necesitas para tus transmisiones.",
-      "category": "nuevo",
-      "image": "microfono-1.jpg"
+      "category": "elegí la categoría",
+      "image": "default-image.png"
    },
    {
       "id": 4,

@@ -31,7 +31,7 @@ module.exports = {
 			price: +price,
 			discount: +discount,
 			category,
-			description: description.trim(),
+			description: description,
 			image: 'default-image.png'
 		}
 		
