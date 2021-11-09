@@ -37,4 +37,25 @@ Mayra y Eliana tienen problemas con multer para entenderlo.
 
 ## Action items:
 - [ ] Mayra y Eli se van a reunir con Javi para avanzar con las tareas de multer.
+- [x] Reunirse con el equipo para organizar tareas a las 18:00
+
+
+### 9/11
+Que hice ayer?
+- Eliana: logró terminar la tarea de multer
+- Javier: miró contenido para poder realizar la creación de modelos con migraciones.
+- Mayra: Avanzó con la tarea de multer
+
+## Que voy a hacer hoy?
+- Eliana: Mirar contenido para avanzar con el CRUD y hacer la tarea de validaciones que queda pendiente y ayudar a Javi con las seeders.
+- Javier: Mirar contenido para poder avanzar con la creación de modelos con migraciones.
+- Mayra: Finalizar la tarea de multer pendiente y mirar contenido para avanzar con CRUD.
+
+## Bloqueadores:
+
+
+
+## Action items:
+- [ ] Mayra y Eli se van a reunir con Javi para avanzar con las tareas de multer.
 - [ ] Reunirse con el equipo para organizar tareas a las 18:00
+
