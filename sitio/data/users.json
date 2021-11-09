@@ -43,5 +43,14 @@
       "password": "$2a$10$KtQacyEZqJ7sR4T0CeqIp.DwqDGQ4XZgf2bjINtni3qd7Yv.J1UJ2",
       "avatar": "default.jpg",
       "rol": "admin"
+   },
+   {
+      "id": 6,
+      "name": "eliana despo",
+      "email": "random@gmail.com",
+      "username": "elianadespo",
+      "password": "$2a$10$lPlxErvg7KiS4gB0wRw18.Dp4Ju6U0Rw4MSwgc6rVYZSYiea6Ni1i",
+      "avatar": "default.jpg",
+      "rol": "admin"
    }
 ]
