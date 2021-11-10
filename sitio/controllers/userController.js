@@ -72,7 +72,7 @@ processRegister: (req, res) => {
 
 },
 logout: (req, res) => {
-    
+    se
     if(req.session){
         req.session.destroy()
         res.cookie('zukuna',
