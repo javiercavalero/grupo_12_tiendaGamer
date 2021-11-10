@@ -1,17 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
+
 const {detail, productAdd, productEdit,destroy,update }= require('../controllers/productController');
 
 const controlller = require('../controllers/productController');
 
 /* validaciones */
 const productAddValidator= require('../validations/productAddValidator')
-const adminLoginCheck = require('../middlewares/adminLoginCheck')
+const adminLoginCheck = require('../middlewares/adminLoginCheck');
+const upload = require('../middlewares/uploadImagesProduct')
 
 /* router de productos */
 router.get('/create/', adminLoginCheck, controlller.create);
-router.post('/create',productAddValidator, controlller.store);
+router.post('/create', upload.single('images'), productAddValidator, controlller.store);
 router.get('/detail/:id', detail);
 router.get('/edit/:id',adminLoginCheck, productEdit);
 router.put('/update/:id', update);
