@@ -58,3 +58,21 @@ Que hice ayer?
 ## Action items:
 
 
+
+### 10/11
+Que hice ayer?
+- Eliana: 
+- Javier: Terminó migraciones y modelos
+- Mayra: Avanzó con la tarea de multer 
+
+## Que voy a hacer hoy?
+- Eliana: .
+- Javier: Empezará a ver Crud
+- Mayra: Resolver multer y comenzar con mi parte de crud
+
+## Bloqueadores:
+- Mayra: No visualiza imagenes de multer. Pedir ayuda a los chicos o a Gaby.
+
+
+## Action items:
+- [ ] Mayra intentará resolver multer
