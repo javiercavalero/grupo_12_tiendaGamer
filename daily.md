@@ -76,3 +76,26 @@ Que hice ayer?
 
 ## Action items:
 - [ ] Mayra intentará resolver multer
+
+---
+
+### 11/11
+Que hice ayer?
+- Eliana: miró videos de seeder 
+- Javier: no logró avanzar con la tarea 
+- Mayra: repasó contenido para poder avanzar con el sprint 
+
+## Que voy a hacer hoy?
+- Eliana: Avanzará con los seeder
+- Javier: Ayudar a eli con los seeder
+- Mayra: Resolver multer y comenzar con mi parte de crud
+
+## Bloqueadores:
+- Mayra:No sabe como probar multer. No visualiza imagenes de multer. Pedir ayuda a los chicos o a Gaby.
+-Eliana: No sabe como avanzar con seeder
+
+## Action items:
+- [ ] Mayra intentará resolver multer
+- [ ] Eliana intentará avanzar con seeder 
+- [ ] Javier: Ayudar a eli en las seeder
+
