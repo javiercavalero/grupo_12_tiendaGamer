@@ -31,8 +31,8 @@ module.exports = {
 			price: +price,
 			discount: +discount,
 			category,
-			description: description,
-			image: 'default-image.png'
+			description: description.trim(),
+			image,
 		}
 		
 		let productsModified = products.map(product => product.id === +req.params.id ? productModified : product)
@@ -48,7 +48,6 @@ module.exports = {
     },
 
     store: (req, res) => {
-
         const errors=validationResult(req);
 
         if(errors.isEmpty()){
@@ -60,7 +59,7 @@ module.exports = {
             discount: +discount,
 			description: description,
             category,
-            image: 'default.jpg'
+            image: req.file ? req.file.filename : 'default.jpg'
         }
         products.push(product)
 

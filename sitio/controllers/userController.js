@@ -72,9 +72,15 @@ processRegister: (req, res) => {
 
 },
 logout: (req, res) => {
-    req.session.destroy()
-    
+    se
+    if(req.session){
+        req.session.destroy()
+        res.cookie('zukuna',
+        '',
+        {maxAge: -1 })
+    }
     res.redirect('/')
+    
 },
 
 
