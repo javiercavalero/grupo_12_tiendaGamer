@@ -25,6 +25,7 @@ module.exports = {
 
     update: (req, res) => {
 		const {name, price, discount, category, description} = req.body;
+        let product = products.find(product => product.id === +req.params.id)
 		let productModified = {
 			id: +req.params.id,
 			name: name.trim(),
@@ -32,7 +33,7 @@ module.exports = {
 			discount: +discount,
 			category,
 			description: description,
-			image: 'default-image.png'
+			image: req.file ? req.file.filename : product.image
 		}
 		
 		let productsModified = products.map(product => product.id === +req.params.id ? productModified : product)
@@ -48,6 +49,7 @@ module.exports = {
     },
 
     store: (req, res) => {
+            return(res.send(req.file))
 
         const errors=validationResult(req);
 
