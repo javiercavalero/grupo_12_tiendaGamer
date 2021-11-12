@@ -58,3 +58,64 @@ Que hice ayer?
 ## Action items:
 
 
+
+### 10/11
+Que hice ayer?
+- Eliana: Mirar un poco de contenido de seeders
+- Javier: Terminó migraciones y modelos
+- Mayra: Avanzó con la tarea de multer 
+
+## Que voy a hacer hoy?
+- Eliana: intentará avanzar con la misma
+- Javier: Empezará a ver Crud
+- Mayra: Resolver multer y comenzar con mi parte de crud
+
+## Bloqueadores:
+- Mayra: No visualiza imagenes de multer. Pedir ayuda a los chicos o a Gaby.
+
+
+## Action items:
+- [ ] Mayra intentará resolver multer
+
+---
+
+### 11/11
+Que hice ayer?
+- Eliana: miró videos de seeder 
+- Javier: no logró avanzar con la tarea 
+- Mayra: repasó contenido para poder avanzar con el sprint 
+
+## Que voy a hacer hoy?
+- Eliana: Avanzará con los seeder
+- Javier: Ayudar a eli con los seeder
+- Mayra: Resolver multer y comenzar con mi parte de crud
+
+## Bloqueadores:
+- Mayra:No sabe como probar multer. No visualiza imagenes de multer. Pedir ayuda a los chicos o a Gaby.
+-Eliana: No sabe como avanzar con seeder
+
+## Action items:
+- [x] Mayra intentará resolver multer
+- [x] Eliana intentará avanzar con seeder 
+- [ ] Javier: Ayudar a eli en las seeder
+
+---
+### 12/11
+Que hice ayer?
+- Eliana: Avanzó con la tarea de seeders.
+- Javier: No logró avanzar con la tarea.
+- Mayra: Logró terminar con la observación de multer. 
+
+## Que voy a hacer hoy?
+- Eliana: Terminar la tarea de seeders.
+- Javier: Avanzar con el CRUD.
+- Mayra: Avanzar con el script.
+
+## Bloqueadores:
+- Eliana: no sabe como avanzar en su tarea.
+
+## Action items:
+- [ ] Eliana: pedir ayuda para resolver las seeders.
+
+
+
