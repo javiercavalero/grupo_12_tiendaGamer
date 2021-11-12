@@ -61,12 +61,12 @@ Que hice ayer?
 
 ### 10/11
 Que hice ayer?
-- Eliana: 
+- Eliana: Mirar un poco de contenido de seeders
 - Javier: Terminó migraciones y modelos
 - Mayra: Avanzó con la tarea de multer 
 
 ## Que voy a hacer hoy?
-- Eliana: .
+- Eliana: intentará avanzar con la misma
 - Javier: Empezará a ver Crud
 - Mayra: Resolver multer y comenzar con mi parte de crud
 
