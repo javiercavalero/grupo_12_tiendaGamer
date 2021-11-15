@@ -28,6 +28,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       rolId: {
+        allowNull: false,
         type: Sequelize.INTEGER,
         references: {
           model:{
