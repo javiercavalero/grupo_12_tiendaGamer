@@ -117,5 +117,24 @@ Que hice ayer?
 ## Action items:
 - [ ] Eliana: pedir ayuda para resolver las seeders.
 
+-----
+
+### 15/11
+Que hice ayer?
+- Eliana: 
+- Javier: No logró avanzar con la tarea.
+- Mayra: No logró avanzar con la tarea. 
+
+## Que voy a hacer hoy?
+- Eliana: 
+- Javier: Avanzar con el CRUD.
+- Mayra: Avanzar con el CRUD.
+
+## Bloqueadores:
+
+
+## Action items:
+
+
 
 
