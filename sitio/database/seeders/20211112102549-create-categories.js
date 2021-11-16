@@ -1,25 +1,13 @@
 'use strict';
 
-let products = require('../../data/products.json')
+let categoryJSON = require('../../data/categories.json');
 
-let categoriesJson = require('../../data/categories.json')
-
-let categories = [];
-
-let id = 1
-
-products.forEach(product => {
-  categoriesJson.forEach(category => {
-    let item = {
-      ...category,
-      id,
-      productId: product.id,
-      createdAt: new Date,
-      updatedAt: new Date
-    }
-    categories.push(item)
-    id++
-  })
+let categories = categoryJSON.map (category => {
+ let item = {
+     ...category,
+     createdAt: new Date(),
+ }   
+ return item;
 })
 
 

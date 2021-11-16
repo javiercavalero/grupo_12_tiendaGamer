@@ -5,7 +5,6 @@
       "price": 9865,
       "discount": 0,
       "description": "Diseño moderno construido en metal y plástico ABS, con todos los accesorios que necesitas para tus transmisiones.",
-      "category": "nuevo",
       "image": "microfono-1.jpg"
    },
    {
@@ -14,7 +13,7 @@
       "price": 72499,
       "discount": 10,
       "description": "Equipado con un panel VA, que proporciona una pérdida mínima de luz y un contraste superior, colores oscuros más fuertes y definidos, lo que te brindara la respuesta que necesitas en los juegos y una mejor calidad de visualización en tu experiencia.",
-      "category": "oferta",
+   
       "image": "monitor-1.jpg"
    },
    {
@@ -22,8 +21,8 @@
       "name": "Dualshock 5 DualSense",
       "price": 14999,
       "discount": 20,
-      "description": "DualSense marca una diferenciación radical de lo que ofrecíamos con nuestros anteriores controles, y captura cuan fuerte nos sentimos sobre dar un salto generacional con PS5. El nuevo control, junto con todas las funciones innovadoras en PS5, será transformador para los juegos, continuando nuestra misión en PlayStation de empujar los límites del juego, ahora y en el futuro. A la comunidad de PlayStation, realmente quiero agradecerle por compartir esta asombrosa aventura con nosotros mientras nos encaminamos al lanzamiento de PS5 a finales de 2020. Esperamos compartir más información de PS5, incluyendo el diseño de la consola, en los próximos meses",
-      "category": "nuevo",
+      "description": "DualSense marca una diferenciación radical de lo que ofrecíamos con nuestros anteriores controles, y captura cuan fuerte nos sentimos sobre dar un salto generacional con PS5. El nuevo control, junto con todas las funciones innovadoras en PS5, será transformador para los juegos, continuando nuestra misión en PlayStation de empujar los límites del juego, ahora y en el futuro. A la comunidad de PlayStation",
+      
       "image": "joystick.jpg"
    },
    {
@@ -32,7 +31,7 @@
       "price": 5799,
       "discount": 50,
       "description": "Crea todo lo que puedas imaginar. Explora los mundos generados al azar. Sobrevive entre las criaturas peligrosas por la noche.",
-      "category": "usado",
+  
       "image": "juego-1.jpg"
    },
    {
@@ -40,8 +39,7 @@
       "name": "Resident Evil Village PS4",
       "price": 11499,
       "discount": 0,
-      "description": "Resident Evil Village tiene como objetivo crear una innovadora experiencia de survival horror como nunca antes. Años después de la pesadilla, Ethan Winters ha conseguido cierta estabilidad y una vida normal con su familia. Una vida que no tardará en ser destruida por un héroe de antaño, Chris Redfield.",
-      "category": "oferta",
+      "description": "Resident Evil Village tiene como objetivo crear una innovadora experiencia de survival horror como nunca antes. Años después de la pesadilla, Ethan Winters ha conseguido cierta estabilidad y una vida normal con su familia. Una vida que no tardará en ser destruida por un héroe de antaño, Chris Redfield.", 
       "image": "juego-2.jpg"
    }
 ]
