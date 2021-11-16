@@ -121,17 +121,16 @@ Que hice ayer?
 
 ### 15/11
 Que hice ayer?
-- Eliana: 
+- Eliana: terminó la logica de las seeders, no sabe cómo correr las seeders.
 - Javier: No logró avanzar con la tarea.
 - Mayra: No logró avanzar con la tarea. 
 
 ## Que voy a hacer hoy?
-- Eliana: 
+- Eliana: Intentar correr las seeders
 - Javier: Avanzar con el CRUD.
 - Mayra: Avanzar con el CRUD.
 
 ## Bloqueadores:
-
 
 ## Action items:
 
