@@ -135,5 +135,19 @@ Que hice ayer?
 ## Action items:
 
 
+---
+### 16/11
+Que hice ayer?
+- Eliana: finalizó tarea de seeders
+- Javier:finalizó tarea de seeders.
+- Mayra: No logró avanzar con la tarea. 
 
+## Que voy a hacer hoy?
+- Eliana: Avanzar con el CRUD de producto listar,ver el detalle y buscar.
+- Javier: Avanzar con el CRUD de usuarios.
+- Mayra: Avanzar con el CRUD de crear,editar y eliminar.
+
+## Bloqueadores:
+
+## Action items:
 
