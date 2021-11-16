@@ -95,7 +95,46 @@ Que hice ayer?
 -Eliana: No sabe como avanzar con seeder
 
 ## Action items:
-- [ ] Mayra intentará resolver multer
-- [ ] Eliana intentará avanzar con seeder 
+- [x] Mayra intentará resolver multer
+- [x] Eliana intentará avanzar con seeder 
 - [ ] Javier: Ayudar a eli en las seeder
+
+---
+### 12/11
+Que hice ayer?
+- Eliana: Avanzó con la tarea de seeders.
+- Javier: No logró avanzar con la tarea.
+- Mayra: Logró terminar con la observación de multer. 
+
+## Que voy a hacer hoy?
+- Eliana: Terminar la tarea de seeders.
+- Javier: Avanzar con el CRUD.
+- Mayra: Avanzar con el script.
+
+## Bloqueadores:
+- Eliana: no sabe como avanzar en su tarea.
+
+## Action items:
+- [ ] Eliana: pedir ayuda para resolver las seeders.
+
+-----
+
+### 15/11
+Que hice ayer?
+- Eliana: 
+- Javier: No logró avanzar con la tarea.
+- Mayra: No logró avanzar con la tarea. 
+
+## Que voy a hacer hoy?
+- Eliana: 
+- Javier: Avanzar con el CRUD.
+- Mayra: Avanzar con el CRUD.
+
+## Bloqueadores:
+
+
+## Action items:
+
+
+
 
