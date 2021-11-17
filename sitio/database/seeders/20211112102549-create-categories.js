@@ -4,7 +4,7 @@ let products = require('../../data/products.json')
 
 let categoriesJson = require('../../data/categories.json')
 
-let categories = [];
+let categories = ['nuevo', 'gratis', 'oferta'];
 
 let id = 1
 
