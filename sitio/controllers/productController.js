@@ -28,12 +28,13 @@ module.exports = {
         let product = products.find(product => product.id === +req.params.id)
 		let productModified = {
 			id: +req.params.id,
-			name: name.trim(),
+			name: name,
 			price: +price,
 			discount: +discount,
 			category,
-			description: description.trim(),
-			image,
+			description: description,
+            image: req.file ? req.file.filename : product.image
+
 		}
 		
 		let productsModified = products.map(product => product.id === +req.params.id ? productModified : product)

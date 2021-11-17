@@ -39,7 +39,7 @@
         <div class="conteiner">
           <% products.forEach(product=> { %>
             <div class="img-destacadas">
-              <div class="img1"><a href="/products/detail/<%= product.id %> "><img src="/images/<%= product.image %> "
+              <div class="img1"><a href="/products/detail/<%= product.id %> "><img src="/images/products/<%= product.image %> "
                     alt=""></a>
                 <% if (product.discount > 0) { %>
                       <h2>$<%= toDiscount(product.price, product.discount)%></h2>
