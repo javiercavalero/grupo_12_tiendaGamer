@@ -155,16 +155,17 @@ Que hice ayer?
 
 ### 17/11
 Que hice ayer?
-- Eliana: 
+- Eliana: Avanzó con la tarea de Crud
 - Javier: No logró avanzar con la tarea.
 - Mayra: Avanzó con la tarea.
 
 ## Que voy a hacer hoy?
-- Eliana: 
+- Eliana: Avanzar con el CRUD de producto listar,ver el detalle y buscar.
 - Javier: Avanzar con el CRUD de usuarios.
 - Mayra: Avanzar con el CRUD de crear,editar y eliminar.
 
 ## Bloqueadores:
+Eliana: No sabe como resolver los errores.
 
 ## Action items:
-
+[]Eliana: Pedir ayuda para poder resolver los errores
