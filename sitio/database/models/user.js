@@ -14,7 +14,13 @@ module.exports = (sequelize, DataTypes) => {
       User.belongsTo(models.Rol, {
         as: 'rol',
         foreignKey: 'rolId'
-    })
+    }),
+    Product.belongsToMany(models.User, {
+      as: 'user',
+      through : 'productUsers',
+      foreignKey: 'productId',
+      otherKey : 'userId'
+  })
     }
   };
   User.init({
@@ -22,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     username: DataTypes.STRING,
     password: DataTypes.STRING,
-    avatar: DataTypes.INTEGER,
+    avatar: DataTypes.STRING,
     rolId: DataTypes.INTEGER
   }, {
     sequelize,
