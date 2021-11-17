@@ -21,7 +21,7 @@ module.exports = {
         defaultValue: 0
       },
       description: {
-        type: Sequelize.STRING(500),
+        type: Sequelize.STRING(600),
         allowNull: false
       },
       image: {
@@ -29,7 +29,7 @@ module.exports = {
       },
       categoryId: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        /* allowNull: false, */
         references: {
           model:{
             tableName: 'Categories'

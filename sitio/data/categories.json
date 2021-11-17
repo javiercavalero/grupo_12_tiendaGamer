@@ -1,3 +1,8 @@
 [
-    "nuevo", "gratis","oferta"
+   {"id":1,
+    "name": "nuevo"},
+   {"id":2,
+    "name":"gratis"},
+   {"id":3,
+    "name":"oferta"}
 ]
