@@ -1,9 +1,11 @@
+const db = require('../database/models/index');
 const path = require ("path");
 const bcrypt = require('bcryptjs');
 const fs = require('fs');
 let users = require(path.join(__dirname, '../data/users.json'));
 const {validationResult} = require('express-validator');
 const { title } = require("process");
+const { log } = require('console');
 
 module.exports = {
 login : (req,res)=> {
