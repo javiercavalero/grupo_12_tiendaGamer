@@ -25,7 +25,7 @@ module.exports = {
         allowNull: false
       },
       avatar: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING(150),
       },
       rolId: {
         type: Sequelize.INTEGER,

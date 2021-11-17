@@ -1,19 +1,19 @@
 'use strict';
 const bcrypt = require('bcryptjs');
+let usersJSON = require('../../data/users.json');
 
+let users = usersJSON.map (user => {
+ let item = {
+     ...user,
+     createdAt: new Date(),
+ }   
+ return item;
+})
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
 
-      await queryInterface.bulkInsert('Users', [{
-        name: 'Admin',
-        email: 'random@gmail.com',
-        password : bcrypt.hashSync('123456789',10),
-        avatar: 'default.jpg',
-        rolId: 6,
-        createdAt: new Date,
-        updatedAt: new Date
-      }], {});
+      await queryInterface.bulkInsert('Users',users , {});
     
   },
 
