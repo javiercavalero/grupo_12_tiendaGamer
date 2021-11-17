@@ -151,3 +151,20 @@ Que hice ayer?
 
 ## Action items:
 
+----
+
+### 17/11
+Que hice ayer?
+- Eliana: 
+- Javier: No logró avanzar con la tarea.
+- Mayra: Avanzó con la tarea.
+
+## Que voy a hacer hoy?
+- Eliana: 
+- Javier: Avanzar con el CRUD de usuarios.
+- Mayra: Avanzar con el CRUD de crear,editar y eliminar.
+
+## Bloqueadores:
+
+## Action items:
+
