@@ -11,11 +11,27 @@ const{validationResult}= require('express-validator');
 
 module.exports = {
     detail : (req, res) => {
-        return res.render('detalleProducto', { title: 'Detail', 
-        products,
-        product : products.find(product => product.id === +req.params.id)}
-        );
+        db.Product.findByPk(req.params.id, {
+            include: ['images']
+        })
+            .then(product => {
+                db.Category.findByPk(product.CategoryId, {
+                    include: [
+                        {
+                            association: 'products',
+                            include: ['images']
+                        }
+                    ]
+                })
+                    .then(category => {
+                        return res.render('detalleProducto', {
+                            product,
+                            products: category.products
+                        })
+                    })
+            })
     },
+    
     productEdit : (req,res) => { 
         let product = products.find(  product => product.id === +req.params.id )
         return res.render('productEdit',{
