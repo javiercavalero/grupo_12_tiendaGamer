@@ -169,3 +169,22 @@ Eliana: No sabe como resolver los errores.
 
 ## Action items:
 []Eliana: Pedir ayuda para poder resolver los errores
+
+---
+
+### 18/11
+Que hice ayer?
+- Eliana:
+- Javier:intentó avanzar con crud de usuarios en el login.
+- Mayra: Avanzó con la tarea de crear producto.
+
+## Que voy a hacer hoy?
+- Eliana:
+- Javier:terminar con metodo login y Avanzar con el CRUD de usuarios.
+- Mayra: terminar creacion de producto y avanzar con editar y eliminar.
+
+## Bloqueadores:
+
+
+## Action items:
+
