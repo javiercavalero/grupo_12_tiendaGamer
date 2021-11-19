@@ -174,12 +174,12 @@ Eliana: No sabe como resolver los errores.
 
 ### 18/11
 Que hice ayer?
-- Eliana:
+- Eliana: no logró avanzar con la tarea.
 - Javier:intentó avanzar con crud de usuarios en el login.
 - Mayra: Avanzó con la tarea de crear producto.
 
 ## Que voy a hacer hoy?
-- Eliana:
+- Eliana: avanzar con ver el detalle y buscar.
 - Javier:terminar con metodo login y Avanzar con el CRUD de usuarios.
 - Mayra: terminar creacion de producto y avanzar con editar y eliminar.
 
