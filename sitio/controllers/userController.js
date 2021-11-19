@@ -1,14 +1,14 @@
 const path = require("path");
 const bcrypt = require("bcryptjs");
 const fs = require("fs");
-let users = require(path.join(__dirname, "../data/users.json"));
 const { validationResult } = require("express-validator");
 const { title } = require("process");
 const { log } = require("console");
 
 /* BASE DE DATOS */
 const db = require("../database/models");
-const { Op } = require("sequelize");
+const { Op, sequelize} = require("sequelize");
+const { reduceRight } = require("../validations/registerValidator");
 
 module.exports = {
   login: (req, res) => {
@@ -19,8 +19,19 @@ module.exports = {
 
   processLogin: (req, res) => {
     let errors = validationResult(req);
+ const {email, password, remember} = req.body;
+   
+ let users = db.User.findAll({
+   email, 
+   include: [
+     "rol"
+    ]
+ }) 
 
-    if (errors.isEmpty()) {
+
+ .then(([users])=>{
+  return res.send(users)
+  if (errors.isEmpty()) {
       let user = users.find((user) => user.email === req.body.email);
       req.session.userLogin = {
         id: user.id,
@@ -41,8 +52,10 @@ module.exports = {
         title: "login",
         errores: errors.mapped(),
       });
-    }
+    }})
+    
   },
+ 
 
   register: (req, res) => {
     return res.render("register", {
