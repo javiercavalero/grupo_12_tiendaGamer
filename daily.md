@@ -121,20 +121,89 @@ Que hice ayer?
 
 ### 15/11
 Que hice ayer?
-- Eliana: 
+- Eliana: terminó la logica de las seeders, no sabe cómo correr las seeders.
 - Javier: No logró avanzar con la tarea.
 - Mayra: No logró avanzar con la tarea. 
 
 ## Que voy a hacer hoy?
-- Eliana: 
+- Eliana: Intentar correr las seeders
 - Javier: Avanzar con el CRUD.
 - Mayra: Avanzar con el CRUD.
+
+## Bloqueadores:
+
+## Action items:
+
+
+---
+### 16/11
+Que hice ayer?
+- Eliana: finalizó tarea de seeders
+- Javier:finalizó tarea de seeders.
+- Mayra: No logró avanzar con la tarea. 
+
+## Que voy a hacer hoy?
+- Eliana: Avanzar con el CRUD de producto listar,ver el detalle y buscar.
+- Javier: Avanzar con el CRUD de usuarios.
+- Mayra: Avanzar con el CRUD de crear,editar y eliminar.
+
+## Bloqueadores:
+
+## Action items:
+
+----
+
+### 17/11
+Que hice ayer?
+- Eliana: Avanzó con la tarea de Crud
+- Javier: No logró avanzar con la tarea.
+- Mayra: Avanzó con la tarea.
+
+## Que voy a hacer hoy?
+- Eliana: Avanzar con el CRUD de producto listar,ver el detalle y buscar.
+- Javier: Avanzar con el CRUD de usuarios.
+- Mayra: Avanzar con el CRUD de crear,editar y eliminar.
+
+## Bloqueadores:
+Eliana: No sabe como resolver los errores.
+
+## Action items:
+[]Eliana: Pedir ayuda para poder resolver los errores
+
+---
+
+### 18/11
+Que hice ayer?
+- Eliana: no logró avanzar con la tarea .
+- Javier:intentó avanzar con crud de usuarios en el login.
+- Mayra: Avanzó con la tarea de crear producto.
+
+## Que voy a hacer hoy?
+- Eliana: avanzar con ver el detalle y buscar.
+- Javier:terminar con metodo login y Avanzar con el CRUD de usuarios.
+- Mayra: terminar creacion de producto y avanzar con editar y eliminar.
 
 ## Bloqueadores:
 
 
 ## Action items:
 
+---
 
+### 19/11
+Que hice ayer?
+- Eliana: No logró terminar la busqueda y detalle de productos.
+- Javier: Intentó avanzar con el login usuarios.
+- Mayra: No logró terminar con la tarea de creación de productos.
+
+## Que voy a hacer hoy?
+- Eliana: Terminar las consignas y el listado de productos.
+- Javier: Avanzar con la tarea.
+- Mayra: Terminar creacion de producto y avanzar con editar y eliminar.
+
+## Bloqueadores:
+Javier: Problemas con el funcionamiento de la computadora.
+
+## Action items:
 
 
