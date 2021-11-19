@@ -188,3 +188,22 @@ Que hice ayer?
 
 ## Action items:
 
+---
+
+### 19/11
+Que hice ayer?
+- Eliana: No logró terminar la busqueda y detalle de productos.
+- Javier: Intentó avanzar con el login usuarios.
+- Mayra: No logró terminar con la tarea de creación de productos.
+
+## Que voy a hacer hoy?
+- Eliana: Terminar las consignas y el listado de productos.
+- Javier: Avanzar con la tarea.
+- Mayra: Terminar creacion de producto y avanzar con editar y eliminar.
+
+## Bloqueadores:
+Javier: Problemas con el funcionamiento de la computadora.
+
+## Action items:
+
+
