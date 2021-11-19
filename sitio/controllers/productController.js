@@ -6,20 +6,36 @@ const products = JSON.parse(fs.readFileSync(path.join(__dirname,'..','data','pro
 const toThousand = require('../utils/toThousand');
 const toDiscount = require('../utils/toDiscount');
 
+
 /* validaciones */
-const{validationResult}= require('express-validator');
+const{validationResult} = require('express-validator');
+
+/* base de datos */
+const { Op, where } = require('sequelize');
+const db = require('../database/models');
 
 module.exports = {
+
+    list : (req, res) => {
+        db.Product.findAll()
+            .then(products => {
+                /*return res.send(products)*/
+            })
+    },
+
     detail : (req, res) => {
-        db.Product.findByPk(req.params.id, {
-            include: ['images']
+
+        db.Product.findOne({
+            where: {
+                id : req.params.id
+            }
         })
             .then(product => {
-                db.Category.findByPk(product.CategoryId, {
+                //return res.send(product)
+                db.Category.findByPk(product.categoryId, {
                     include: [
                         {
-                            association: 'products',
-                            include: ['images']
+                            association: 'products'
                         }
                     ]
                 })
@@ -29,8 +45,33 @@ module.exports = {
                             products: category.products
                         })
                     })
+                    .catch(error => console.log(error))
             })
+            .catch(error => console.log(error))
+
     },
+
+    /*search: (req, res) => {
+        let products = db.Product.findAll({
+            where: {
+                name: {
+                    [Op.substring]: req.query.keyword
+                }
+            },
+            include: ['images', 'category']
+        })
+        let categories = db.Category.findAll()
+
+        Promise.all([products, categories])
+
+            .then(([products, categories]) => {
+                return res.render('admin', {
+                    products,
+                    categories,
+                    title: 'Resultado de la búsqueda'
+                })
+            })
+    },*/
     
     productEdit : (req,res) => { 
         let product = products.find(  product => product.id === +req.params.id )

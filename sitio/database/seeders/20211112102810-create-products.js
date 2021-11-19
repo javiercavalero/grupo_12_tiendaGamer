@@ -5,7 +5,8 @@ let products = require('../../data/products.json')
 let productos = products.map ( product =>{
   let item = {
     ...product,
-    createdAt: new Date
+    createdAt: new Date,
+    
   }
   return item
 })
