@@ -23,7 +23,10 @@
         <div class='container-input'>
           <label for="email">Email</label>
           <input type="email" name="email" minlength="8">
-        </div>           
+        </div>        
+        <span>
+          <%=  error != "undefined" && error.email ? error.email : null %> 
+        </span>   
         <!--Contraseña-->
         <div class='container-input'>
           <label for="password">Contraseña</label>

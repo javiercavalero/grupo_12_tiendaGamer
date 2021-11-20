@@ -54,5 +54,14 @@
       "username": "jec",
       "password": "$2a$10$imOcBZX5LUpSk0uTGlLaPeDNfmes4yGQqFapql21Ov7K.bnCLIYe6",
       "avatar": "default.jpg"
+   },
+   {
+      "id": 8,
+      "name": "Ja",
+      "email": "javicavalero9@gmail.com",
+      "username": "JC1234",
+      "password": "$2a$10$Y6cbi6.DCjc20h7Cs0GM9uXDmWgmQ8BX08vSNNp6ZZe7aG9wjI3bK",
+      "avatar": "default.jpg",
+      "rol": "user"
    }
 ]
