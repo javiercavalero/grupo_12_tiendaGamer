@@ -16,10 +16,17 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'rolId'
     }),
     User.belongsToMany(models.Product, {
+<<<<<<< HEAD
       as: 'Product',
       through : 'ProductUsers',
       foreignKey: 'userId',
       otherKey : 'productId'
+=======
+      as: 'user',
+      through : 'productUsers',
+      foreignKey: 'productId',
+      otherKey : 'userId'
+>>>>>>> ca794116b5fb54beaf4fe32c2460cc29eac44721
   })
     }
   };
