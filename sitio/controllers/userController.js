@@ -1,11 +1,48 @@
 const path = require ("path");
 const bcrypt = require('bcryptjs');
 const fs = require('fs');
-let users = require(path.join(__dirname, '../data/users.json'));
+const db = require('../database/models')
 const {validationResult} = require('express-validator');
 const { title } = require("process");
 
 module.exports = {
+  register : (req,res)=> {
+    return res.render('register', {title: 'register'})
+},
+
+processRegister: async (req, res) => {
+    let errors = validationResult(req);
+    
+    if(errors.isEmpty()){
+        const {name, email, password, username} = req.body;
+      db.User.create ({
+            name : name.trim(),
+            email : email.trim(),
+            username: username.trim(),
+            password : bcrypt.hashSync(password, 10),
+            avatar : 'default.jpg',
+            rolId : 1 
+        })
+        .then(user => {
+          req.session.userLogin ={
+            id: user.id,
+            username: user.username,
+            name: user.name,
+            avatar:user.avatar ,
+            rol:user.rolId
+        }
+         return res.redirect('/')
+    }).catch(error => {
+        console.log(error);
+        })
+    }else{
+        return res.render('register', {
+            title: 'register',
+            errores : errors.mapped(),
+            old: req.body
+        })};
+    },
+
 login : (req,res)=> {
 return res.render('login',{title:'login'})
 },
@@ -14,13 +51,18 @@ processLogin: (req, res) => {
 let errors= validationResult(req);
 
 if(errors.isEmpty()){
-let user= users.find(user => user.email === req.body.email);
+
+  db.User.findOne({
+    where : { 
+      email : req.body.email
+  }
+  }).then(user => {
 req.session.userLogin ={
     id: user.id,
     username: user.username,
     name: user.name,
     avatar:user.avatar ,
-    rol:user.rol
+    rol:user.rolId
 }
 if(req.body.remember){
     res.cookie('zukuna',
@@ -29,7 +71,7 @@ if(req.body.remember){
 }
 
 return res.redirect('/')
-}else{
+  })}else{
 
     return res.render('login',{
         title: 'login',
@@ -39,57 +81,27 @@ return res.redirect('/')
 },
 
 
-register : (req,res)=> {
-    return res.render('register', {title: 'register'})
-
-
-},
-processRegister: (req, res) => {
-    let errors = validationResult(req);
-    
-    if(errors.isEmpty()){
-        const {name, email, password, username} = req.body;
-        let user = {
-            id : users.length != 0 ? users[users.length - 1].id + 1 : 1,
-            name : name.trim(),
-            email : email.trim(),
-            username: username.trim(),
-            password : bcrypt.hashSync(password, 10),
-            avatar : 'default.jpg',
-            rol: "user"
-        }
-        users.push(user);
-        fs.writeFileSync(path.join(__dirname, '../data/users.json'),JSON.stringify(users, null, 3), 'utf-8')
-        res.redirect('/')
-    }else{
-        return res.render('register', {
-            title: 'register',
-            errores : errors.mapped(),
-            old : req.body
-        })
-    }
-
-
-},
 logout: (req, res) => {
-    se
     if(req.session){
         req.session.destroy()
         res.cookie('zukuna',
         '',
         {maxAge: -1 })
     }
-    res.redirect('/')
-    
+    res.redirect('/')  
 },
 
 
 
-profile : (req,res) => {
-    let users = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/users.json'),'utf-8'));
-    return res.render('profile',{
-        user : users.find(user => user.id === req.session.userLogin.id)
-    })
-}
+profile :async (req,res) => {
+    try {
+         let user = await db.User.findByPk(req.session.userLogin.id)
+         return res.render('profile', {
+                user: user})
 
+    }
+     catch(error) {
+                console.log(error);
+    }
+}
 }
