@@ -19,8 +19,13 @@ module.exports = {
     list : (req, res) => {
         db.Product.findAll()
             .then(products => {
-                /*return res.send(products)*/
+                /*return res.render(products)*/
+                 res.render('productsList.ejs', {products,
+                    toThousand,
+                    toDiscount})
             })
+            .catch(error => console.log(error))
+
     },
 
     detail : (req, res) => {
@@ -31,7 +36,7 @@ module.exports = {
             }
         })
             .then(product => {
-                //return res.send(product)
+               // return res.send(product)
                 db.Category.findByPk(product.categoryId, {
                     include: [
                         {
@@ -51,27 +56,30 @@ module.exports = {
 
     },
 
-    /*search: (req, res) => {
+    search: (req, res) => {
+
         let products = db.Product.findAll({
             where: {
                 name: {
                     [Op.substring]: req.query.keyword
                 }
-            },
-            include: ['images', 'category']
+            }
         })
         let categories = db.Category.findAll()
 
         Promise.all([products, categories])
 
             .then(([products, categories]) => {
-                return res.render('admin', {
+                return res.render('results.ejs', {
                     products,
                     categories,
-                    title: 'Resultado de la búsqueda'
+                    toThousand,
+                    toDiscount
                 })
             })
-    },*/
+            .catch(error => console.log(error))
+        },
+
     
     productEdit : (req,res) => { 
         let product = products.find(  product => product.id === +req.params.id )

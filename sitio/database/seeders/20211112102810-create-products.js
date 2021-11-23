@@ -7,6 +7,7 @@ let productos = products.map ( product =>{
   let item = {
     ...product,
     createdAt: new Date,
+    updatedAt: new Date,
     categoryId: faker.datatype.number({
       min: 1,
       max: 3

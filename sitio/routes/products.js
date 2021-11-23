@@ -14,8 +14,8 @@ const upload = require('../middlewares/uploadImagesProduct')
 /* router de productos */
 router.get('/create/', adminLoginCheck, controlller.create);
 router.post('/create', upload.single('images'), productAddValidator, controlller.store);
-/*router.get('/search',search);*/
-router.get('/list', list)
+router.get('/search',search);
+router.get('/list', list);
 router.get('/detail/:id', detail);
 router.get('/edit/:id',adminLoginCheck, productEdit);
 router.put('/update/:id', update);
