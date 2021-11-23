@@ -17,7 +17,7 @@ const adminLoginCheck = require('../middlewares/adminLoginCheck');
 const upload = require('../middlewares/uploadImagesProduct')
 
 /* router de productos */
-router.get('/create/', adminLoginCheck, controlller.create);
+router.get('/create/', adminLoginCheck, productController.create);
 router.post('/create', upload.single('images'), productAddValidator, controlller.store);
 router.get('/detail/:id', detail);
 router.get('/edit/:id',adminLoginCheck, productEdit);

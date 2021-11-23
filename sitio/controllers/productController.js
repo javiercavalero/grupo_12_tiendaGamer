@@ -23,6 +23,7 @@ module.exports = {
         })
     },
 
+       
     update: (req, res) => {
 		const {name, price, discount, category, description} = req.body;
         let product = products.find(product => product.id === +req.params.id)
@@ -43,11 +44,24 @@ module.exports = {
 		res.redirect('/products/detail/' + req.params.id)
 	},
 
-    create: (req, res) => {
-		return res.render('productAdd',{
-            title: 'Crear producto'
+    create: function (req, res) {
+           const {name,description,price,discount,categoryId} = req.body
+           db.Product.create({
+           name,
+           price,
+           discount,
+           description,
+           image,
+           categoryId,
         })
+       
+        .then( Product => {
+            return res.redirect('/products')
+        })
+        .catch(error => console.log(error))
+        
     },
+
 
     store: (req, res) => {
         const errors=validationResult(req);
