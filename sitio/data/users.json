@@ -6,6 +6,7 @@
       "username": "javi_kshmr",
       "password": "$2a$10$sMS4k9v39ZecreawDlE7qep//.zLE1fgGArJrre6/DK3JD5Ytm0Ai",
       "avatar": "default.jpg"
+      
    },
    {
       "id": 2,
@@ -14,6 +15,7 @@
       "username": "juan",
       "password": "$2a$10$q9liYDNse2Aof0EafSQuX.4Yryiv1YNU6MPTvj58hp1Il6rwi833S",
       "avatar": "default.jpg"
+
    },
    {
       "id": 3,
@@ -22,6 +24,7 @@
       "username": "el mejor1234567890",
       "password": "$2a$10$iQa9QbhTCT78EbXBi7XO6.bBDhatATynVmW5qmRhnJ2XNJP9ABOEq",
       "avatar": "default.jpg"
+     
    },
    {
       "id": 4,
@@ -30,6 +33,7 @@
       "username": "mayra",
       "password": "$2a$10$MyQ1.Oo3VZj75RbyFtDOQuFkowMK1liwoUEvwS8F9Q8DpN9d9RW.6",
       "avatar": "default.jpg"
+     
    },
    {
       "id": 5,
@@ -38,6 +42,8 @@
       "username": "elianades",
       "password": "$2a$10$KtQacyEZqJ7sR4T0CeqIp.DwqDGQ4XZgf2bjINtni3qd7Yv.J1UJ2",
       "avatar": "default.jpg"
+      
+  
    },
    {
       "id": 6,
@@ -61,7 +67,6 @@
       "email": "javicavalero9@gmail.com",
       "username": "JC1234",
       "password": "$2a$10$Y6cbi6.DCjc20h7Cs0GM9uXDmWgmQ8BX08vSNNp6ZZe7aG9wjI3bK",
-      "avatar": "default.jpg",
-      "rol": "user"
+      "avatar": "default.jpg"
    }
 ]
