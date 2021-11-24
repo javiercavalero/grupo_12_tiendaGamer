@@ -9,15 +9,16 @@
  
       <!-- buscador-->
       <div class="busqueda">
-        <form action=""><input type="text" placeholder="Busqueda" /></form>
-        <button><i class="fas fa-search"></i></button>
+        <form action="/products/search" method="GET" >
+          <input type="text" placeholder="Busqueda" name="keyword" /></form>
+        <button type="submit" ><i class="fas fa-search"></i></button>
       </div>
       <!--  register y login --> 
       <ul class="enlaces">
       <li> <% if (locals.userLogin) { %>
         <a href="#"><%= locals.userLogin.username %> </a>
         <li><a href="users/profile">Perfil</a></li>
-        <% if (locals.userLogin.rol === 'admin') { %>
+        <% if (locals.userLogin.rol === 2) { %>
           
          <li><a href="/admin" method="GET">Admin</a></li>
          

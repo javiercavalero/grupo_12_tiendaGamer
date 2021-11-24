@@ -35,12 +35,15 @@
           </button>
         </div>
 
+        
         <h3>Destacados de la semana</h3>
+        <a href="/products/list"><h4>Listado de productos</h4></a>
         <div class="conteiner">
           <% products.forEach(product=> { %>
             <div class="img-destacadas">
               <div class="img1"><a href="/products/detail/<%= product.id %> "><img src="/images/products/<%= product.image %> "
                     alt=""></a>
+
                 <% if (product.discount > 0) { %>
                       <h2>$<%= toDiscount(product.price, product.discount)%></h2>
                       <span><%= product.discount %> % OFF</span>

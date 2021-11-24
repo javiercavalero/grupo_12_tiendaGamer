@@ -1,5 +1,5 @@
 <!--head-->
-<%- include('./partials/head') %> 
+<%- include('./partials/head', {title:'Agregar producto'}) %> 
 <body class="bg-light">
  <!--HEADER-->
  <%- include('./partials/headerAdmin') %> 
@@ -12,7 +12,7 @@
                      <h2>Agregar producto</h2>
                 </div>
               <div class="card-body">
-                  <form class="row" action="" method="POST" enctype="multipart/form-data">
+                  <form class="row" action="/products/create" method="POST" enctype="multipart/form-data">
                       <div class="row">
                           <div class="col-12 mb-3 "> 
                               <div class="form-floating ">
@@ -49,9 +49,10 @@
                         <div class="form-floating">
                           <select name="category"class="form-select" id="category" aria-label="Floating label select example"  >
                             <option  selected hidden>Elegí la categoría</option>
-                            <option value="1">Nuevo</option>
-                            <option value="2">Oferta</option>
-                            <option value="3">Usado</option>
+                            <% categories.forEach(category => { %>
+                              <option class="text-capitalize" value="<%=category.id%>"><%= category.name %> </option>
+                            <% }) %>
+                            
                           </select>
                           <label for="category">Categoría</label>
                         </div>
@@ -60,11 +61,7 @@
                       <div class="col-12 col-md-6">
                         <div class="mb-3 ">
                           <label for="image" class="btn btn-outline-info w-100 ">subir imagen</label>
-<<<<<<< HEAD
                           <input hidden class="form-control" type="file" id="image" name="image">
-=======
-                          <input hidden class="form-control" type="file" id="image" name="images" multiple>
->>>>>>> 0d7c5cc62ac11fef3d2da646f931f036410dc3da
                         </div>
                       </div>
                       

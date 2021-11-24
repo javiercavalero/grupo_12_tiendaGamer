@@ -1,0 +1,31 @@
+<%- include('./partials/head', {title: 'products list' }) %>
+
+    <body>
+        <%- include('./partials/header') %>
+
+            <div>
+                <h3>Listado de productos</h3>
+                <main>
+                    <% products.forEach(product=> { %>
+                        <div>
+                            <a href="/products/detail/<%= product.id %> "><img src="/images/products/<%= product.image %>"
+                                    alt=""></a>
+                            <% if (product.discount> 0) { %>
+                                <h2>$<%= toDiscount(product.price, product.discount)%>
+                                </h2>
+                                <span>
+                                    <%= product.discount %> % OFF
+                                </span>
+                                <% } else { %>
+                                    <h2>$<%= toThousand(product.price)%>
+                                    </h2>
+                                    <% } %>
+                                        <h2>
+                                            <%= product.name %>
+                                        </h2>
+                        </div>
+                        <% }) %>
+                </main>
+            </div>
+
+    </body>

@@ -6,6 +6,7 @@ let users = usersJSON.map (user => {
  let item = {
      ...user,
      createdAt: new Date(),
+     rolId: 2,
  }   
  return item;
 })
