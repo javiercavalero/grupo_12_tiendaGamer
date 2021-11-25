@@ -223,7 +223,7 @@ Que hice ayer?
 
 
 ## Action items:
-- [ ]  Reunirse hoy entre 21:00 y 23:00hs. para repartir tareas de sprint 7
+- [ ]  Reunirse hoy entre 21:00 y 23:00hs. para repartir tareas de sprint 7 (No se presentó el sprint)
 
 ### 25/11
 Que hice ayer?
@@ -240,4 +240,4 @@ Que hice ayer?
 
 
 ## Action items:
-- [ ]  Reunirse hoy entre 21:00 y 23:00hs. para repartir tareas de sprint 7
+- [ ]
