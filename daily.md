@@ -206,4 +206,21 @@ Javier: Problemas con el funcionamiento de la computadora.
 
 ## Action items:
 
+---
 
+### 24/11
+Que hice ayer?
+- Eliana: 
+- Javier: Completó la tarea de crud (login, register, y profile)
+- Mayra: Completó crud de productos (crear)
+- 
+## Que voy a hacer hoy?
+- Eliana: 
+- Javier: Esperar las correcciones.
+- Mayra: Avanzar con CRUD: editar y eliminar.
+
+## Bloqueadores:
+
+
+## Action items:
+- [ ]  Reunirse hoy entre 21:00 y 23:00hs. para repartir tareas de sprint 7
