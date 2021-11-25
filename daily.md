@@ -224,3 +224,20 @@ Que hice ayer?
 
 ## Action items:
 - [ ]  Reunirse hoy entre 21:00 y 23:00hs. para repartir tareas de sprint 7
+
+### 25/11
+Que hice ayer?
+- Eliana: 
+- Javier: Avanzó con observaciones de validaciones pendientes 
+- Mayra: No logró avanzar con la tarea pendiente
+- 
+## Que voy a hacer hoy?
+- Eliana: 
+- Javier: Terminar las observaciones de validaciones. Ayudar en CRUD eliminar productos.
+- Mayra: Avanzar con CRUD: editar y eliminar.
+
+## Bloqueadores:
+
+
+## Action items:
+- [ ]  Reunirse hoy entre 21:00 y 23:00hs. para repartir tareas de sprint 7
