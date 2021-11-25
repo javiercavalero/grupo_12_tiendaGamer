@@ -67,7 +67,7 @@ req.session.userLogin ={
 if(req.body.remember){
     res.cookie('zukuna',
     req.session.userLogin,
-    {maxAge: 60000 })
+    {maxAge: 6000 })
 }
 
 return res.redirect('/')
