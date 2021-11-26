@@ -241,3 +241,21 @@ Que hice ayer?
 
 ## Action items:
 - [ ]
+
+
+### 26/11
+Que hice ayer?
+- Eliana: no logró avanzar con la tarea de observaciones de validaciones en registro.
+- Javier: Terminó CRUD: eliminación de producto y pasó la vista home y admin a base de datos.
+- Mayra: 
+- 
+## Que voy a hacer hoy?
+- Eliana: terminar con la tarea de observacion.
+- Javier: validar login y profile.
+- Mayra:
+
+## Bloqueadores:
+
+
+## Action items:
+- [ ] Reunión para organización de tareas del sprint 7 a las 22hs.
