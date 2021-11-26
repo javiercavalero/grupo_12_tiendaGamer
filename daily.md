@@ -210,12 +210,12 @@ Javier: Problemas con el funcionamiento de la computadora.
 
 ### 24/11
 Que hice ayer?
-- Eliana: 
+- Eliana: completó la tareas de listar, ver detalle y buscar.
 - Javier: Completó la tarea de crud (login, register, y profile)
 - Mayra: Completó crud de productos (crear)
 - 
 ## Que voy a hacer hoy?
-- Eliana: 
+- Eliana: hacer algunas correcciones anteriores
 - Javier: Esperar las correcciones.
 - Mayra: Avanzar con CRUD: editar y eliminar.
 
@@ -227,12 +227,12 @@ Que hice ayer?
 
 ### 25/11
 Que hice ayer?
-- Eliana: 
+- Eliana: No logró avanzar con las tareas.
 - Javier: Avanzó con observaciones de validaciones pendientes 
 - Mayra: No logró avanzar con la tarea pendiente
 - 
 ## Que voy a hacer hoy?
-- Eliana: 
+- Eliana: Intentar avanzar.
 - Javier: Terminar las observaciones de validaciones. Ayudar en CRUD eliminar productos.
 - Mayra: Avanzar con CRUD: editar y eliminar.
 
