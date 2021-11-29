@@ -247,12 +247,12 @@ Que hice ayer?
 Que hice ayer?
 - Eliana: no logró avanzar con la tarea de observaciones de validaciones en registro.
 - Javier: Terminó CRUD: eliminación de producto y pasó la vista home y admin a base de datos.
-- Mayra: 
+- Mayra: No logró avanzar con la tarea pendiente
 - 
 ## Que voy a hacer hoy?
 - Eliana: terminar con la tarea de observacion.
 - Javier: validar login y profile.
-- Mayra:
+- Mayra: Avanzar con CRUD: editar
 
 ## Bloqueadores:
 
