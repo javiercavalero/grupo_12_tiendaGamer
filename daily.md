@@ -258,4 +258,23 @@ Que hice ayer?
 
 
 ## Action items:
-- [ ] Reunión para organización de tareas del sprint 7 a las 22hs.
+- [x] Reunión para organización de tareas del sprint 7 a las 22hs.
+
+
+### 29/11
+Que hice ayer?
+- Eliana: no logró avanzar con la tarea de observaciones de validaciones en registro.
+- Javier: Avanzó con la validación de perfil de usuario.
+- Mayra: Avanzó con CRUD: editar
+- 
+## Que voy a hacer hoy?
+- Eliana: terminar con la tarea de observacion.
+- Javier: terminar de validar profile.
+- Mayra: Terminar con CRUD: editar
+
+## Bloqueadores:
+
+
+## Action items:
+
+
