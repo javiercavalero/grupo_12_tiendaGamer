@@ -277,4 +277,21 @@ Que hice ayer?
 
 ## Action items:
 
+------
 
+### 30/11
+Que hice ayer?
+- Eliana: revisó contenido para realizar la tarea de validacion de front en registro.
+- Javier: No logró avanzar con la tarea.
+- Mayra: Avanzó con CRUD: editar
+- 
+## Que voy a hacer hoy?
+- Eliana: Avanzar con la tarea de validacion de front de registro.
+- Javier: Avanzar con la tarea de validacion de front de login.
+- Mayra: Terminar con CRUD: editar
+
+## Bloqueadores:
+- Mayra: Error que no puede resolver
+
+## Action items:
+-[ ] Mayra: Juntarse con Gaby a las 18hs. para resolver el problema.
