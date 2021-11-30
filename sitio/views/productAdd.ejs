@@ -50,14 +50,14 @@
                           <select name="category"class="form-select" id="category" aria-label="Floating label select example"  >
                             <option  selected hidden>Elegí la categoría</option>
                             <% categories.forEach(category => { %>
-                              <option class="text-capitalize" value="<%=category.id%>"><%= category.name %> </option>
+                               <option class="text-capitalize" value="<%=category.id%>"><%= category.name %> </option>
                             <% }) %>
                             
+                            
                           </select>
+                          <span class="text-danger small ms-2"><%= locals.errors && errors.category ? errors.category.msg : null%> </span>
                           <label for="category">Categoría</label>
-                        </div>
-                        <span class="text-danger small ms-2"><%= locals.errors && errors.category ? errors.category.msg : null%> </span>
-                      </div>
+                        
                       <div class="col-12 col-md-6">
                         <div class="mb-3 ">
                           <label for="image" class="btn btn-outline-info w-100 ">subir imagen</label>

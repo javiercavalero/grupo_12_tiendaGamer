@@ -1,5 +1,5 @@
 var express = require('express');
-var router = express.Router();
+var router = express.Router(); 
 
 
 const {detail, create, store, productEdit,destroy,update, search, list }= require('../controllers/productController');

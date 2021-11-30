@@ -93,8 +93,11 @@ logout: (req, res) => {
 
 
 
-profile :async (req,res) => {
-    try {
+profile :async (req,res) =>
+ { let errors= validationResult(req);
+   /*  return res.send(errors) */
+    if(errors.isEmpty()){
+        try {
          let user = await db.User.findByPk(req.session.userLogin.id)
          return res.render('profile', {
                 user: user})
@@ -103,5 +106,11 @@ profile :async (req,res) => {
      catch(error) {
                 console.log(error);
     }
-}
-}
+}else {
+    return res.render('profile', {
+        errores : errors.mapped()
+    })
+
+    }
+    
+}}

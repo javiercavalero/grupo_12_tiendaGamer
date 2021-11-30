@@ -14,11 +14,12 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-12 col-md-4">
+                           
+                            <div class="col-12 col-md-8">
+                                <form class="row" method="POST" enctype="multipart/form-data"> 
+                                    <div class="col-12 col-md-4">
                                 <img class="img-fluid rounded-start" src="/images/users/<%= user.avatar %> "  alt="">
                             </div>
-                            <div class="col-12 col-md-8">
-                                <form class="row" method="POST" enctype="multipart/form-data">
                                     <div class="col-12 mb-3">
                                         <div class="form-floating ">
                                             <input type="text" class="form-control <%= locals.errors && errors.name ? 'is-invalid' : null %>" id="name" placeholder="Nombre " name="name" value="<%= user.name %>">
@@ -28,7 +29,7 @@
                                     </div>
                                     <div class="col-12 mb-3">
                                         <div class="form-floating ">
-                                            <input type="text" class="form-control" id="email" placeholder="Email" name="email" value="<%= user.email %>" disabled>
+                                            <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="<%= user.email %>" disabled>
                                             <label for="email">Email</label>
                                           </div>
                                     </div>

@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const registerValidator = require('../validations/registerValidator');
 const loginValidator = require('../validations/loginValidator');
+const profileValidator = require('../validations/profileValidator');
 
 
 
@@ -19,7 +20,7 @@ router
         .post('/register', registerValidator, processRegister)
         .get('/logout',userLoginCheck, logout)
         .get('/profile',userLoginCheck, profile)
-        .post('/profile', userLoginCheck)
+        .post('/profile',profileValidator ,userLoginCheck,profile)
 
         
 module.exports = router;
