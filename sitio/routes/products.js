@@ -6,7 +6,6 @@ const {detail, create, store, productEdit,destroy,update, search, list }= requir
 
 
 
-
 /* validaciones */
 const productAddValidator= require('../validations/productAddValidator')
 const adminLoginCheck = require('../middlewares/adminLoginCheck');
