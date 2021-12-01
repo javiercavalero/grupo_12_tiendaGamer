@@ -89,27 +89,31 @@ module.exports = {
         let errors = validationResult(req);
 
         if (errors.isEmpty()) {
-            const { name, description, price, discount, categoryId } = req.body;
-         
-            db.Product.update(
-                {
-                    name : name.trim(),
-                    description : description.trim(),
-                    price,
-                    discount,
-                    categoryId : category,
-                    
-                },
-                {
-                    where : {
-                        id : req.params.id
+            const { name, description, price, discount, category } = req.body;
+            db.Product.findByPk(req.params.id) 
+            .then(product => {
+                db.Product.update(
+                    {
+                        name : name.trim(),
+                        description : description.trim(),
+                        price,
+                        discount,
+                        categoryId : +category,
+                        image: req.file ? req.file.filename: product.image
+                    },
+                    {
+                        where : {
+                            id : req.params.id
+                        }
                     }
-                }
-            )
-                .then( () => {
-                    return res.redirect('/admin')
-                })
-        
+                )
+                    .then( () => {
+                        return res.redirect('/admin')
+                    })
+                    .catch(error=>console.log(error))
+            }) 
+            .catch(error=>console.log(error))
+            
 
 
         } else {
@@ -163,7 +167,7 @@ module.exports = {
                 price,
                 discount,
                 description,
-                image: req.file ? req.filename : 'default.jpg' ,
+                image: req.file ? req.file.filename : 'default.jpg' ,
                 categoryId,
             })
 
@@ -202,14 +206,10 @@ module.exports = {
         Promise.all([product,categories])
 
         .then(([product,categories]) => {
+          // return res.send(product) 
             return res.render('productEdit', {
-                name,
-                price,
-                discount,
-                description,
-                image,
-                categoryId,
-
+                product,
+                categories
             })
 
         })

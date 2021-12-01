@@ -1,5 +1,5 @@
 <!--head-->
-<%- include('./partials/head') %> 
+<%- include('./partials/head' , {title:'Editar producto'}) %> 
 <body class="bg-light">
   <!--HEADER-->
   <%- include('./partials/headerAdmin') %> 
@@ -23,8 +23,8 @@
                     </div>
                       <div class="col-12">
                           <div class="form-floating mb-3">
-                        <textarea style="resize: none; height: 100px" class="form-control" placeholder="Descripción de producto" id="floatingTextarea"<%= product.description %> ></textarea>
-                        <label for="floatingTextarea"> Descripción </label>
+                        <textarea name="description" style="resize: none; height: 100px" class="form-control" placeholder="Descripción de producto" id="floatingTextarea"><%= product.description %></textarea>
+                        <label for="floatingTextarea">  Descripción </label>
                     </div>
                     
                         <div class="form-floating col-md-6 mb-3">
@@ -43,9 +43,11 @@
                         <div class="form-floating">
                           <select name="category" class="form-select" id="floatingSelect" aria-label="Floating label select example">
                             <option selected  hidden>elegí la categoría</option>
-                            <option value="nuevo" <% product.category === "nuevo" ? "selected" : null %> >nuevo</option>
-                            <option value="oferta" <% product.category === "oferta" ? "selected" : null %>>oferta</option>
-                            <option value="usado" <% product.category === "usado" ? "selected" : null %>>usado</option>
+                            <% categories.forEach(categoria => {  %>
+                              <option value="<%=categoria.id%>" <%=product.categoryId == categoria.id ? "selected" : null %> > <%=categoria.name%> </option>
+                              
+                            <% }) %>
+                            
                           </select>
                           <label for="floatingSelect">categoría</label>
                         </div>
