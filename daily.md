@@ -294,4 +294,23 @@ Que hice ayer?
 - Mayra: Error que no puede resolver
 
 ## Action items:
--[ ] Mayra: Juntarse con Gaby a las 18hs. para resolver el problema.
+-[x] Mayra: Juntarse con Gaby a las 18hs. para resolver el problema.
+
+-------------------------------------------
+
+### 1/12
+Que hice ayer?
+- Eliana:  No logró avanzar con la tarea.
+- Javier: No logró avanzar con la tarea del sprint, pero realizó extra de generador de contraseña.
+- Mayra: finalizó CRUD editar de sprint anterior.
+- 
+## Que voy a hacer hoy?
+- Eliana: Avanzar con la tarea de validacion de front de registro.
+- Javier: Avanzar con la tarea de validacion de front de login.
+- Mayra: va a ver contenido para validaciones front del sprint 7.
+
+## Bloqueadores:
+
+
+## Action items:
+
