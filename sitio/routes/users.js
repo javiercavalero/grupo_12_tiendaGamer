@@ -16,7 +16,7 @@ Empieza con /users */
 router
         .get('/login', userCheck, login)
         .post('/login',loginValidator,processLogin)
-        .get('/register', userCheck, register)
+        .get('/register',  userCheck , register)
         .post('/register', registerValidator, processRegister)
         .get('/logout',userLoginCheck, logout)
         .get('/profile',userLoginCheck, profile)

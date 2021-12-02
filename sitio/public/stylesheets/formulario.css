@@ -83,8 +83,50 @@ div.card{
       margin-bottom: 10px;
 }
     
-
+/*------------------generador contraseñas ----------------------*/
     
+
+.container{
+    display: flex; flex-direction: column;
+    max-width: 400px;  padding: 40px;
+    background: #fff; border-radius: 20px;
+    border: 1px solid rgb(26,1,247); box-shadow: 0px 20px 20px rgba(0,0,0,0.3);
+}
+
+.el { display:flex; flex-direction: column}
+
+.sugerencia {
+text-align: center;  margin-bottom: 20px;
+font-size: 15px;
+}
+
+.inp{ padding: 8px; color: #000;
+font-family: 'Josefine sans', sans-serif ; font-weight: 800; 
+text-align: center; border: 2px solid rgb(43,43,58);
+border-radius: 4px;
+}
+
+.inp:focus{outline: none;}
+
+.botons button{
+    width: 40px; margin-left: 8px;
+    border: 2px solid rgb(43,43,58);
+    border-radius: 4px; transition: 0.2s; 
+}
+.botons button:hover{ background: #000;  color: #fff;}
+
+.info{margin: 0 50px 0px 50px;    background: rgb(0 43 255 / 40%);
+    padding: 7px 0 7px 0px; opacity: 0; text-align: center;
+    transition: 0.15s; animation: slideIn 1.5s linear forwards;
+}
+
+
+
+
+
+
+
+
     /* desktop */
 @media (min-width: 1024px){
 
