@@ -30,6 +30,7 @@ module.exports = {
 
     },
 
+
     detail: (req, res) => {
 
         db.Product.findOne({
@@ -83,32 +84,57 @@ module.exports = {
     },
 
 
-    productEdit: (req, res) => {
-        let product = products.find(product => product.id === +req.params.id)
-        return res.render('productEdit', {
-            title: 'Editar producto', product,
-        })
-    },
-
 
     update: (req, res) => {
-        const { name, price, discount, category, description } = req.body;
-        let product = products.find(product => product.id === +req.params.id)
-        let productModified = {
-            id: +req.params.id,
-            name: name,
-            price: +price,
-            discount: +discount,
-            category,
-            description: description,
-            image: req.file ? req.file.filename : product.image
+        let errors = validationResult(req);
+
+        if (errors.isEmpty()) {
+            const { name, description, price, discount, category } = req.body;
+            db.Product.findByPk(req.params.id) 
+            .then(product => {
+                db.Product.update(
+                    {
+                        name : name.trim(),
+                        description : description.trim(),
+                        price,
+                        discount,
+                        categoryId : +category,
+                        image: req.file ? req.file.filename: product.image
+                    },
+                    {
+                        where : {
+                            id : req.params.id
+                        }
+                    }
+                )
+                    .then( () => {
+                        return res.redirect('/admin')
+                    })
+                    .catch(error=>console.log(error))
+            }) 
+            .catch(error=>console.log(error))
+            
+
+
+        } else {
+
+            let product = db.Product.findByPk(req.params.id)
+            let categories = db.Category.findAll()
+    
+            Promise.all([product,categories])
+    
+            .then(([product,categories]) => {
+                return res.render('productEdit', {
+                    categories,
+                    product,
+                    firstLetter,
+                    errors: errors.mapped(),
+                })
+            })
+            .catch(error => console.log(error))
 
         }
 
-        let productsModified = products.map(product => product.id === +req.params.id ? productModified : product)
-
-        fs.writeFileSync(path.join(__dirname, '..', 'data', 'products.json'), JSON.stringify(productsModified, null, 3), 'utf-8');
-        res.redirect('/products/detail/' + req.params.id)
     },
 
     create: function (req, res) {
@@ -141,7 +167,7 @@ module.exports = {
                 price,
                 discount,
                 description,
-                image: req.file ? req.filename : 'default.jpg' ,
+                image: req.file ? req.file.filename : 'default.jpg' ,
                 categoryId,
             })
 
@@ -172,6 +198,29 @@ module.exports = {
 
     },
 
+
+    edit: (req, res) => {
+        let product = db.Product.findByPk(req.params.id)
+        let categories = db.Category.findAll()
+
+        Promise.all([product,categories])
+
+        .then(([product,categories]) => {
+          // return res.send(product) 
+            return res.render('productEdit', {
+                product,
+                categories
+            })
+
+        })
+        .catch(error => console.log(error))
+
+
+
+
+
+
+},
     destroy: (req, res) => {
 
         db.Product.destroy({
