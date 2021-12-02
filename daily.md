@@ -210,12 +210,12 @@ Javier: Problemas con el funcionamiento de la computadora.
 
 ### 24/11
 Que hice ayer?
-- Eliana: 
+- Eliana: completó la tareas de listar, ver detalle y buscar.
 - Javier: Completó la tarea de crud (login, register, y profile)
 - Mayra: Completó crud de productos (crear)
 - 
 ## Que voy a hacer hoy?
-- Eliana: 
+- Eliana: hacer algunas correcciones anteriores
 - Javier: Esperar las correcciones.
 - Mayra: Avanzar con CRUD: editar y eliminar.
 
@@ -227,12 +227,12 @@ Que hice ayer?
 
 ### 25/11
 Que hice ayer?
-- Eliana: 
+- Eliana: No logró avanzar con las tareas.
 - Javier: Avanzó con observaciones de validaciones pendientes 
 - Mayra: No logró avanzar con la tarea pendiente
 - 
 ## Que voy a hacer hoy?
-- Eliana: 
+- Eliana: Intentar avanzar.
 - Javier: Terminar las observaciones de validaciones. Ayudar en CRUD eliminar productos.
 - Mayra: Avanzar con CRUD: editar y eliminar.
 
@@ -241,3 +241,76 @@ Que hice ayer?
 
 ## Action items:
 - [ ]
+
+
+### 26/11
+Que hice ayer?
+- Eliana: no logró avanzar con la tarea de observaciones de validaciones en registro.
+- Javier: Terminó CRUD: eliminación de producto y pasó la vista home y admin a base de datos.
+- Mayra: No logró avanzar con la tarea pendiente
+- 
+## Que voy a hacer hoy?
+- Eliana: terminar con la tarea de observacion.
+- Javier: validar login y profile.
+- Mayra: Avanzar con CRUD: editar
+
+## Bloqueadores:
+
+
+## Action items:
+- [x] Reunión para organización de tareas del sprint 7 a las 22hs.
+
+
+### 29/11
+Que hice ayer?
+- Eliana: no logró avanzar con la tarea de observaciones de validaciones en registro.
+- Javier: Avanzó con la validación de perfil de usuario.
+- Mayra: Avanzó con CRUD: editar
+- 
+## Que voy a hacer hoy?
+- Eliana: terminar con la tarea de observacion.
+- Javier: terminar de validar profile.
+- Mayra: Terminar con CRUD: editar
+
+## Bloqueadores:
+
+
+## Action items:
+
+------
+
+### 30/11
+Que hice ayer?
+- Eliana: revisó contenido para realizar la tarea de validacion de front en registro.
+- Javier: No logró avanzar con la tarea.
+- Mayra: Avanzó con CRUD: editar
+- 
+## Que voy a hacer hoy?
+- Eliana: Avanzar con la tarea de validacion de front de registro.
+- Javier: Avanzar con la tarea de validacion de front de login.
+- Mayra: Terminar con CRUD: editar
+
+## Bloqueadores:
+- Mayra: Error que no puede resolver
+
+## Action items:
+-[x] Mayra: Juntarse con Gaby a las 18hs. para resolver el problema.
+
+-------------------------------------------
+
+### 1/12
+Que hice ayer?
+- Eliana:  No logró avanzar con la tarea.
+- Javier: No logró avanzar con la tarea del sprint, pero realizó extra de generador de contraseña.
+- Mayra: finalizó CRUD editar de sprint anterior.
+- 
+## Que voy a hacer hoy?
+- Eliana: Avanzar con la tarea de validacion de front de registro.
+- Javier: Avanzar con la tarea de validacion de front de login.
+- Mayra: va a ver contenido para validaciones front del sprint 7.
+
+## Bloqueadores:
+
+
+## Action items:
+
