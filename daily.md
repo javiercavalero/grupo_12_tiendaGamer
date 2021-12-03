@@ -338,12 +338,12 @@ Que hice ayer?
 Que hice ayer?
 - Eliana: terminó validacion de registro de backend.
 - Javier: vio contenido para avanzar en el sprint.
-- Mayra: 
+- Mayra: Vió contenido de las validaciones front-end
 - 
 ## Que voy a hacer hoy?
 - Eliana: Terminar con la tarea de validacion de front de registro.
 - Javier: Avanzar con la tarea de validacion de front de login.
-- Mayra:
+- Mayra:Avanzar con la tarea de validación de front de creacion y modificacion de productos
 
 ## Bloqueadores:
 Eli: no va a tener mucho tiempo para avanzar con el sprint
