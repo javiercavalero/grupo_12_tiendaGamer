@@ -18,7 +18,7 @@ router.get('/search',search);
 router.get('/list', list);
 router.get('/detail/:id', detail);
 router.get('/edit/:id',adminLoginCheck, edit);
-router.put('/update/:id', upload.single('image') , update);
+router.put('/update/:id', upload.single('image') ,productAddValidator , update);
 router.delete('/destroy/:id',destroy);
 
 

@@ -17,40 +17,43 @@
                       <div class="row" >
                           <div class="col-12"> 
                               <div class="form-floating mb-3 ">
-                        <input type="text" class="form-control" id="name" placeholder="Nombre de producto" name="name" value="<%= product.name %>">
+                        <input type="text" class="form-control <%= locals.errors && errors.name ? 'is-invalid' : null %>" id="name" placeholder="Nombre de producto" name="name" value="<%= product.name %>">
                         <label for="name">Nombre de producto</label>
                       </div>
+                      <span class="text-danger small ms-2"><%= locals.errors && errors.name ? errors.name.msg : null%> </span>
                     </div>
                       <div class="col-12">
                           <div class="form-floating mb-3">
-                        <textarea name="description" style="resize: none; height: 100px" class="form-control" placeholder="Descripción de producto" id="floatingTextarea"><%= product.description %></textarea>
+                        <textarea  class="form-control  <%= locals.errors && errors.description ? 'is-invalid' : null %>" name="description" style="resize: none; height: 100px" placeholder="Descripción de producto" id="floatingTextarea"><%= product.description %></textarea>
                         <label for="floatingTextarea">  Descripción </label>
                     </div>
+                    <span class="text-danger small ms-2"><%= locals.errors && errors.description ? errors.description.msg : null%> </span>
                     
                         <div class="form-floating col-md-6 mb-3">
-                        <input name="price" type="number" class="form-control" id="price" value= "<%= product.price %>" >
+                        <input name="price" type="number" class="form-control  <%= locals.errors && errors.price ? 'is-invalid' : null %>" id="price" value= "<%= product.price %>" >
                         <label for="price">Precio</label>
                       </div>
+                      <span class="text-danger small ms-2"><%= locals.errors && errors.price ? errors.price.msg : null%> </span>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-floating col-md-6 mb-3">
-                        <input name="discount" type="number" class="form-control" id="discount" value= "<%= product.discount %>">
+                        <input class="form-control  <%= locals.errors && errors.discount ? 'is-invalid' : null %>" name="discount" type="number" id="discount" value= "<%= product.discount %>">
                         <label for="discount">Descuento</label>
                       </div>
+                      <span class="text-danger small ms-2"><%= locals.errors && errors.discount ? errors.discount.msg : null%> </span>
                     </div>
                          
                       <div class="col-12 col-md-6">
                         <div class="form-floating">
-                          <select name="category" class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected  hidden>elegí la categoría</option>
-                            <% categories.forEach(categoria => {  %>
-                              <option value="<%=categoria.id%>" <%=product.categoryId == categoria.id ? "selected" : null %> > <%=categoria.name%> </option>
-                              
+                          <select class="form-select <%= locals.errors && errors.category ? 'is-invalid' : null %>" id="category" aria-label="Floating label select example" name="category">
+                            <option value="" selected hidden>Elegí la categoría</option>
+                            <% categories.forEach(category => { %>
+                             <option value="<%= category.id %>" <%= locals.old && old.category.id === category.id  ? 'selected' : null%> > <%= category.name %>  </option>
                             <% }) %>
-                            
                           </select>
-                          <label for="floatingSelect">categoría</label>
+                          <label for="category">Categoría</label>
                         </div>
+                        <span class="text-danger small ms-2"><%= locals.errors && errors.category ? errors.category.msg : null%> </span>
                       </div>
                       <div class="col-12 col-md-6">
                         <div class="mb-3 ">

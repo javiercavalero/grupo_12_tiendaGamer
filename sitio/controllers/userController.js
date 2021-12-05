@@ -4,6 +4,7 @@ const fs = require('fs');
 const db = require('../database/models')
 const {validationResult} = require('express-validator');
 const { title } = require("process");
+const users = require('../data/users.json')
 
 module.exports = {
   register : (req,res)=> {
@@ -67,7 +68,7 @@ req.session.userLogin ={
 if(req.body.remember){
     res.cookie('zukuna',
     req.session.userLogin,
-    {maxAge: 6000 })
+    {maxAge: 60000000 })
 }
 
 return res.redirect('/')
@@ -91,26 +92,48 @@ logout: (req, res) => {
     res.redirect('/')  
 },
 
+profile: (req, res) => {
+    db.User.findByPk(req.session.userLogin.id)
+        .then(user => {
+            return res.render('profile', {
+                user
+            })
+        })
+        .catch(error => console.log(error))
+    },
 
 
-profile :async (req,res) =>
- { let errors= validationResult(req);
-   /*  return res.send(errors) */
-    if(errors.isEmpty()){
-        try {
-         let user = await db.User.findByPk(req.session.userLogin.id)
-         return res.render('profile', {
-                user: user})
+    update: (req, res) => {
+        let errors = validationResult(req);
+        if (errors.isEmpty()) {
+            db.User.update(
+                {
+                    name : req.body.name,
+                    avatar : req.file ? req.file.filename : req.session.userLogin.avatar,
+                },
+                {
+                    where : {
+                        id : req.session.userLogin.id
+                    }
+                },
+            ).then( async () => {
+                if (req.file) {
+                    if (fs.existsSync(path.join(__dirname, '../public/images/users/' + user.avatar)) && user.avatar != "default.png") {
+                        fs.unlinkSync(path.join(__dirname, '../public/images/users/' + user.avatar))
+                    }
+                    req.session.userLogin.avatar = req.file.filename
+                }
+                req.session.userLogin.name = req.body.name
+                return res.redirect('/users/profile') 
+            })
+            .catch(error => console.log(error))
 
-    }
-     catch(error) {
-                console.log(error);
-    }
-}else {
-    return res.render('profile', {
-        errores : errors.mapped()
-    })
+        } else {
+            res.render('profile', {
+                user: users.find(user => user.id === req.session.userLogin.id),
+                errors: errors.mapped()
+            })
+        }
 
-    }
-    
-}}
+
+    }}
