@@ -356,12 +356,12 @@ Eli: no va a tener mucho tiempo para avanzar con el sprint
 
 ### 6/12
 Que hice ayer?
-- Eliana: 
+- Eliana: Avanzó con validación de registro del front
 - Javier: terminó validación back, de editar producto y profile. Avanzó con validacion de login de front.
 - Mayra: Avanzó con la validacion front de creacion de producto
 - 
 ## Que voy a hacer hoy?
-- Eliana: 
+- Eliana: terminar validacion del registro del front.
 - Javier: Terminar validacion de login de front.
 - Mayra: Terminar la validacion front de creacion de producto
 
