@@ -83,13 +83,31 @@ module.exports = {
             .catch(error => console.log(error))
     },
 
+    edit: (req, res) => {
+        let product = db.Product.findByPk(req.params.id)
+        let categories = db.Category.findAll()
+
+        Promise.all([product,categories])
+
+        .then(([product,categories]) => {
+          // return res.send(product) 
+            return res.render('productEdit', {
+                product,
+                categories
+            })
+
+        })
+        .catch(error => console.log(error))
+},
 
 
     update: (req, res) => {
         let errors = validationResult(req);
 
-        if (errors.isEmpty()) {
+        if (errors.isEmpty()) { 
+            
             const { name, description, price, discount, category } = req.body;
+           
             db.Product.findByPk(req.params.id) 
             .then(product => {
                 db.Product.update(
@@ -98,7 +116,7 @@ module.exports = {
                         description : description.trim(),
                         price,
                         discount,
-                        categoryId : +category,
+                        categoryId : category,
                         image: req.file ? req.file.filename: product.image
                     },
                     {
@@ -127,7 +145,6 @@ module.exports = {
                 return res.render('productEdit', {
                     categories,
                     product,
-                    firstLetter,
                     errors: errors.mapped(),
                 })
             })
@@ -137,39 +154,33 @@ module.exports = {
 
     },
 
-    create: function (req, res) {
+    create: (req, res) => {
+
         db.Category.findAll()
             .then(categories => {
- //               return res.send(categories) 
-                res.render('productAdd', {
+                return res.render('productAdd', {
                     categories
-                }
-
-                )
-             
+                })
             })
-          .catch( error => {
-              console.log(error)
-          })
-
-
-    },
+            .catch(error => console.log(error))
+        },
 
 
     store: (req, res) => {
         const errors = validationResult(req);
       //  return res.send(req.file)
-
         if (errors.isEmpty()) {
-            const { name, description, price, discount, categoryId } = req.body
+            const { name, description, price, discount, category } = req.body
+           
             db.Product.create({
                 name,
                 price,
                 discount,
                 description,
                 image: req.file ? req.file.filename : 'default.jpg' ,
-                categoryId,
+                categoryId: category
             })
+            
 
                 .then(product => {
                     return res.redirect('/products/list')
@@ -199,28 +210,7 @@ module.exports = {
     },
 
 
-    edit: (req, res) => {
-        let product = db.Product.findByPk(req.params.id)
-        let categories = db.Category.findAll()
-
-        Promise.all([product,categories])
-
-        .then(([product,categories]) => {
-          // return res.send(product) 
-            return res.render('productEdit', {
-                product,
-                categories
-            })
-
-        })
-        .catch(error => console.log(error))
-
-
-
-
-
-
-},
+   
     destroy: (req, res) => {
 
         db.Product.destroy({

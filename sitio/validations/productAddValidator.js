@@ -13,12 +13,13 @@ module.exports = [
 
     check('price')
     .isInt({min:1})
-    .withMessage('El valor debe ser mayor a 1'),
+    .withMessage('El valor debe ser mayor a 1, sin "." ni ","'),
 
-    check('discount').isInt({min:0})
+    check('discount')
+    .isInt({min:0})
     .withMessage('Agregar el descuento'),
 
     check('category')
     .notEmpty()
-    .withMessage('Nombre de categoria obligatorio')
+    .withMessage('Indicá la categoría')
 ]
