@@ -7,7 +7,8 @@ module.exports = {
     let products = db.Product.findAll({
       limit: 8,
       include: ["Category"],
-    }).then((products) => {
+    })
+    .then((products) => {
       return res.render("index", {
         products,
         toThousand,

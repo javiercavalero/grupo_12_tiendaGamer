@@ -13,21 +13,23 @@
 
 
     <div class='contenedor'>
-      <form class="form" action="" method="POST" >
+      <form class="form" id="form-login" action="" method="POST" autocomplete="off">
         <h2 class="fuente2"> Ingresá</h2>
-        <!--userName-->
+        <!--email-->
         <div class='container-input'>
-          <input type="email" placeholder="Email" name="email" >
+          <input class="form-control" type="email" placeholder="Email" name="email" id="email" >
+          <span id="error-email" class="small text-danger"></span>
         </div>
         <!--contraseña-->
         <div class='container-input'>
-          <input type="password" placeholder="Contraseña" name="password" >
+          <input class="form-control" type="password" placeholder="Contraseña" name="password" id="password">
+          <span id="error-password" class="small text-danger"></span>
         </div>
         <div > 
           <span class="text-danger small ms-2 fs-32px"><%= locals.errores && errores.email ? errores.email.msg : null%> </span>
         </div>
        
-        <input type="checkbox" id="remember" name="remember">
+        <input type="checkbox" id="remember" name="remember" id="remember">
         <label for="remember">Recordarme</label>
 
         
@@ -44,7 +46,10 @@
 
 
   <%-include('./partials/footer') %>
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="/javascript/loginValidator.js ">
+  </script>
+
 </body>
 
 </html>

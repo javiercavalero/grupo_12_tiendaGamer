@@ -30,25 +30,40 @@
           <label for="password">Contraseña</label>
           <input type="password" name="password" minlength="8">
         </div>
+
+        <!--generador contraseñas -->
+        <div class="conteiner">
+
+          <h2 class="sugerencia">Contraseña sugerida</h2>
+          <div class="el">
+          
+          <input type="text" placeholder="Password" class="inp" id="password"/>
+          <div class="botons">
+             <button type="button" onclick="copytext()" title="copy">
+          <i class="fa fa-copy"></i> </button>
+          <button type="button" onclick="generatePassword()" title="Generate">
+          <i class="fa-solid fa-wand-magic"></i></button>
+          </div>
+         
+          </div>
+          </div>
+          <div class="info">copiado!!</div>
+          
         <!--Botones-->
         <div class='container-buttons'>
           <button type="submit"> Enviar </button>
         </div>
       </form>
-
-
     </div>
 
   </main>
 
 
   <%-include('./partials/footer') %>
-
+  <script src="/javascript/password.js">
+    </script>
 </body>
 
 </html>
 
 
-</body>
-
-</html>

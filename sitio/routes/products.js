@@ -1,5 +1,5 @@
 var express = require('express');
-var router = express.Router();
+var router = express.Router(); 
 
 
 const {detail, edit, create, store, destroy,update, search, list }= require('../controllers/productController');
@@ -18,7 +18,7 @@ router.get('/search',search);
 router.get('/list', list);
 router.get('/detail/:id', detail);
 router.get('/edit/:id',adminLoginCheck, edit);
-router.put('/update/:id', upload.single('image') , update);
+router.put('/update/:id', upload.single('image') ,productAddValidator , update);
 router.delete('/destroy/:id',destroy);
 
 

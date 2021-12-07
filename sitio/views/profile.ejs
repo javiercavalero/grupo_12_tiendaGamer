@@ -14,11 +14,12 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-12 col-md-4">
-                                <img class="img-fluid rounded-start" src="/images/users/<%= user.avatar %> "  alt="">
-                            </div>
+                            
                             <div class="col-12 col-md-8">
-                                <form class="row" method="POST" enctype="multipart/form-data">
+                                <form class="row" method="POST" enctype="multipart/form-data"> 
+                                    <div class="col-12 col-md-4">
+                                <img class="img-fluid rounded-start" src="/images/users/<%= user.avatar %>"  alt="">
+                            </div>
                                     <div class="col-12 mb-3">
                                         <div class="form-floating ">
                                             <input type="text" class="form-control <%= locals.errors && errors.name ? 'is-invalid' : null %>" id="name" placeholder="Nombre " name="name" value="<%= user.name %>">
@@ -28,16 +29,16 @@
                                     </div>
                                     <div class="col-12 mb-3">
                                         <div class="form-floating ">
-                                            <input type="text" class="form-control" id="email" placeholder="Email" name="email" value="<%= user.email %>" disabled>
+                                            <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="<%= user.email %>" disabled>
                                             <label for="email">Email</label>
                                           </div>
                                     </div>
                                     <div class="col-12 mb-3">
                                         <div class="form-floating ">
-                                            <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password" >
-                                            <label for="email">Cambiar contraseña</label>
+                                            <input type="password" class="form-control <%= locals.errors && errors.contraseña ? 'is-invalid' : null %>" id="password" placeholder="Contraseña" name="contraseña" >
+                                            <label for="password">Cambiar contraseña</label>
                                           </div>
-                                          <span class="text-danger small ms-2"><%= locals.errors && errors.password ? errors.password.msg : null%> </span>
+                                          <span class="text-danger small ms-2"><%= locals.errors && errors.contraseña ? errors.contraseña.msg : null%> </span>
 
                                     </div>
                                    <div class="col-12 col-md-6">

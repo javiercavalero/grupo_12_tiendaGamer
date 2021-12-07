@@ -294,4 +294,98 @@ Que hice ayer?
 - Mayra: Error que no puede resolver
 
 ## Action items:
--[ ] Mayra: Juntarse con Gaby a las 18hs. para resolver el problema.
+-[x] Mayra: Juntarse con Gaby a las 18hs. para resolver el problema.
+
+-------------------------------------------
+
+### 1/12
+Que hice ayer?
+- Eliana:  No logró avanzar con la tarea.
+- Javier: No logró avanzar con la tarea del sprint, pero realizó extra de generador de contraseña.
+- Mayra: finalizó CRUD editar de sprint anterior.
+- 
+## Que voy a hacer hoy?
+- Eliana: Avanzar con la tarea de validacion de front de registro.
+- Javier: Avanzar con la tarea de validacion de front de login.
+- Mayra: va a ver contenido para validaciones front del sprint 7.
+
+## Bloqueadores:
+
+
+## Action items:
+
+-------------------------------------------------
+
+### 2/12
+Que hice ayer?
+- Eliana:  Avanzó con el registro de usuarios.
+- Javier: No logró avanzar con la tarea del sprint, pero terminó extra de generador de contraseña.
+- Mayra: Vió contenido de las validaciones front-end
+- 
+## Que voy a hacer hoy?
+- Eliana: Terminar con la tarea de validacion de front de registro.
+- Javier: Avanzar con la tarea de validacion de front de login.
+- Mayra: Avanzar con la tarea de validación de front de creacion y modificacion de productos
+
+## Bloqueadores:
+
+
+## Action items:
+
+
+----------------------------------------------
+### 3/12
+Que hice ayer?
+- Eliana: terminó validacion de registro de backend.
+- Javier: vio contenido para avanzar en el sprint.
+- Mayra: Vió contenido de las validaciones front-end
+- 
+## Que voy a hacer hoy?
+- Eliana: Terminar con la tarea de validacion de front de registro.
+- Javier: Avanzar con la tarea de validacion de front de login.
+- Mayra:Avanzar con la tarea de validación de front de creacion y modificacion de productos
+
+## Bloqueadores:
+Eli: no va a tener mucho tiempo para avanzar con el sprint
+
+## Action items: 
+
+
+---------------------------------------------------
+
+
+### 6/12
+Que hice ayer?
+- Eliana: Avanzó con validación de registro del front
+- Javier: terminó validación back, de editar producto y profile. Avanzó con validacion de login de front.
+- Mayra: Avanzó con la validacion front de creacion de producto
+- 
+## Que voy a hacer hoy?
+- Eliana: terminar validacion del registro del front.
+- Javier: Terminar validacion de login de front.
+- Mayra: Terminar la validacion front de creacion de producto
+
+## Bloqueadores:
+
+
+## Action items: 
+
+---------------------------------------------------
+
+
+### 7/12
+Que hice ayer?
+- Eliana: Realizó tarea de validaciondes del registro de usuarios front.
+- Javier: Terminó la validación front de login.
+- Mayra: Realizó tarea de validacion de creación de producto front.
+- 
+## Que voy a hacer hoy?
+- Eliana: Terminar la tarea de validaciones del registro de usarios
+- Javier: Terminar la tarea de validación front del profile.
+- Mayra: Terminar la tarea de creación de producto del front.
+
+## Bloqueadores:
+
+
+## Action items: 
+
