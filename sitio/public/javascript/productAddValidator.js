@@ -1,3 +1,4 @@
+console.log('productAdd success');
 const $ = id => document.getElementById(id);
 const formAddProduct = $('form-add-product');
 const oneMB = 1048576;
@@ -9,6 +10,11 @@ formAddProduct.elements[0].addEventListener('blur', function () {
         case !this.value.trim() :
             this.classList.add('is-invalid');
             nameError.innerHTML = "El nombre es requerido";
+            break;
+
+            case this.value.length < 5:
+            this.classList.add('is-invalid');
+            nameError.innerHTML = "Debe tener al menos 5 caracteres.";
             break;
 
         default:
@@ -41,7 +47,7 @@ formAddProduct.elements[2].addEventListener('blur', function () {
     switch (true) {
         case this.value == "":
             this.classList.add('is-invalid');
-            priceError.innerHTML = "¿Es gratis?";
+            priceError.innerHTML = "El precio es obligatorio";
             break;
         case this.value <= 0:
             this.classList.add('is-invalid');
@@ -133,3 +139,5 @@ formAddProduct.addEventListener('submit', function(e) {
     }
     !error && this.submit();
 })
+
+
