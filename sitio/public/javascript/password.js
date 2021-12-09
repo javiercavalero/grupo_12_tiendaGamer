@@ -5,7 +5,7 @@ let password= "";
 
 function generatePassword() {
 password = "";
-let length = 8;
+let length = 14;
 let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
 let n = chars.length;
 for (var i = 0; i < length; ++i) {

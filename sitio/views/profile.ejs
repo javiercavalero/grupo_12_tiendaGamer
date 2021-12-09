@@ -16,7 +16,7 @@
                         <div class="row">
                             
                             <div class="col-12 col-md-8">
-                                <form class="row" method="POST" enctype="multipart/form-data"> 
+                                <form class="row" method="POST" enctype="multipart/form-data"  autocomplete="off"> 
                                     <div class="col-12 col-md-4">
                                 <img class="img-fluid rounded-start" src="/images/users/<%= user.avatar %>"  alt="">
                             </div>
@@ -26,7 +26,8 @@
                                             <label for="name">Nombre</label>
                                           </div>
                                           <span class="text-danger small ms-2"><%= locals.errors && errors.name ? errors.name.msg : null%> </span>
-                                    </div>
+                                          <span id="error-name" class="small text-info"></span>
+                                        </div>
                                     <div class="col-12 mb-3">
                                         <div class="form-floating ">
                                             <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="<%= user.email %>" disabled>
@@ -39,7 +40,7 @@
                                             <label for="password">Cambiar contraseña</label>
                                           </div>
                                           <span class="text-danger small ms-2"><%= locals.errors && errors.contraseña ? errors.contraseña.msg : null%> </span>
-
+                                          <span id="error-password" class="small text-info"></span>
                                     </div>
                                    <div class="col-12 col-md-6">
                                     <div class="mb-3">
@@ -63,6 +64,6 @@
     </main>
 
     <%- include('./partials/scripts') %> 
-
+<script src="/javascript/profile.js"></script>
 </body>
 </html>
