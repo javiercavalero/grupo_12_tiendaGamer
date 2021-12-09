@@ -408,3 +408,22 @@ Eli: Falta de tiempo para poder terminar la tarea.
 
 ## Action items: 
 
+---------------------------------------------------
+
+
+### 9/12
+Que hice ayer?
+- Eliana: 
+- Javier: Validó el profile del front.
+- Mayra: Terminó la validacion de creación de producto front.
+- 
+## Que voy a hacer hoy?
+- Eliana: 
+- Javier: Corregir observaciones
+- Mayra: Terminar validación de edicion de producto front.
+
+## Bloqueadores:
+
+
+## Action items: 
+
