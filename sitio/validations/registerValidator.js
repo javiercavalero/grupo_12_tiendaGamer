@@ -35,5 +35,12 @@ module.exports = [
         max: 20
     }).withMessage('La contraseña debe tener un mínimo de 8 y un máximo de 20 caracteres'),
 
+    check('username')
+    .notEmpty().withMessage('Ingresa un nombre de usuario')
+    .isLength({
+        min: 2,
+        max: 30
+    })
+
 
 ]
