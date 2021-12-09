@@ -356,14 +356,33 @@ Eli: no va a tener mucho tiempo para avanzar con el sprint
 
 ### 6/12
 Que hice ayer?
-- Eliana: 
+- Eliana: Avanzó con validación de registro del front
 - Javier: terminó validación back, de editar producto y profile. Avanzó con validacion de login de front.
 - Mayra: Avanzó con la validacion front de creacion de producto
 - 
 ## Que voy a hacer hoy?
-- Eliana: 
+- Eliana: terminar validacion del registro del front.
 - Javier: Terminar validacion de login de front.
 - Mayra: Terminar la validacion front de creacion de producto
+
+## Bloqueadores:
+
+
+## Action items: 
+
+---------------------------------------------------
+
+
+### 7/12
+Que hice ayer?
+- Eliana: Realizó tarea de validaciondes del registro de usuarios front.
+- Javier: Terminó la validación front de login.
+- Mayra: Realizó tarea de validacion de creación de producto front.
+- 
+## Que voy a hacer hoy?
+- Eliana: Terminar la tarea de validaciones del registro de usarios
+- Javier: Terminar la tarea de validación front del profile.
+- Mayra: Terminar la tarea de creación de producto del front.
 
 ## Bloqueadores:
 
