@@ -427,3 +427,22 @@ Que hice ayer?
 
 ## Action items: 
 
+---------------------------------------------------
+
+
+### 10/12
+Que hice ayer?
+- Eliana: Retocar las vistas.
+- Javier: Ya había finalizado sus tareas
+- Mayra: trabajando en la tarea de validaciones de edición de productos front.
+- 
+## Que voy a hacer hoy?
+- Eliana: trabajar en las vistas del home.
+- Javier: Realizar observaciones pendientes
+- Mayra: Terminar la tarea de validaciones de edición de productos.
+
+## Bloqueadores:
+
+
+## Action items: 
+-[ ] Reunión de equipo a las 19hs para hacer la retrospectiva.
