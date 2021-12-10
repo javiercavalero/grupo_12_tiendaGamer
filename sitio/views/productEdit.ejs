@@ -12,7 +12,7 @@
                      <h2>Editar producto</h2>
                 </div>
               <div class="card-body">                           
-                    <form action="/products/update/<%= product.id %>?_method=PUT" class="row" method="POST" enctype="multipart/form-data">
+                    <form action="/products/update/<%= product.id %>?_method=PUT" class="row" method="POST" enctype="multipart/form-data" id="form-product">
 
                       <div class="row" >
                           <div class="col-12"> 
@@ -21,6 +21,8 @@
                         <label for="name">Nombre de producto</label>
                       </div>
                       <span class="text-danger small ms-2"><%= locals.errors && errors.name ? errors.name.msg : null%> </span>
+                      <span id="nameError" class="text-danger small ms-2"><%= locals.errors && errors.name ? errors.name.msg : null%> </span>
+
                     </div>
                       <div class="col-12">
                           <div class="form-floating mb-3">
@@ -28,12 +30,15 @@
                         <label for="floatingTextarea">  Descripción </label>
                     </div>
                     <span class="text-danger small ms-2"><%= locals.errors && errors.description ? errors.description.msg : null%> </span>
-                    
+                    <span id="descriptionError" class="text-danger small ms-2"><%= locals.errors && errors.description ? errors.description.msg : null%> </span>
+
                         <div class="form-floating col-md-6 mb-3">
                         <input name="price" type="number" class="form-control  <%= locals.errors && errors.price ? 'is-invalid' : null %>" id="price" value= "<%= product.price %>" >
                         <label for="price">Precio</label>
                       </div>
                       <span class="text-danger small ms-2"><%= locals.errors && errors.price ? errors.price.msg : null%> </span>
+                      <span id="priceError" class="text-danger small ms-2"><%= locals.errors && errors.price ? errors.price.msg : null%> </span>
+
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-floating col-md-6 mb-3">
@@ -57,7 +62,7 @@
                       </div>
                       <div class="col-12 col-md-6">
                         <div class="mb-3 ">
-                          <label for="image" class="btn btn-outline-info w-100 ">subir imagen</label>
+                          <label for="image" class="btn btn-outline-info w-100 ">Subir imagen</label>
                           <input name="image" hidden class="form-control" type="file" id="image">
                         </div>
                       </div>
@@ -79,5 +84,6 @@
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="/javascript/productAddValidator.js"></script>
 </body>
 </html>

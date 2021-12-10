@@ -1,11 +1,11 @@
-console.log('productAdd success');
+console.log('productEditValidator success');
 const $ = id => document.getElementById(id);
-const formAddProduct = $('form-product');
+const formEditProduct = $('form-product');
 const oneMB = 1048576;
 const regExExt = /(.jpg|.jpeg|.png|.gif|.webp)$/i;
 var preview = document.querySelector('#preview');
 
-formAddProduct.elements[0].addEventListener('blur', function () {
+formEditProduct.elements[0].addEventListener('blur', function () {
     switch (true) {
         case !this.value.trim() :
             this.classList.add('is-invalid');
@@ -25,7 +25,7 @@ formAddProduct.elements[0].addEventListener('blur', function () {
     }
 })
 
-formAddProduct.elements[1].addEventListener('blur', function () {
+formEditProduct.elements[1].addEventListener('blur', function () {
     switch (true) {
         case this.value == "":
             this.classList.add('is-invalid');
@@ -43,7 +43,7 @@ formAddProduct.elements[1].addEventListener('blur', function () {
     }
 })
 
-formAddProduct.elements[2].addEventListener('blur', function () {
+formEditProduct.elements[2].addEventListener('blur', function () {
     switch (true) {
         case this.value == "":
             this.classList.add('is-invalid');
@@ -61,7 +61,7 @@ formAddProduct.elements[2].addEventListener('blur', function () {
     }
 })
 
-formAddProduct.elements[4].addEventListener('blur', function () {
+formEditProduct.elements[4].addEventListener('blur', function () {
 
     switch (true) {
         case !this.value:
@@ -76,7 +76,7 @@ formAddProduct.elements[4].addEventListener('blur', function () {
     }
 })
 
-formAddProduct.elements[5].addEventListener('change', function (e) {
+formEditProduct.elements[5].addEventListener('change', function (e) {
     switch (true) {
         case !regExExt.exec(this.value):
             imageError.innerHTML = "Solo imágenes con extensión jpg, jpeg, png, gif, webp"
@@ -122,11 +122,11 @@ formAddProduct.elements[5].addEventListener('change', function (e) {
     }
 })
 
-formAddProduct.addEventListener('submit', function(e) {
+formEditProduct.addEventListener('submit', function(e) {
     e.preventDefault();
     let error = false;
     for (let i = 0; i < this.elements.length - 1; i++) {
-        if(this.elements[i].classList.contains('is-invalid')  ) {
+        if(this.elements[i].classList.contains('is-invalid') || !this.elements[i].value){
             error = true
             this.elements[i].classList.add('is-invalid');
             errorEmpty.innerHTML = "Los campos indicados son obligatorios"
@@ -139,5 +139,4 @@ formAddProduct.addEventListener('submit', function(e) {
     }
     !error && this.submit();
 })
-
 
