@@ -389,3 +389,60 @@ Que hice ayer?
 
 ## Action items: 
 
+---------------------------------------------------
+
+
+### 8/12
+Que hice ayer?
+- Eliana: Realizó tarea de validaciondes del registro de usuarios front.
+- Javier: Terminó la validación front de login.
+- Mayra: Realizó tarea de validacion de creación de producto front.
+- 
+## Que voy a hacer hoy?
+- Eliana: Terminar la tarea de validaciones del registro de usarios
+- Javier: Terminó la tarea de validación front del profile.
+- Mayra: Terminó la tarea de validación front de crear producto
+
+## Bloqueadores:
+Eli: Falta de tiempo para poder terminar la tarea.
+
+## Action items: 
+
+---------------------------------------------------
+
+
+### 9/12
+Que hice ayer?
+- Eliana: Terminó validaciones del registro front.
+- Javier: Validó el profile del front.
+- Mayra: Terminó la validacion de creación de producto front.
+- 
+## Que voy a hacer hoy?
+- Eliana: Pulir vistas de la página en general.
+- Javier: Corregir observaciones
+- Mayra: Terminar validación de edicion de producto front.
+
+## Bloqueadores:
+
+
+## Action items: 
+
+---------------------------------------------------
+
+
+### 10/12
+Que hice ayer?
+- Eliana: Retocar las vistas.
+- Javier: Ya había finalizado sus tareas
+- Mayra: trabajando en la tarea de validaciones de edición de productos front.
+- 
+## Que voy a hacer hoy?
+- Eliana: trabajar en las vistas del home.
+- Javier: Realizar observaciones pendientes
+- Mayra: Terminar la tarea de validaciones de edición de productos.
+
+## Bloqueadores:
+
+
+## Action items: 
+-[ ] Reunión de equipo a las 19hs para hacer la retrospectiva.
