@@ -15,7 +15,10 @@ module.exports = [
     .isInt({min:1})
     .withMessage('El valor debe ser mayor a 1, sin "." ni ","'),
 
-    
+    check('discount')
+    .isInt({min:0})
+    .withMessage('Agregar el descuento'),
+
     check('category')
     .notEmpty()
     .withMessage('Indicá la categoría')

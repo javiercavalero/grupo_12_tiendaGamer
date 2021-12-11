@@ -1,6 +1,6 @@
 console.log('productAdd success');
 const $ = id => document.getElementById(id);
-const formAddProduct = $('form-add-product');
+const formAddProduct = $('form-product');
 const oneMB = 1048576;
 const regExExt = /(.jpg|.jpeg|.png|.gif|.webp)$/i;
 var preview = document.querySelector('#preview');
@@ -126,7 +126,7 @@ formAddProduct.addEventListener('submit', function(e) {
     e.preventDefault();
     let error = false;
     for (let i = 0; i < this.elements.length - 1; i++) {
-        if(this.elements[i].classList.contains('is-invalid') || !this.elements[i].value){
+        if(this.elements[i].classList.contains('is-invalid')  ) {
             error = true
             this.elements[i].classList.add('is-invalid');
             errorEmpty.innerHTML = "Los campos indicados son obligatorios"
