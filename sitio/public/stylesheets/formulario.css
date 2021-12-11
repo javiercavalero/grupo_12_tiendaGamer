@@ -40,7 +40,7 @@ div.card{
     padding-bottom: 39px;
     padding-top: 39px;
     box-shadow: black;
-    background-color: #42DDF5; 
+    background-color: #c9c8c8;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 70px;
@@ -82,7 +82,21 @@ div.card{
       font-size: 20px;
       margin-bottom: 10px;
 }
-    
+
+.registrarse{
+    display: contents;
+
+}
+
+.registrarse a{
+    margin-left: 38%;
+    margin-right: 62%;
+    color: grey;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
 /*------------------generador contraseñas ----------------------*/
     
 
