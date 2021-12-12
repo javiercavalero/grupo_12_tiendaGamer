@@ -1,5 +1,5 @@
 footer { 
-    background-color: #42DDF5;
+    background-color: #c9c8c8;
     width: 100%;
     padding: 10px;
     margin-top: 10px;
@@ -52,7 +52,6 @@ footer .logos .instagram{
 /* tablet */
 @media (min-width:768px) {
  footer {
-        background-color: #42DDF5;
         margin-top: 10px;
         display: flex;
         flex-wrap: wrap;

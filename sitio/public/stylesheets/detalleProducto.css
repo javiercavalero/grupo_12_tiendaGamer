@@ -15,7 +15,6 @@
 .body-product-detail .product{
     display:flex;
     flex-wrap: wrap;
-    border: 20px solid #EBEBEB;
     text-align:center;
 }
 
@@ -23,6 +22,13 @@
     font-size: 27px;
     font-weight: 600;
     margin: 3px;
+}
+
+.body-product-detail main section{
+    background-color: #fafafa;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .body-product-detail main section div ul{

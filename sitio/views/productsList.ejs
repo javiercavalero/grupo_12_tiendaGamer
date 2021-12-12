@@ -1,31 +1,40 @@
 <%- include('./partials/head', {title: 'products list' }) %>
 
-    <body>
+    <body class="products-list">
         <%- include('./partials/header') %>
 
-            <div>
-                <h3>Listado de productos</h3>
-                <main>
-                    <% products.forEach(product=> { %>
-                        <div>
-                            <a href="/products/detail/<%= product.id %> "><img src="/images/products/<%= product.image %>"
-                                    alt=""></a>
-                            <% if (product.discount> 0) { %>
-                                <h2>$<%= toDiscount(product.price, product.discount)%>
-                                </h2>
-                                <span>
-                                    <%= product.discount %> % OFF
-                                </span>
-                                <% } else { %>
-                                    <h2>$<%= toThousand(product.price)%>
-                                    </h2>
-                                    <% } %>
-                                        <h2>
-                                            <%= product.name %>
-                                        </h2>
-                        </div>
-                        <% }) %>
-                </main>
-            </div>
+        <div class="container">
+            <% products.forEach(product=> { %>
+              <div class="list">
+                <div class="product"><a href="/products/detail/<%= product.id %> ">
+                    <img src="/images/products/<%= product.image %> " alt=""></a>
+  
+  
+                    <div class="products-title">
+                      <h2>
+                        <%= product.name %>
+                      </h2>
+      
+                      <% if (product.discount> 0) { %>
+                        <h2>$<%= toDiscount(product.price, product.discount)%>
+                        </h2>
+                        <span>
+                          <%= product.discount %> % OFF
+                        </span>
+                        <% } else { %>
+                          <h2>$<%= toThousand(product.price)%>
+                          </h2>
+                          <% } %>
+      
+                            <div class="carrito-compra"><a href="/carrito"><i class="fas fa-cart-plus"></i>
+                              </a>
+                            </div>
+                    </div>
+                  
+  
+                </div>
+              </div>
+              <% }) %>
+          </div>
 
     </body>
