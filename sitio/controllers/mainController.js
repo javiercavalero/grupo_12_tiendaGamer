@@ -1,7 +1,7 @@
 const toDiscount = require("../utils/toDiscount");
 const toThousand = require("../utils/toThousand");
 const db = require("../database/models");
-const { Op,Sequelize } = require('sequelize');
+const { Op, Sequelize } = require('sequelize');
 
 module.exports = {
   index: (req, res) => {
@@ -35,6 +35,28 @@ module.exports = {
       })
       .catch((error) => console.log(error));
   },
+  search: (req, res) => {
+
+    let products = db.Product.findAll({
+        where: {
+          name: {
+            [Op.substring]: req.query.keyword
+        }
+        },
+        include: ["Category"],
+    })
+    let categories = db.Category.findAll()
+
+    Promise.all([products, categories])
+
+        .then(([products, categories ]) => {
+            return res.render('searchAdmin.ejs', {
+                products,
+                categories
+            })
+        })
+        .catch(error => console.log(error))
+},
 
   carrito: (req, res) => {
     return res.render("carrito");

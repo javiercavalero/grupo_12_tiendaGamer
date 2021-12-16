@@ -16,10 +16,10 @@ module.exports = {
         type: Sequelize.DECIMAL(8,2),
         allowNull: false
       },
-     discount:{
-      type: Sequelize.DECIMAL(8,2),
-      allowNull: false,
-      defaultValue: 0
+     discount: {
+        type: Sequelize.DECIMAL(8,2),
+        allowNull: false,
+        defaultValue: 0
      },
 
       description: {
