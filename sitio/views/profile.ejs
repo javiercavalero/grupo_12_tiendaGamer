@@ -46,6 +46,8 @@
                                     <div class="mb-3">
                                         <label for="avatar" class="btn btn-outline-secondary w-100 mt-2">Subir imagen de perfil</label>
                                         <input hidden class="form-control" type="file" id="avatar" name="avatar">
+                                        <span id="imageError" class="text-danger small ms-2"><%= locals.errors && errors.image ? errors.image.msg : null%> </span>
+
                                       </div>
                                    </div>
                                     <div class="col-12 mt-5">
