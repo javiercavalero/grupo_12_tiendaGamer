@@ -1,12 +1,14 @@
 const toDiscount = require("../utils/toDiscount");
 const toThousand = require("../utils/toThousand");
 const db = require("../database/models");
+const { Op,Sequelize } = require('sequelize');
 
 module.exports = {
   index: (req, res) => {
     let products = db.Product.findAll({
-      limit: 8,
+      limit: 12,
       include: ["Category"],
+      order : Sequelize.literal('rand()'),
     })
     .then((products) => {
       return res.render("index", {

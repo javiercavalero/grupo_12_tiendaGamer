@@ -1,5 +1,6 @@
 header{
-    background-color: #6868AC;
+    background-color: #702286
+;
     width:100%;
     padding: 10px;
 }
@@ -15,6 +16,7 @@ header .carrito-login i{
 
 header a{
     text-decoration: none;
+    color: white
 }
 
  header nav .busqueda {
@@ -30,6 +32,8 @@ header a{
 
  header nav .logo img{
     width: 100%;
+        color: white;
+
 }
  header nav .busqueda input {
     width: 100%;
@@ -48,6 +52,7 @@ header a{
 
 header nav .enlaces .ingresar, .registrarse{
     display: none;
+    
 }
 
 header nav .enlaces{
@@ -125,6 +130,7 @@ header nav .enlaces{
     }
     header nav .enlaces .users .ingresar, .registrarse{
         display: none;
+
     }
     
     header nav .enlaces{
@@ -175,12 +181,12 @@ header div.bars{
     }
  header nav .enlaces .registrarse a{
         margin-left: 90px;
-        color: #595355;
+        color: white;
         font-weight: lighter;
     }
 
  header nav .enlaces .ingresar a{
-        color: #595355;        
+        color: white;        
     }
  header nav .carrito-login {
         display: none;

@@ -1,40 +1,45 @@
 <%- include('./partials/head', {title: 'products list' }) %>
 
-    <body class="products-list">
-        <%- include('./partials/header') %>
+  <body class="home">
+    <%- include('./partials/header') %>
 
-        <div class="container">
+      <main>
+        <div class="destacados">
+          <h3>Listado de todos los productos</h3>
+          <div class="conteiner">
             <% products.forEach(product=> { %>
-              <div class="list">
-                <div class="product"><a href="/products/detail/<%= product.id %> ">
+              <div class="img-destacadas">
+                <div class="img1"><a href="/products/detail/<%= product.id %> ">
                     <img src="/images/products/<%= product.image %> " alt=""></a>
-  
-  
-                    <div class="products-title">
-                      <h2>
-                        <%= product.name %>
+
+
+                  <div class="products-title">
+                    <h2>
+                      <%= product.name %>
+                    </h2>
+
+                    <% if (product.discount> 0) { %>
+                      <h2>$<%= toDiscount(product.price, product.discount)%>
                       </h2>
-      
-                      <% if (product.discount> 0) { %>
-                        <h2>$<%= toDiscount(product.price, product.discount)%>
+                      <span>
+                        <%= product.discount %> % OFF
+                      </span>
+                      <% } else { %>
+                        <h2>$<%= toThousand(product.price)%>
                         </h2>
-                        <span>
-                          <%= product.discount %> % OFF
-                        </span>
-                        <% } else { %>
-                          <h2>$<%= toThousand(product.price)%>
-                          </h2>
-                          <% } %>
-      
-                            <div class="carrito-compra"><a href="/carrito"><i class="fas fa-cart-plus"></i>
-                              </a>
-                            </div>
-                    </div>
-                  
-  
+                        <% } %>
+
+                          <div class="carrito-compra"><a href="/carrito"><i class="fas fa-cart-plus"></i>
+                            </a>
+                          </div>
+                  </div>
+
+
                 </div>
               </div>
               <% }) %>
           </div>
+        </div>
+      </main>
 
-    </body>
+  </body>

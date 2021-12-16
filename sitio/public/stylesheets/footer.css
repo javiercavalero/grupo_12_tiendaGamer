@@ -1,14 +1,17 @@
 footer { 
-    background-color: #c9c8c8;
+    background-color: #702286
+;
     width: 100%;
     padding: 10px;
     margin-top: 10px;
 }
  footer .listas {
     display: none;
+
 }
  footer h3 {
     display: none;
+    color: white
 }
 footer .logos{
     display: flex;
@@ -83,8 +86,9 @@ footer .listas li a {
         display: flex;
         justify-content: left;
         font-size: 20px;
-        color: #000000;
+        color: white;
         margin-left: 0px;
+        text-decoration: none;
     }
  footer .listas .marcas{
         width: 15%;
