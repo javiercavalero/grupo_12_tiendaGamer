@@ -64,6 +64,7 @@
                         <div class="mb-3 ">
                           <label for="image" class="btn btn-outline-info w-100 ">Subir imagen</label>
                           <input name="image" hidden class="form-control" type="file" id="image">
+                          <span id="imageError" class="text-danger small ms-2"><%= locals.errors && errors.image ? errors.image.msg : null%> </span>
                         </div>
                       </div>
                       

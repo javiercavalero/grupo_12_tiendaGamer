@@ -180,13 +180,22 @@ module.exports = {
                 image: req.file ? req.file.filename : 'default.jpg' ,
                 categoryId: category
             })
-            
+            .then(product => {
+                if(req.files[0] != undefined) {
 
-                .then(product => {
-                    return res.redirect('/products/list')
-                })
-                .catch(error => console.log(error))
-
+                    let images = req.files.map(image => {
+                        let img = {
+                            file : image.filename,
+                            productId : product.id
+                        }
+                        return img
+                    });
+                    db.Image.bulkCreate(images, {validate : true})
+                        .then( () => console.log('imagenes agregadas'))
+                }
+                return res.redirect('/admin')
+            })
+            .catch(error => console.log(error))
         } else {
             db.Category.findAll()
             .then(categories => {
