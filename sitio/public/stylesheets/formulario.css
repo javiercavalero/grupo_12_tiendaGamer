@@ -19,7 +19,7 @@ div.col-12{
     margin-left: 20px;
 }
 
-input#name.form-control{
+input .name{
     padding: 40px;
 }
 
@@ -67,13 +67,14 @@ div.card{
 .registro-login  .container-buttons button{
    background-color: white;
    border-radius: solid 5px white;
-   border-radius: 5px;
    font-weight: 900;
    padding: 8px;
-   box-shadow: 2px 2px #ebebeb;
    border: none;
    margin-top: 10px;
    font-size: 15px;
+}
+.registro-login  .container-buttons button:hover{
+    background-color: #37c733;
 }
 
     
@@ -99,6 +100,16 @@ div.card{
 
 /*------------------generador contraseñas ----------------------*/
     
+.registro-login main .contenedor .botons button {
+    width: 100px;
+    border-radius: 10px;
+}
+.registro-login main .contenedor .botons button:hover {
+    background-color: #37c733;
+}
+
+
+
 
 .container{
     display: flex; flex-direction: column;
