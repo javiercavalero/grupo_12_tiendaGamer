@@ -8,7 +8,7 @@ const name = $('name');
 const password = $('password');
 
 //expresiones regulares
-const regExPassword = /^[a-zA-Z0-9!@#$%^&*]{8,20}$/;
+
 const regExName =  /^[_A-zA-Z]*((-|\s)*[_A-zA-Z])*$/
 
 
@@ -47,21 +47,3 @@ password.addEventListener('keydown', function () {
     $('error-password').innerText = null;
 });
 
-password.addEventListener('blur', function () {
-    switch (true) {
-        case !this.value:
-            $('error-password').innerText = 'La contraseña es requerida';
-            this.classList.add('is-invalid');
-            break;
-            case !regExPassword.test(this.value): 
-            $('error-password').innerText = 'La contraseña no es válida';
-            this.classList.add('is-invalid');
-
-            break;
-        default:
-            $('error-password').innerText = null;
-            this.classList.remove('is-invalid');
-            this.classList.add('is-valid');
-            break;
-    }
-});

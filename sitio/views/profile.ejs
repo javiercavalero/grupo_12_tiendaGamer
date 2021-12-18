@@ -1,71 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('./partials/head',{title : 'Perfil de usuario'}) %> 
+  <%- include('./partials/head',{title : 'Perfil de usuario' }) %>
 
-<body class="bg-light">
-  <%- include('./partials/header') %> 
+  <body class="bg-light">
+    <%- include('./partials/header') %>
 
     <main class="container">
-        <div class="row">
-            <div class="col-12 col-md-10 col-lg-8 mt-5 mx-auto">
-                <div class="card">
-                    <div class="card-header text-light bg-dark">
-                        <h4>Perfil de usuario</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            
-                            <div class="col-12 col-md-8">
-                                <form class="row" method="POST" enctype="multipart/form-data"  autocomplete="off"> 
-                                    <div class="col-12 col-md-4">
-                                <img class="img-fluid rounded-start" src="/images/users/<%= user.avatar %>"  alt="">
-                            </div>
-                                    <div class="col-12 mb-3">
-                                        <div class="form-floating ">
-                                            <input type="text" class="form-control <%= locals.errors && errors.name ? 'is-invalid' : null %>" id="name" placeholder="Nombre " name="name" value="<%= user.name %>">
-                                            <label for="name">Nombre</label>
-                                          </div>
-                                          <span class="text-danger small ms-2"><%= locals.errors && errors.name ? errors.name.msg : null%> </span>
-                                          <span id="error-name" class="small text-info"></span>
-                                        </div>
-                                    <div class="col-12 mb-3">
-                                        <div class="form-floating ">
-                                            <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="<%= user.email %>" disabled>
-                                            <label for="email">Email</label>
-                                          </div>
-                                    </div>
-                                    <div class="col-12 mb-3">
-                                        <div class="form-floating ">
-                                            <input type="password" class="form-control <%= locals.errors && errors.contraseña ? 'is-invalid' : null %>" id="password" placeholder="Contraseña" name="contraseña" >
-                                            <label for="password">Cambiar contraseña</label>
-                                          </div>
-                                          <span class="text-danger small ms-2"><%= locals.errors && errors.contraseña ? errors.contraseña.msg : null%> </span>
-                                          <span id="error-password" class="small text-info"></span>
-                                    </div>
-                                   <div class="col-12 col-md-6">
-                                    <div class="mb-3">
-                                        <label for="avatar" class="btn btn-outline-secondary w-100 mt-2">Subir imagen de perfil</label>
-                                        <input hidden class="form-control" type="file" id="avatar" name="avatar">
-                                        <span id="imageError" class="text-danger small ms-2"><%= locals.errors && errors.image ? errors.image.msg : null%> </span>
-
-                                      </div>
-                                   </div>
-                                    <div class="col-12 mt-5">
-                                        <button type="submit" class="btn btn-outline-dark w-100">Guardar cambios</button>
-                                    </div>
-                              </form>
-                            </div>
-                        </div>
-                        
-                    </div>
-                   
-                </div>
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-8 mt-2 mx-auto">
+          <div class="card">
+            <div class="card-header text-light bg-dark" style="margin: 0;">
+              <h4 class="usuario">Perfil de usuario</h4>
             </div>
-           
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-md-8">
+                  <form
+                    class="row"
+                    method="POST"
+                    enctype="multipart/form-data"
+                    autocomplete="off"
+                  >
+                    <div class="col-12 col-md-4">
+                      <img
+                        class="img-fluid rounded-start"
+                        src="/images/users/<%= user.avatar %>"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-12 mb-3">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="
+                            form-control
+                            <%=
+                            locals.errors
+                            &&
+                            errors.name
+                            ?
+                            'is-invalid'
+                            :
+                            null
+                            %>
+                          "
+                          id="name"
+                          placeholder="Nombre "
+                          name="name"
+                          value="<%= user.name %>"
+                        />
+                        <label for="name">Nombre</label>
+                      </div>
+                      <span class="text-danger small ms-2">
+                        <%= locals.errors && errors.name ? errors.name.msg :
+                        null%>
+                      </span>
+                      <span id="error-name" class="small text-info"></span>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Email"
+                          name="email"
+                          value="<%= user.email %>"
+                          disabled
+                        />
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+                    <div class="col-12 ">
+                      <div class="form-floating">
+                        <input
+                          type="password"
+                          class="
+                            form-control
+                            <%=
+                            locals.errors
+                            &&
+                            errors.contraseña
+                            ?
+                            'is-invalid'
+                            :
+                            null
+                            %>
+                          "
+                          id="password"
+                          placeholder="Contraseña"
+                          name="contraseña"
+                        />
+                        <label for="password">Cambiar contraseña</label>
+                      </div>
+                      <span class="text-danger small ms-2">
+                        <%= locals.errors && errors.contraseña ?
+                        errors.contraseña.msg : null%>
+                      </span>
+                      <span id="error-password" class="small text-info"></span>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div>
+                        <label
+                          for="avatar"
+                          class="btn btn-outline-secondary w-100 mt-2"
+                          >Subir imagen de perfil</label
+                        >
+                        <input
+                          hidden
+                          class="form-control"
+                          type="file"
+                          id="avatar"
+                          name="avatar"
+                        />
+                        <span id="imageError" class="text-danger small ms-2">
+                          <%= locals.errors && errors.image ? errors.image.msg :
+                          null%>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                      <button type="submit" class="btn btn-outline-dark w-100">
+                        Guardar cambios
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
-    <%- include('./partials/scripts') %> 
-<script src="/javascript/profile.js"></script>
-</body>
+    <%- include('./partials/scripts') %>
+    <script src="/javascript/profile.js"></script>
+  </body>
 </html>

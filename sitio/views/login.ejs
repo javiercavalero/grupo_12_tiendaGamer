@@ -35,8 +35,13 @@
         
         <!--Botones-->
         <div class='container-buttons'>
+           <button type="button" id='cancelar' onclick="location.href='/'"> Cancelar </button>
           <button type="submit"> Ingresar </button>
         </div>
+       <div class="d-flex mt-3">
+         <h6>No tenes una cuenta?</h6>   
+         <a href="/users/register">Registrate</a>
+       </div> 
       </form>
 
       
@@ -44,9 +49,7 @@
 
   </main>
 
-  <li class="registrarse">
-    <a href="/users/register">Registrarse</a>
-  </li>
+  
 
   <%-include('./partials/footer') %>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
