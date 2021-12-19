@@ -4,13 +4,13 @@ const registerValidator = require('../validations/registerValidator');
 const loginValidator = require('../validations/loginValidator');
 const profileValidator = require('../validations/profileValidator');
 const upload = require('../middlewares/multerImageCheck');
-
+const userLoginCheck = require('../middlewares/userLoginCheck')
+const userCheck = require('../middlewares/userCheck')
 
 
 const {login,register, processRegister, processLogin,logout,profile,update } =  require('../controllers/userController');
 
-const userLoginCheck = require('../middlewares/userLoginCheck')
-const userCheck = require('../middlewares/userCheck')
+
 
 /* GET users listing.
 Empieza con /users */

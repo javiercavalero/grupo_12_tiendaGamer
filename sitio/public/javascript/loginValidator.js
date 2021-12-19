@@ -14,7 +14,7 @@ const inputPassword = $('password');
 
 //expresiones regulares
 const regExEmail= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
-const regExPassword = /^[a-zA-Z0-9!@#$%^&*]{8,20}$/;
+const regExPassword = /^[\s\S]{8,20}$/
 
 //funcion para validar el email 
 
@@ -48,7 +48,7 @@ inputEmail.addEventListener('blur', function () {
 //funcion para validar el password
 
 inputPassword.addEventListener('focus', function () {
-    $('error-password').innerText = 'Ingrese una contraseña entre 8 y 20 caracteres';
+    $('error-password').innerText = 'Ingrese su contraseña';
 });
 
 inputPassword.addEventListener('keydown', function () {
@@ -60,11 +60,6 @@ inputPassword.addEventListener('blur', function () {
         case !this.value:
             $('error-password').innerText = 'La contraseña es requerida';
             this.classList.add('is-invalid');
-            break;
-            case !regExPassword.test(this.value): 
-            $('error-password').innerText = 'La contraseña no es válida';
-            this.classList.add('is-invalid');
-
             break;
         default:
             $('error-password').innerText = null;
