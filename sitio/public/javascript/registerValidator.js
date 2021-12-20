@@ -4,7 +4,7 @@ const $ = id => document.getElementById(id);
 
 //expresiones regulares
 const regExEmail = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]:+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/ 
-const regExLetras = /^[_A-zA-Z]*((-|\s)*[_A-zA-Z])*$/
+const regExLetras = /^[a-z ,.'-]+$/i
 const regExPassword = /^[\s\S]{8,20}$/
 
 
@@ -151,7 +151,7 @@ formulario.addEventListener('submit', e => {
             $('error-empty').innerText = "Los campos señalados son obligatorios";
             error = true;
         }
-        else{
+        if(!error){
         formulario.submit()
     }
     }

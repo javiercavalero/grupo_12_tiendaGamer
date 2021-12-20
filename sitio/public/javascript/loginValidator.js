@@ -5,8 +5,6 @@ const $ = id => document.getElementById(id);
 //capturar elementos del formulario
 const form = $('form-login');
 
-const elements = form.elements;
-
 
 //capturar inputs del formulario
 const inputEmail = $('email');
@@ -68,3 +66,25 @@ inputPassword.addEventListener('blur', function () {
             break;
     }
 });
+
+form.addEventListener('submit', e => {
+    
+    e.preventDefault();
+    
+    let error = false;
+    const elementos = form.elements;
+    
+    for (let i = 0; i < elementos.length - 1; i++) {
+        
+        if(!elementos[i].value){
+            elementos[i].classList.add('is-invalid');
+            $('error-empty').innerText = "Los campos señalados son obligatorios";
+            error = true;
+        }
+        if(!error){
+        form.submit()
+    }
+    }
+    
+
+})
