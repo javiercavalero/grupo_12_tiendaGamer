@@ -7,6 +7,18 @@
     
 
 }
+
+.home .no-results{
+    margin-top: 140px;
+    margin-bottom: 140px;
+    text-align: center;
+    
+}
+
+.home .no-results h2{
+    font-weight: 900;
+}
+
 .fa-cart-plus:before {
     content: "\f217";
     color: #3b85f6;

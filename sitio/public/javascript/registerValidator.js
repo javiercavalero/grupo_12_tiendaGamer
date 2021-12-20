@@ -4,13 +4,12 @@ const $ = id => document.getElementById(id);
 
 //expresiones regulares
 const regExEmail = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]:+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/ 
-const regExLetras = /^[_A-zA-Z]*((-|\s)*[_A-zA-Z])*$/
+const regExLetras = /^[a-z ,.'-]+$/i
 const regExPassword = /^[\s\S]{8,20}$/
 
-const formulario = $('form-register');
 
-const elementos = formulario.elements;
 
+const formulario = $('form-register')
 const inputName = $('name');
 const inputEmail = $('email');
 const inputPassword = $('password');
@@ -137,3 +136,26 @@ inputPassword.addEventListener('blur', function () {
             break;
     }
 });
+
+formulario.addEventListener('submit', e => {
+    
+    e.preventDefault();
+    
+    let error = false;
+    const elementos = formulario.elements;
+    
+    for (let i = 0; i < elementos.length - 1; i++) {
+        
+        if(!elementos[i].value){
+            elementos[i].classList.add('is-invalid');
+            $('error-empty').innerText = "Los campos señalados son obligatorios";
+            error = true;
+        }
+        if(!error){
+        formulario.submit()
+    }
+    }
+    
+
+})
+

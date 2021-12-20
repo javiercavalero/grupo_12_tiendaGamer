@@ -1,51 +1,54 @@
 <%-include('./partials/head', {title : 'Resultados de tu búsqueda' }) %>
 
-    <body class="home">
-        <%- include('./partials/header') %>
+  <body class="home">
+    <%- include('./partials/header') %>
 
-<main>
+      <main>
+        <div class="destacados">
+          <h3>Resultados de tu búsqueda:</h3>
+          <div class="conteiner">
+            <%if (products.length> 0) {%>
+              <% products.forEach(product=> { %>
+                <div class="img-destacadas">
+                  <div class="img1">
+                    <a href="/products/detail/<%= product.id %> ">
+                      <img src="/images/products/<%= product.image %> " alt="" /></a>
+                    <div class="products-title">
+                      <h2>
+                        <%= product.name %>
+                      </h2>
 
-            <div class="destacados">
-                <h3>Resultados de tu búsqueda:</h3>
-                <div class="conteiner">
-                    <% products.forEach(product=> { %>
-                        <div class="img-destacadas">
-                            <div class="img1"><a href="/products/detail/<%= product.id %> ">
-                                    <img src="/images/products/<%= product.image %> " alt=""></a>
+                      <% if (product.discount> 0) { %>
+                        <h2>$<%= toDiscount(product.price, product.discount)%>
+                        </h2>
+                        <span>
+                          <%= product.discount %> % OFF
+                        </span>
+                        <% } else { %>
+                          <h2>$<%= toThousand(product.price)%>
+                          </h2>
+                          <% } %>
 
-            
-
-                                <div class="products-title">
-                                    <h2>
-                                        <%= product.name %>
-                                    </h2>
-
-                                    <% if (product.discount> 0) { %>
-                                        <h2>$<%= toDiscount(product.price, product.discount)%>
-                                        </h2>
-                                        <span>
-                                            <%= product.discount %> % OFF
-                                        </span>
-                                        <% } else { %>
-                                            <h2>$<%= toThousand(product.price)%>
-                                            </h2>
-                                            <% } %>
-
-                                                <div class="carrito-compra"><a href="/carrito"><i
-                                                            class="fas fa-cart-plus"></i>
-                                                    </a>
-                                                </div>
-                                </div>
-
-
-                        <% }) %>
-                        
+                            <div class="carrito-compra">
+                              <a href="/carrito"><i class="fas fa-cart-plus"></i> </a>
+                            </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </main>
+                <% }) %>
+                  <% }else{ %>
+                    <div class="no-results">
+                      <h2 class="products-title" style="color: red;">No hay productos que coincidan con tu búsqueda.
+                      </h2>
+                    </div>
+                    <% } %>
+          </div>
+        </div>
 
 
-<footer>
-    <%- include('./partials/footer') %>
-</footer>
-    </body> 
+      </main>
+
+      <footer>
+        <%- include('./partials/footer') %>
+      </footer>
+  </body>

@@ -10,7 +10,7 @@
 
   <main>
 
-
+ 
 
     <div class='contenedor'>
       <form class="form" id="form-login" action="" method="POST" >
@@ -28,7 +28,9 @@
         <div > 
           <span class="text-danger small ms-2 fs-32px"><%= locals.errores && errores.email ? errores.email.msg : null%> </span>
         </div>
-       
+        <div class="box-form">
+          <span id="error-empty" class="small text-danger"></span>
+      </div>
         <input type="checkbox" id="remember" name="remember" id="remember">
         <label for="remember">Recordarme</label>
 
