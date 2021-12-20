@@ -197,19 +197,25 @@ module.exports = {
             })
             .catch(error => console.log(error))
         } else {
+            errors = errors.mapped()
+
+            if (req.fileValidationError) {
+                errors = {
+                    ...errors,
+                    image: {
+                        msg: req.fileValidationError,
+                    },
+                };
+            }
             db.Category.findAll()
             .then(categories => {
- //               return res.send(categories) 
-                res.render('productAdd', {
+                return res.render('productAdd', {
                     categories,
-                    errors: errors.mapped(),
+                    firstLetter,
+                    errors,
                     old: req.body
-    
-                }
-
-                )
-             
-            })
+                })
+            })           
           .catch( error => {
               console.log(error)
           })

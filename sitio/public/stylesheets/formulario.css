@@ -4,7 +4,9 @@ div.row{
 }
 div.card-header{
     margin-top: 60px;
-
+}
+h4.usuario{
+   color: white; 
 }
 form.row{
     padding: 0px;
@@ -19,18 +21,20 @@ div.col-12{
     margin-left: 20px;
 }
 
-input#name.form-control{
+input .name{
     padding: 40px;
 }
 
 div.card{
-    margin-top: 60px;
     margin-bottom: 50px;
 }
-
+.registro-login a{
+ text-decoration: none;
+}
 
 .registro-login {
-    background-color: #ebebeb;
+    background-color: hsl(0, 0%, 92%);
+   
 }
 .registro-login .contenedor {
     width: 90%;
@@ -39,11 +43,12 @@ div.card{
     border-radius: 10px;
     padding-bottom: 39px;
     padding-top: 39px;
-    box-shadow: black;
+    
     background-color: #c9c8c8;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 70px;
+    box-shadow: 0 3px 10px rgb(0 0 0 );
 }
     
 .registro-login .contenedor form {
@@ -62,19 +67,41 @@ div.card{
     font-weight: 900;
     padding: 10px;
     width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 40%);
 }
 
+.registro-login  .container-buttons{
+display: flex;
+justify-content: space-evenly;
+
+}
 .registro-login  .container-buttons button{
-   background-color: white;
+   background-color: rgb(0, 192, 0);
    border-radius: solid 5px white;
-   border-radius: 5px;
    font-weight: 900;
    padding: 8px;
-   box-shadow: 2px 2px #ebebeb;
    border: none;
    margin-top: 10px;
    font-size: 15px;
+   color: white;
 }
+.registro-login  .container-buttons button:hover{
+    background-color: green;
+}
+
+.registro-login  .container-buttons button#cancelar{
+    background-color: rgb(255, 62, 62);
+    border-radius: solid 5px white;
+    font-weight: 900;
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+ }
+ .registro-login  .container-buttons button#cancelar:hover{
+     background-color: red;
+ }
 
     
 .fuente2{
@@ -99,6 +126,16 @@ div.card{
 
 /*------------------generador contraseñas ----------------------*/
     
+.registro-login main .contenedor .botons button {
+    width: 100px;
+    border-radius: 10px;
+}
+.registro-login main .contenedor .botons button:hover {
+    background-color: #37c733;
+}
+
+
+
 
 .container{
     display: flex; flex-direction: column;

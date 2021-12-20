@@ -5,7 +5,7 @@ const $ = id => document.getElementById(id);
 //expresiones regulares
 const regExEmail = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]:+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/ 
 const regExLetras = /^[_A-zA-Z]*((-|\s)*[_A-zA-Z])*$/
-
+const regExPassword = /^[\s\S]{8,20}$/
 
 const formulario = $('form-register');
 
@@ -15,6 +15,7 @@ const inputName = $('name');
 const inputEmail = $('email');
 const inputPassword = $('password');
 const inputUsername = $('username');
+const buttonSend= $('enviar');
 
 
 /*name*/
@@ -22,7 +23,7 @@ const inputUsername = $('username');
 inputName.addEventListener('focus', function() {
     $('info-name').innerText = "Solo letras"
     $('error-name').innerText = null;
-    this.classList.remove('is-invalid');
+    this.classList.remove('is-valid');
 })
 
 inputName.addEventListener('keydown', function() {
@@ -33,10 +34,11 @@ inputName.addEventListener('blur', function() {
     switch (true) {
         case !this.value :
             $('error-name').innerText = "El nombre es requerido";
-            this.classList.add('is-invalid')
+            this.classList.add('is-invalid');
+            $('info-name').innerText = null;
             break;
         case !regExLetras.test(this.value) :
-            $('error-name').innerText = "Solo se permiten letras";
+            $('error-name').innerText = "Solo se permiten letras sin espacios al final";
             this.classList.add('is-invalid');
             break;
         default:
@@ -47,54 +49,57 @@ inputName.addEventListener('blur', function() {
     }
 })
 
-/*username
+/* username */
 
 inputUsername.addEventListener('focus', function() {
-    $('info-name').innerText = "Solo letras"
-    $('error-name').innerText = null;
-    this.classList.remove('is-invalid');
+    $('info-username').innerText = "Solo letras"
+    $('error-username').innerText = null;
+    this.classList.remove('is-valid');
 })
 
-inputName.addEventListener('keydown', function() {
-    $('info-name').innerText = null
+inputUsername.addEventListener('keydown', function() {
+    $('info-username').innerText = null
 })
 
-inputName.addEventListener('blur', function() {
+inputUsername.addEventListener('blur', function() {
     switch (true) {
         case !this.value :
-            $('error-name').innerText = "El nombre es requerido";
-            this.classList.add('is-invalid')
+            $('error-username').innerText = "El nombre de usuario es requerido";
+            this.classList.add('is-invalid');
+            $('info-username').innerText = null;
             break;
         case !regExLetras.test(this.value) :
-            $('error-name').innerText = "Solo se permiten letras";
+            $('error-username').innerText = "Solo se permiten letras sin espacios al final";
             this.classList.add('is-invalid');
             break;
         default:
-            $('error-name').innerText = null;
+            $('error-username').innerText = null;
             this.classList.remove('is-invalid');
             this.classList.add('is-valid');
             break;
     }
-})*/
-
+})
 /*mail*/
 
 
-inputEmail.addEventListener('focus', function() {
-    $('info-email').innerText = "Escriba un email válido"
-    $('error-email').innerText = null;
-    this.classList.remove('is-invalid');
-})
+inputEmail.addEventListener('focus', function () {
+    $('error-email').innerText = 'Ingrese su correo electrónico';
+});
 
-inputEmail.addEventListener('blur', async function(){
+inputEmail.addEventListener('keydown', function () {
+    $('error-email').innerText = null;
+});
+
+inputEmail.addEventListener('blur', function () {
     switch (true) {
-        case !this.value :
-            $('error-email').innerText = "El email es requerido";
-            this.classList.add('is-invalid')
-            break;
-        case !regExEmail.test(this.value) : 
-            $('error-email').innerText = "Email inválido";
+        case !this.value:
+            $('error-email').innerText = 'El correo es requerido';
             this.classList.add('is-invalid');
+            break;
+            case !regExEmail.test(this.value): 
+            $('error-email').innerText = 'El correo no es válido, agregue @ ';
+            this.classList.add('is-invalid');
+
             break;
         default:
             $('error-email').innerText = null;
@@ -102,25 +107,28 @@ inputEmail.addEventListener('blur', async function(){
             this.classList.add('is-valid');
             break;
     }
-})
+});
 
 //password
 
-inputPassword.addEventListener('focus', function() {
-    $('info-password').innerText = "Mínimo de 8 a 20 caracteres"
+inputPassword.addEventListener('focus', function () {
+    $('error-password').innerText = 'Ingrese una contraseña entre 8 y 20 caracteres';
+});
+
+inputPassword.addEventListener('keydown', function () {
     $('error-password').innerText = null;
-    this.classList.remove('is-invalid');
-})
+});
 
-inputPassword.addEventListener('keydown', function() {
-    $('info-password').innerText = null;
-})
-
-inputPassword.addEventListener('blur', function() {
+inputPassword.addEventListener('blur', function () {
     switch (true) {
-        case !this.value :
-            $('error-password').innerText = "La contraseña es requerida";
-            this.classList.add('is-invalid')
+        case !this.value:
+            $('error-password').innerText = 'La contraseña es requerida';
+            this.classList.add('is-invalid');
+            break;
+            case !regExPassword.test(this.value): 
+            $('error-password').innerText = 'La contraseña no es válida';
+            this.classList.add('is-invalid');
+
             break;
         default:
             $('error-password').innerText = null;
@@ -128,4 +136,4 @@ inputPassword.addEventListener('blur', function() {
             this.classList.add('is-valid');
             break;
     }
-})
+});

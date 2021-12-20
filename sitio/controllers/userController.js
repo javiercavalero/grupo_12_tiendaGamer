@@ -2,13 +2,10 @@ const path = require("path");
 const bcrypt = require('bcryptjs');
 const fs = require('fs');
 const db = require('../database/models')
-const {
-    validationResult
-} = require('express-validator');
-const {
-    title
-} = require("process");
-const users = require('../data/users.json')
+const {validationResult} = require('express-validator');
+const {  title } = require("process");
+
+const users = require('../data/users.json');
 
 module.exports = {
     register: (req, res) => {
@@ -122,6 +119,7 @@ module.exports = {
 
     update: (req, res) => {
         let errors = validationResult(req);
+        
         if (errors.isEmpty()) {
             db.User.update({
                     name: req.body.name,
@@ -142,13 +140,45 @@ module.exports = {
                 })
                 .catch(error => console.log(error))
 
-        } else {
-            res.render('profile', {
-                user: users.find(user => user.id === req.session.userLogin.id),
-                errors: errors.mapped()
-            })
-        }
+                .then(product => {
+                    if(req.files[0] != undefined) {
 
-
-    }
-}
+                        let images = req.files.map(image => {
+                            let img = {
+                                file : image.filename,
+                                productId : product.id
+                            }
+                            return img
+                        });
+                        db.Image.bulkCreate(images, {validate : true})
+                            .then( () => console.log('imagenes agregadas'))
+                    }
+                    return res.redirect('/profile')
+                })
+                
+            }else {  
+                if (req.fileValidationError) {
+                        errors = {
+                            ...errors,
+                            image: {
+                                msg: req.fileValidationError,
+                            },
+                        };
+                    }
+                return res.render('profile', {
+                errors,
+                old: req.body,      
+                user: users.find(user => user.id === req.session.userLogin.id)
+            }) 
+            .catch(error => console.log(error))
+                
+                    
+        
+                   
+                     
+                   
+                   
+                }
+                }
+            
+            }
