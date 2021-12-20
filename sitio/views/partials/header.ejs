@@ -16,9 +16,13 @@
     <ul class="enlaces">
       <li>
         <% if (locals.userLogin) { %>
-          <a href="#">
+          <div>
+            <img width="70" class="rounded-circle" src="/images/users/<%= locals.userLogin.avatar %> " alt="">
+                    <a href="#">
             <%= locals.userLogin.username %>
           </a>
+          </div>
+
       <li><a href="users/profile">Perfil</a></li>
       <% if (locals.userLogin.rol===2) { %>
 
