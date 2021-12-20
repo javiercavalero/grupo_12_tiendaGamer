@@ -15,7 +15,7 @@ const inputEmail = $('email');
 const inputPassword = $('password');
 const inputUsername = $('username');
 const buttonSend= $('enviar');
-
+const btnWatch = $('watch');
 
 /*name*/
 
@@ -159,3 +159,7 @@ formulario.addEventListener('submit', e => {
 
 })
 
+//ver la contraseña
+btnWatch.addEventListener('click', () => {
+    inputPassword.type === "text" ? inputPassword.type = "password" : inputPassword.type = "text";
+})
