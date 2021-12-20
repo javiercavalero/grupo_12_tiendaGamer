@@ -9,6 +9,7 @@ const form = $('form-login');
 //capturar inputs del formulario
 const inputEmail = $('email');
 const inputPassword = $('password');
+const btnWatch = $('watch');
 
 //expresiones regulares
 const regExEmail= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
@@ -87,4 +88,9 @@ form.addEventListener('submit', e => {
     }
     
 
+})
+
+//ver la contraseña
+btnWatch.addEventListener('click', () => {
+    inputPassword.type === "text" ? inputPassword.type = "password" : inputPassword.type = "text";
 })

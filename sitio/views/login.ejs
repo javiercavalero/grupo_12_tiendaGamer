@@ -21,10 +21,17 @@
           <span id="error-email" class="small text-danger"></span>
         </div>
         <!--contraseña-->
+        
         <div class='container-input'>
-          <input class="form-control" type="password" placeholder="Contraseña" name="password" id="password">
-          <span id="error-password" class="small text-danger"></span>
+          
+          <input class="form-control" type="password" placeholder="Contraseña" name="password" id="password" >
+         <span id="error-password" class="small text-danger"></span> 
+         <a class="btn btn-outline-dark ms-2" type="button" id="watch" style="width:50px" >
+            <i class="fa fa-eye"></i>
+        </a>
+        
         </div>
+        
         <div > 
           <span class="text-danger small ms-2 fs-32px"><%= locals.errores && errores.email ? errores.email.msg : null%> </span>
         </div>
