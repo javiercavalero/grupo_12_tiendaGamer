@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router(); 
 
 
-const {detail, edit, create, store, destroy,update, search, list }= require('../controllers/productController');
+const {detail, edit, create, store, destroy,update, search, list, category }= require('../controllers/productController');
 
 
 
@@ -20,6 +20,8 @@ router.get('/detail/:id', detail);
 router.get('/edit/:id',adminLoginCheck, edit);
 router.put('/update/:id', upload.single('image') ,productAddValidator , update);
 router.delete('/destroy/:id',destroy);
+
+router.get('/category/:id', category)
 
 
 module.exports = router;

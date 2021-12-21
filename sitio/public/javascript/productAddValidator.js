@@ -1,3 +1,5 @@
+//const { render } = require("ejs");
+
 console.log('productAdd success');
 const $ = id => document.getElementById(id);
 const formAddProduct = $('form-product');
@@ -100,9 +102,22 @@ formAddProduct.elements[5].addEventListener('change', function (e) {
             $('btnImagen').classList.remove('btn-outline-danger');
             imageError.innerHTML = null;
             btnImagen.innerText = "Cambiar imágenes"
-            if (this.files) {
+
+
+             //previsualizacion inicio
+
+             var reader = new FileReader();
+             reader.readAsDataURL(e.target.files[0])
+             render.onload = () => {
+             $('img-product').src = render.result
+             }
+ 
+             //previsualizacion fin
+
+          /*   if (this.files) {
                 [].forEach.call(this.files, readAndPreview);
             }
+           
 
             function readAndPreview(file) {
 
@@ -117,8 +132,10 @@ formAddProduct.elements[5].addEventListener('change', function (e) {
                 });
                 reader.readAsDataURL(file);
 
-            }
+            } */
             break;
+
+            
     }
 })
 

@@ -1,7 +1,7 @@
 console.log('productEdit.js success');
 
-const preview = document.getElementById('preview');
 
+const preview = document.getElementById('preview');
 
 const showPreview = array => {
     preview.innerHTML = null;

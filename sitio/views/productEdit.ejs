@@ -11,6 +11,9 @@
                 <div class="card-header bg-info"> 
                      <h2>Editar producto</h2>
                 </div>
+                <div>
+                  <img id="img-product" class="w-100" src="/images/products/<%= product.image %>" alt="">
+                </div>
               <div class="card-body">                           
                     <form action="/products/update/<%= product.id %>?_method=PUT" class="row" method="POST" enctype="multipart/form-data" id="form-product">
 
@@ -53,7 +56,7 @@
                           <select class="form-select <%= locals.errors && errors.category ? 'is-invalid' : null %>" id="category" aria-label="Floating label select example" name="category">
                             <option value="" selected hidden>Elegí la categoría</option>
                             <% categories.forEach(category => { %>
-                             <option value="<%= category.id %>" <%= locals.old && old.category.id === category.id  ? 'selected' : null%> > <%= category.name %>  </option>
+                             <option value="<%= category.id %>" <%= locals.old && old.category.id === category.id  ? 'selected' : category.id == product.categoryId ? 'selected' : null %> > <%= category.name %>  </option>
                             <% }) %>
                           </select>
                           <label for="category">Categoría</label>
@@ -62,7 +65,7 @@
                       </div>
                       <div class="col-12 col-md-6">
                         <div class="mb-3 ">
-                          <label for="image" class="btn btn-outline-info w-100 ">Subir imagen</label>
+                          <label id="btnImagen" for="image" class="btn btn-outline-info w-100 ">Subir imagen</label>
                           <input name="image" hidden class="form-control" type="file" id="image">
                           <span id="imageError" class="text-danger small ms-2"><%= locals.errors && errors.image ? errors.image.msg : null%> </span>
                         </div>

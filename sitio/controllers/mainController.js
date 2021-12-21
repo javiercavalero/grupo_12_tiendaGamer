@@ -10,9 +10,13 @@ module.exports = {
       include: ["Category"],
       order : Sequelize.literal('rand()'),
     })
-    .then((products) => {
+    let categories = db.Category.findAll();
+
+    Promise.all([products, categories])
+    .then(([products, categories]) => {
       return res.render("index", {
         products,
+        categories,
         toThousand,
         toDiscount,
       });

@@ -1,8 +1,25 @@
 [
-   {"id":1,
-    "name": "nuevo"},
-   {"id":2,
-    "name":"gratis"},
-   {"id":3,
-    "name":"oferta"}
+   {"icon":"fas fa-sd-card",
+    "name":"almacenamiento"},
+
+    {"icon":"fas fa-gamepad",
+    "name":"consolas"},
+
+    {"icon":"fas fa-desktop",
+    "name":"notebooks"},
+
+    {"icon":"fas fa-headphones",
+    "name":"auriculares"},
+
+    {"icon":"fas fa-desktop",
+    "name":"monitores"},
+
+    {"icon":"fas fa-microphone",
+    "name":"audio"},
+    
+    {"icon":"fas fa-mouse",
+    "name":"mouses"},
+
+    {"icon":"fab fa-usb",
+    "name":"usb"}
 ]

@@ -181,7 +181,7 @@ module.exports = {
                 categoryId: category
             })
             .then(product => {
-                if(req.files[0] != undefined) {
+                if(req.file[0] != undefined) {
 
                     let images = req.files.map(image => {
                         let img = {
@@ -237,7 +237,24 @@ module.exports = {
             return res.redirect('/admin')
         })
         .catch(error => console.log(error)
-        )}
+        )},
+    
+    category: (req,res) => {
+        db.Product.findAll({
+            where: {
+                categoryId: req.params.id
+            }
+        })
+        .then(products => {
+           // return res.send(products)
+            return res.render('results', {
+                products,
+                toThousand,
+                toDiscount
+            })
+        })
+        .catch(error => console.log(error))
+    }
        
       
 }

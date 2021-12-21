@@ -2,8 +2,8 @@ const path = require("path");
 const bcrypt = require('bcryptjs');
 const fs = require('fs');
 const db = require('../database/models')
-const {validationResult} = require('express-validator');
-const {  title } = require("process");
+const { validationResult } = require('express-validator');
+const { title } = require("process");
 
 const users = require('../data/users.json');
 
@@ -25,13 +25,13 @@ module.exports = {
                 username
             } = req.body;
             db.User.create({
-                    name: name.trim(),
-                    email: email.trim(),
-                    username: username.trim(),
-                    password: bcrypt.hashSync(password, 10),
-                    avatar: 'default.jpg',
-                    rolId: 1
-                })
+                name: name.trim(),
+                email: email.trim(),
+                username: username.trim(),
+                password: bcrypt.hashSync(password, 10),
+                avatar: 'default.jpg',
+                rolId: 1
+            })
                 .then(user => {
                     req.session.userLogin = {
                         id: user.id,
@@ -62,7 +62,7 @@ module.exports = {
     processLogin: (req, res) => {
         let errors = validationResult(req);
 
-        
+
         if (errors.isEmpty()) {
 
             db.User.findOne({
@@ -80,8 +80,8 @@ module.exports = {
                 if (req.body.remember) {
                     res.cookie('zukuna',
                         req.session.userLogin, {
-                            maxAge: 6000
-                        })
+                        maxAge: 6000
+                    })
                 }
                 return res.redirect('/')
             })
@@ -100,8 +100,8 @@ module.exports = {
             req.session.destroy()
             res.cookie('zukuna',
                 '', {
-                    maxAge: -1
-                })
+                maxAge: -1
+            })
         }
         res.redirect('/')
     },
@@ -117,68 +117,59 @@ module.exports = {
     },
 
 
-    update: (req, res) => {
+    update: async (req, res) => {
         let errors = validationResult(req);
-        
-        if (errors.isEmpty()) {
-            db.User.update({
+
+        if (errors.isEmpty() && !req.fileValidationError) {
+
+            try {
+                let user = await db.User.findByPk(req.session.userLogin.id)
+
+                let userResult = await db.User.update({
                     name: req.body.name,
                     avatar: req.file ? req.file.filename : req.session.userLogin.avatar,
                 }, {
                     where: {
                         id: req.session.userLogin.id
                     }
-                }, ).then(async () => {
-                    if (req.file) {
-                        if (fs.existsSync(path.join(__dirname, '../public/images/users/' + user.avatar)) && user.avatar != "default.png") {
-                            fs.unlinkSync(path.join(__dirname, '../public/images/users/' + user.avatar))
-                        }
-                        req.session.userLogin.avatar = req.file.filename
-                    }
-                    req.session.userLogin.name = req.body.name
-                    return res.redirect('/users/profile')
                 })
-                .catch(error => console.log(error))
 
-                .then(product => {
-                    if(req.files[0] != undefined) {
+                if (req.file) {
+                    if (fs.existsSync(path.join(__dirname, '../public/images/users/' + user.avatar)) && user.avatar != "default.png") {
+                        fs.unlinkSync(path.join(__dirname, '../public/images/users/' + user.avatar))
+                    }
+                    req.session.userLogin.avatar = req.file.filename
+                }
+                req.session.userLogin.name = req.body.name
+                return res.redirect('/users/profile')
 
-                        let images = req.files.map(image => {
-                            let img = {
-                                file : image.filename,
-                                productId : product.id
-                            }
-                            return img
-                        });
-                        db.Image.bulkCreate(images, {validate : true})
-                            .then( () => console.log('imagenes agregadas'))
-                    }
-                    return res.redirect('/profile')
-                })
-                
-            }else {  
-                if (req.fileValidationError) {
-                        errors = {
-                            ...errors,
-                            image: {
-                                msg: req.fileValidationError,
-                            },
-                        };
-                    }
-                return res.render('profile', {
-                errors,
-                old: req.body,      
-                user: users.find(user => user.id === req.session.userLogin.id)
-            }) 
-            .catch(error => console.log(error))
-                
-                    
-        
-                   
-                     
-                   
-                   
-                }
-                }
-            
+            } catch (error) {
+                console.log(error);
             }
+
+        } else {
+
+            try {
+                errors = errors.mapped()
+
+                if (req.fileValidationError) {
+                    errors = {
+                        ...errors,
+                        image: {
+                            msg: req.fileValidationError,
+                        },
+                    };
+                }
+                let user = await db.User.findByPk(req.session.userLogin.id)
+                return res.render('profile', {
+                    errors,
+                    old: req.body,
+                    user
+                })
+            } catch (error) {
+                console.log(error)
+            }
+        }
+    }
+
+}

@@ -12,6 +12,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING(50)
       },
+      icon: {
+        allowNull: false,
+        type: Sequelize.STRING(50)
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

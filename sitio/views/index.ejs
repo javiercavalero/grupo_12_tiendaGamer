@@ -80,14 +80,9 @@
     
         <h3>¿Que estas buscando?</h3>
         <div class="icons">
-          <div class="headphones"><a href=""><i class="fas fa-headphones"></i></a></div>
-          <div class="game"><a href=""><i class="fas fa-gamepad"></i></a></div>
-          <div class="mouse"><a href=""><i class="fas fa-mouse"></i></a></div>
-          <div class="sd-card"><a href=""><i class="fas fa-sd-card"></i></a></div>
-          <div class="laptop"><a href=""><i class="fas fa-desktop"></i></a></div>
-          <div class="usb"><a href=""><i class="fab fa-usb"></i></a></div>
-          <div class="mobile"><a href=""><i class="fas fa-mobile-alt"></i></a></div>
-          <div class="microfono"><a href=""> <i class="fas fa-microphone"></i></a></div>
+          <% categories.forEach(category => { %>
+            <div class="category"><a href="/products/category/<%= category.id %> "><i class="<%= category.icon %>"></i></a></div>
+          <% }) %>
         </div>
 
 
